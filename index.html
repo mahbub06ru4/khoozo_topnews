@@ -67,6 +67,42 @@
         "name": "Khoozo",
         "url": "https://khoozo.com",
         "email": "support@khoozo.com"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://topnews.khoozo.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Top News by Khoozo publish its own news?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. It is a directory and headline aggregator. Every link opens the original publisher's website, and all rights in the reporting stay with that publisher." }
+          },
+          {
+            "@type": "Question",
+            "name": "How often are the live headlines updated?",
+            "acceptedAnswer": { "@type": "Answer", "text": "An automated job fetches the latest Bangla and English headlines from Google News Bangladesh roughly every 30 minutes, and the page also refreshes them while it is open." }
+          },
+          {
+            "@type": "Question",
+            "name": "A newspaper is missing from the list. How do I get it added?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Email the newspaper's name and official website address to support@khoozo.com. It will be added once the link has been checked." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Top News free to use, and do I need an account?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It is free and there is no account, login or newsletter signup. The site is supported by advertising. Reading preferences are stored only in your own browser, never on a server." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I watch live cricket and football scores on this site?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The site shows live sports headlines and links directly to the live pages of Cricbuzz, ESPNcricinfo, LiveScore and Sofascore. The scores themselves stay with the services licensed to publish them." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do some newspaper logos not appear?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Each card tries to load the publisher's own site icon. When a publisher does not serve one, the card falls back to the newspaper's name set as a Bangla wordmark. The link itself always works." }
+          }
+        ]
       }
     ]
   }
@@ -318,6 +354,19 @@
         <p class="bn">Top News by Khoozo একটি দ্রুতগতির, মোবাইল-বান্ধব সংবাদপত্র ডিরেক্টরি। এখানে বাংলাদেশের জাতীয় দৈনিক, অনলাইন নিউজ পোর্টাল, টেলিভিশন চ্যানেলের নিউজ সাইট, ই-পেপার, ইংরেজি দৈনিক, বিভাগীয় ও আঞ্চলিক পত্রিকা এবং আন্তর্জাতিক বাংলা সংবাদমাধ্যমের লিংক বিষয়ভিত্তিকভাবে সাজানো আছে। প্রতিটি লিংক সরাসরি প্রকাশকের নিজস্ব ওয়েবসাইটে খোলে — আমরা কোনো সংবাদ কপি করি না, শুধু পাঠককে সঠিক উৎসে পৌঁছে দিই।</p>
         <p class="bn">কম ইন্টারনেট ডেটায় দ্রুত লোড হওয়ার জন্য সাইটটি হালকা রাখা হয়েছে। উপরের সার্চ বক্সে পত্রিকার বাংলা বা ইংরেজি নাম লিখলেই তালিকা সঙ্গে সঙ্গে ছোট হয়ে আসবে, আর ক্যাটাগরি ট্যাব দিয়ে নির্দিষ্ট ধরনের সংবাদমাধ্যম আলাদা করে দেখা যাবে।</p>
         <p>Top News by Khoozo is a lightweight directory of Bangladeshi and international news websites. Instead of republishing articles, we organise trusted publishers by category and send you straight to the original source, with a small live-headline section that refreshes automatically from Google News Bangladesh every 30 minutes.</p>
+
+        <h3>How this directory is organised</h3>
+        <p>Bangladesh has a crowded media landscape, and the first difficulty for most readers is simply knowing which kind of outlet they need. A national Bangla daily, a web-first portal, a television newsroom and an e-paper all cover the same country, but they do different jobs, publish on different schedules and are useful at different moments. The categories here follow that practical distinction rather than any official classification.</p>
+        <p>The <a href="bangla-newspapers.html">national Bangla dailies</a> set the day's agenda and carry the widest general coverage. The <a href="online-news-portals.html">online portals</a> publish continuously and are usually where breaking news appears first. <a href="tv-news-channels.html">Television newsrooms</a> have become major digital publishers in their own right, with live streams and written reports alongside the broadcast. The <a href="bangla-epapers.html">e-papers</a> reproduce the printed edition page by page, which is what you need for job circulars, tender notices and anything you want to cite by date.</p>
+        <p>Beyond those, the <a href="english-newspapers.html">English dailies</a> carry the business and policy reporting that reaches an international readership, the <a href="local-newspapers.html">divisional and district press</a> covers news that never reaches Dhaka, and the <a href="sports-live-score.html">sports and live-score section</a> collects the cricket and football services that millions of readers open several times a day. <a href="jobs-tech-portals.html">Job and technology portals</a>, <a href="kolkata-bangla-newspapers.html">Kolkata Bangla papers</a> and <a href="international-news.html">international outlets</a> each have a section as well. Every category has its own guide page explaining what the publications are, how they developed and how to get the most out of them.</p>
+
+        <h3>Built for a phone on mobile data</h3>
+        <p>Most people in Bangladesh read the news on a phone, often on a metered data pack and not always on a strong connection. That shaped how this site is built. There is no heavy framework, no auto-playing video and no tracking carousel — the directory is a static page that loads once and then filters instantly as you type, without going back to the network for every keystroke.</p>
+        <p>Practical consequences: the search box responds immediately and matches both Bangla and English names, so typing <em>প্রথম</em> or <em>protho</em> finds the same paper. The category tabs narrow the list without reloading. The reader controls in the header let you change the Bangla typeface and text size if the default is hard to read, and the choice is remembered on your next visit. Dark mode follows your device setting unless you override it.</p>
+
+        <h3>What we do not do</h3>
+        <p>We do not copy articles, rewrite them, or hold readers on this site to collect advertising revenue that belongs to the newsroom that did the work. Every newspaper card and every headline links directly to the publisher's own domain, opening in a new tab. All rights in the reporting remain with the publisher, and the headlines shown in the live section are exactly that — headlines, with the source name and the time, linking onward.</p>
+        <p>Listing a publication is not an endorsement of it. The aim is coverage of the established Bangladeshi media across the spectrum, so that readers can compare rather than be steered. Links are checked periodically, and if you find one that is broken, out of date or pointing somewhere it should not, telling us is genuinely useful.</p>
       </section>
 
       <div class="info-grid section">
@@ -349,6 +398,22 @@
             <p>Look at the date and time stamp, be careful with screenshots that have no link, and remember that opinion columns are different from news reports. If a claim seems surprising, fact-checking initiatives and international outlets such as BBC Bangla or DW Bangla can offer additional context.</p>
           </div>
         </details>
+        <details class="acc">
+          <summary>Which outlet should you read for what?</summary>
+          <div>
+            <p>For a developing story — a verdict, a result, an accident, a weather warning — the online portals and television newsrooms will have it first, but the first thirty minutes of any breaking story are the least reliable. Numbers change, names get corrected, and early reports are often assembled from incomplete information.</p>
+            <p>For the settled version of the same event, the next morning's national dailies are better. They have had time to confirm details, gather reaction and place the story in context. For documents, notices and anything you need to quote exactly, use the e-paper, where the page appears as it was printed.</p>
+            <p>For sustained coverage of a subject — the economy, a particular ministry, a sector such as garments or energy — the English business press and the specialist desks of the larger dailies carry far more depth than general coverage will ever show you.</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="bn">কম ডেটায় খবর পড়ার কৌশল</summary>
+          <div class="bn">
+            <p>মোবাইল ডেটা সাশ্রয় করতে চাইলে কয়েকটি সহজ অভ্যাস কাজে লাগে। নিউজ সাইটের ভিডিও অটোপ্লে সবচেয়ে বেশি ডেটা খরচ করে, তাই ব্রাউজারের সেটিংস থেকে ভিডিও অটোপ্লে বন্ধ রাখলে অনেকটা সাশ্রয় হয়।</p>
+            <p>লাইভ স্কোর বা লাইভ স্ট্রিমের পাতা খোলা রাখলে সেটি অবিরত ডেটা খরচ করতে থাকে। খেলা দেখার সময় পাতাটি খোলা রেখে অন্য কাজ করলে ডেটা শেষ হয় দ্রুত — প্রয়োজন শেষ হলে ট্যাবটি বন্ধ করে দেওয়াই ভালো।</p>
+            <p>ই-পেপার পৃষ্ঠা আকারে লোড হয় বলে আকারে বড় হয়; সম্ভব হলে ওয়াই-ফাইতে খুলুন। আর যে পত্রিকাগুলো নিয়মিত পড়েন, সেগুলোর ওয়েবসাইট বুকমার্ক করে রাখলে সার্চ ইঞ্জিন ও সামাজিক মাধ্যমের বাড়তি পাতা লোড করতে হয় না।</p>
+          </div>
+        </details>
       </div>
 
       <section class="section" aria-labelledby="faqTitle">
@@ -365,6 +430,18 @@
           <details class="acc">
             <summary class="bn">কোনো পত্রিকা তালিকায় নেই — কীভাবে যোগ করব?</summary>
             <div class="bn"><p>পত্রিকার নাম ও ওয়েবসাইট লিংকসহ <a href="mailto:support@khoozo.com">support@khoozo.com</a>-এ ইমেইল করুন। যাচাই করে আমরা তালিকায় যুক্ত করব।</p></div>
+          </details>
+          <details class="acc">
+            <summary>Is Top News free to use, and do I need an account?</summary>
+            <div><p>It is free and there is no account, no login and no newsletter signup. The site is supported by advertising, which is what keeps it free for every reader. Your category and reading preferences are stored only in your own browser, never on a server.</p></div>
+          </details>
+          <details class="acc">
+            <summary class="bn">লাইভ স্কোর কি এই সাইটেই দেখা যায়?</summary>
+            <div class="bn"><p>না। আমরা লাইভ খেলার শিরোনাম দেখাই, আর লাইভ স্কোরের জন্য সরাসরি ক্রিকবাজ, ইএসপিএন ক্রিকইনফো, লাইভস্কোর ও সোফাস্কোরের নিজস্ব লাইভ পাতায় লিংক দিই। স্কোর প্রকাশের অধিকার যাদের আছে, পাঠক তাদের সাইটেই পৌঁছান।</p></div>
+          </details>
+          <details class="acc">
+            <summary>Why do some newspaper logos not appear?</summary>
+            <div><p>Each card tries to load the publisher's own site icon. Some publishers do not serve one, or block requests for it, in which case the card falls back to the newspaper's name set in a Bangla wordmark. The link itself always works.</p></div>
           </details>
         </div>
       </section>
