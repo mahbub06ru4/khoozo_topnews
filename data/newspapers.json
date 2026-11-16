@@ -31,6 +31,14 @@
       "intro_en": "Bangladeshi TV newsrooms are now major digital publishers. Their websites stream live bulletins, talk shows and short clips, which makes them especially popular for breaking news and live events."
     },
     {
+      "id": "sports",
+      "en": "Sports & Live Score",
+      "bn": "খেলা ও লাইভ স্কোর",
+      "title_en": "Sports & Live Score Sites",
+      "intro_bn": "ক্রিকেট ও ফুটবলের লাইভ স্কোর, বল-বাই-বল ধারাভাষ্য, সূচি ও পয়েন্ট টেবিল দেখার জন্য নির্ভরযোগ্য সাইটগুলো এখানে সাজানো আছে। বাংলাদেশ দলের ম্যাচ, বিপিএল, আইপিএল, বিশ্বকাপ থেকে শুরু করে ইউরোপীয় লিগ — প্রতিটি লিংক সরাসরি মূল সাইটের লাইভ পাতায় খোলে।",
+      "intro_en": "Trusted sites for live cricket and football scores, ball-by-ball commentary, fixtures and tables. From Bangladesh internationals and the BPL to the World Cup and European leagues, every link opens the official live page of the publisher."
+    },
+    {
       "id": "epaper",
       "en": "e-Paper",
       "bn": "ই-পেপার",
@@ -627,6 +635,97 @@
       "name_en": "The Times of India",
       "url": "https://timesofindia.indiatimes.com",
       "category": "international"
+    },
+    {
+      "name_bn": "ক্রিকবাজ লাইভ স্কোর",
+      "name_en": "Cricbuzz Live Scores",
+      "url": "https://www.cricbuzz.com/cricket-match/live-scores",
+      "category": "sports",
+      "color": "#009270"
+    },
+    {
+      "name_bn": "ইএসপিএন ক্রিকইনফো",
+      "name_en": "ESPNcricinfo Live",
+      "url": "https://www.espncricinfo.com/live-cricket-score",
+      "category": "sports",
+      "color": "#0a77c0"
+    },
+    {
+      "name_bn": "আইসিসি",
+      "name_en": "ICC Cricket",
+      "url": "https://www.icc-cricket.com",
+      "category": "sports",
+      "color": "#1b2a6b"
+    },
+    {
+      "name_bn": "বিসিবি টাইগার ক্রিকেট",
+      "name_en": "BCB — Tiger Cricket",
+      "url": "https://www.tigercricket.com.bd",
+      "category": "sports",
+      "color": "#006a4e"
+    },
+    {
+      "name_bn": "লাইভস্কোর ফুটবল",
+      "name_en": "LiveScore Football",
+      "url": "https://www.livescore.com/en/football/live/",
+      "category": "sports",
+      "color": "#ff6b00"
+    },
+    {
+      "name_bn": "সোফাস্কোর",
+      "name_en": "Sofascore",
+      "url": "https://www.sofascore.com",
+      "category": "sports",
+      "color": "#374df5"
+    },
+    {
+      "name_bn": "গোল ডটকম",
+      "name_en": "Goal.com",
+      "url": "https://www.goal.com",
+      "category": "sports",
+      "color": "#1a1a1a"
+    },
+    {
+      "name_bn": "ফিফা",
+      "name_en": "FIFA",
+      "url": "https://www.fifa.com",
+      "category": "sports",
+      "color": "#05204a"
+    },
+    {
+      "name_bn": "বাফুফে",
+      "name_en": "Bangladesh Football Federation",
+      "url": "https://www.bff.com.bd",
+      "category": "sports",
+      "color": "#d71920"
+    },
+    {
+      "name_bn": "টি স্পোর্টস",
+      "name_en": "T Sports",
+      "url": "https://www.tsports.com",
+      "category": "sports",
+      "color": "#e2231a"
+    },
+    {
+      "name_bn": "প্রথম আলো খেলা",
+      "name_en": "Prothom Alo Sports",
+      "url": "https://www.prothomalo.com/sports",
+      "category": "sports",
+      "color": "#e2231a"
+    },
+    {
+      "name_bn": "ডেইলি স্টার স্পোর্টস",
+      "name_en": "The Daily Star Sports",
+      "url": "https://www.thedailystar.net/sports",
+      "category": "sports",
+      "color": "#1d4ed8"
+    },
+    {
+      "name_bn": "বিবিসি স্পোর্ট",
+      "name_en": "BBC Sport",
+      "url": "https://www.bbc.com/sport",
+      "category": "sports",
+      "color": "#b80000"
     }
   ],
   "divisions": [

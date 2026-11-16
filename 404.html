@@ -6,13 +6,15 @@
   <title>Page not found — Top News by Khoozo</title>
   <meta name="description" content="The page you were looking for could not be found.">
   <link rel="canonical" href="https://topnews.khoozo.com/404.html">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f6f4ef">
   <meta name="robots" content="noindex">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script>(function(){try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400..800&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400..800&family=Plus+Jakarta+Sans:wght@400..800&display=swap">
+  <!-- Reader font + text-size preference, applied before paint -->
+  <script>(function(){try{var d=document.documentElement,f=localStorage.getItem('font'),s=localStorage.getItem('size');if(f)d.setAttribute('data-font',f);if(s)d.setAttribute('data-size',s);}catch(e){}})();</script>
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/app.js" defer></script>
 </head>
@@ -52,6 +54,7 @@
   <nav class="mainnav" id="mainNav" aria-label="Main">
     <div class="container mainnav-inner">
       <a class="mn-link" href="./" data-home>হোম</a>
+      <a class="mn-link mn-live" href="./#sports" data-sports><span class="live-dot" aria-hidden="true"></span>লাইভ খেলা</a>
       <div class="mn-item">
         <button class="mn-btn" type="button" aria-expanded="false" aria-controls="mega-all">সব পত্রিকা <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="mega" id="mega-all"><p class="mega-empty" style="padding:16px">লোড হচ্ছে…</p></div>
@@ -63,6 +66,7 @@
       <a class="mn-link" href="./#cat=bangla" data-cat="bangla">জাতীয় দৈনিক</a>
       <a class="mn-link" href="./#cat=online" data-cat="online">অনলাইন</a>
       <a class="mn-link" href="./#cat=tv" data-cat="tv">টিভি নিউজ</a>
+      <a class="mn-link" href="./#cat=sports" data-cat="sports">খেলা</a>
       <a class="mn-link" href="./#cat=epaper" data-cat="epaper">ই-পেপার</a>
       <a class="mn-link" href="./#cat=english" data-cat="english">English</a>
       <a class="mn-link" href="./#cat=jobs" data-cat="jobs">চাকরি</a>

@@ -1,9 +1,11 @@
 /* =========================================================================
    Top News by Khoozo — app.js (vanilla, zero dependencies)
    - Dark/light theme with persistence
+   - Reader settings: Bangla typeface + text size (persisted)
    - Live Bangla (Gregorian + Bangabda) / English date
    - Mega-menu navigation + logo carousel built from data/newspapers.json
    - Breaking ticker + live headlines from data/news.json
+   - Live Sports: cricket + football headlines from data/sports.json
    - Directory as "TOP 10" category sections with Read More / Show More,
      category filter tabs, instant search, in-feed ad slots
    - Sticky mobile anchor ad with close button
@@ -61,7 +63,7 @@
       root.dataset.theme = t;
       btn?.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
       const meta = $('meta[name="theme-color"]');
-      if (meta) meta.content = t === 'dark' ? '#0d1015' : '#ffffff';
+      if (meta) meta.content = t === 'dark' ? '#0b0b0f' : '#f6f4ef';
     };
     apply(root.dataset.theme || 'light');
     btn?.addEventListener('click', () => {
@@ -71,6 +73,45 @@
     });
     matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', (e) => {
       if (!store.get('theme')) apply(e.matches ? 'dark' : 'light');
+    });
+  }
+
+  /* ---------------- Reader settings: Bangla typeface + text size ---------------- */
+  const FONTS = [['anek', 'আধুনিক', 'Modern'], ['hind', 'ক্লাসিক', 'Classic'], ['serif', 'সেরিফ', 'Serif']];
+  const SIZES = [['sm', 'A', 'Small'], ['md', 'A', 'Default'], ['lg', 'A', 'Large']];
+
+  function initReader() {
+    const root = document.documentElement;
+    const actions = $('.header-actions');
+    if (!actions) return;
+    const state = {
+      font: FONTS.some(([id]) => id === root.dataset.font) ? root.dataset.font : 'anek',
+      size: SIZES.some(([id]) => id === root.dataset.size) ? root.dataset.size : 'md',
+    };
+    const group = (key, opts, label) => h('div', { class: 'seg', role: 'group', 'aria-label': label },
+      opts.map(([id, glyph, name]) => h('button', { type: 'button', [`data-${key}`]: id, 'aria-pressed': String(state[key] === id), title: name },
+        h('b', key === 'font' ? { lang: 'bn' } : {}, glyph), h('small', {}, name))));
+    const pop = h('div', { class: 'reader-pop', id: 'readerPop', hidden: '' },
+      h('h3', {}, 'Bangla font · বাংলা ফন্ট'), group('font', FONTS, 'Bangla font'),
+      h('h3', {}, 'Text size · লেখার আকার'), group('size', SIZES, 'Text size'));
+    const btn = h('button', { class: 'icon-btn', id: 'readerToggle', type: 'button', 'aria-label': 'Font and text size', 'aria-expanded': 'false', 'aria-controls': 'readerPop' }, 'Aa');
+    actions.insertBefore(btn, $('#themeToggle', actions));
+    actions.append(pop);
+
+    const setOpen = (open) => { pop.hidden = !open; btn.setAttribute('aria-expanded', String(open)); };
+    btn.addEventListener('click', (e) => { e.stopPropagation(); setOpen(pop.hidden); });
+    document.addEventListener('click', (e) => { if (!pop.hidden && !pop.contains(e.target)) setOpen(false); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !pop.hidden) { setOpen(false); btn.focus(); } });
+    pop.addEventListener('click', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      const key = b.dataset.font ? 'font' : 'size';
+      state[key] = b.dataset[key];
+      // The defaults are stored as "no attribute" so the CSS fallbacks apply.
+      const isDefault = state[key] === (key === 'font' ? 'anek' : 'md');
+      if (isDefault) delete root.dataset[key]; else root.dataset[key] = state[key];
+      store.set(key, isDefault ? '' : state[key]);
+      $$(`[data-${key}]`, pop).forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     });
   }
 
@@ -192,6 +233,7 @@
 
     // Fix home/category links so they work from every page (incl. 404).
     $$('a[data-home]', nav).forEach((a) => { a.href = HOME; });
+    $$('a[data-sports]', nav).forEach((a) => { a.setAttribute('href', IS_HOME ? '#sports' : `${HOME}#sports`); });
     $$('a[data-cat]', nav).forEach((a) => { a.setAttribute('href', catHref(a.dataset.cat)); });
 
     let data;
@@ -261,7 +303,7 @@
         ticker.style.setProperty('--ticker-dur', `${Math.max(40, items.length * 7)}s`);
       }
       if (grid) {
-        grid.replaceChildren(...items.slice(0, 10).map((it) => h('li', {},
+        grid.replaceChildren(...items.slice(0, 9).map((it) => h('li', {},
           h('a', { class: 'live-card', href: safeUrl(it.link), ...ext },
             h('h3', { lang: it.lang }, it.title),
             h('div', { class: 'live-meta' },
@@ -280,6 +322,61 @@
     }
   }
 
+  /* ---------------- Live sports (cricket + football headlines) ---------------- */
+  const SPORT_LABEL = { cricket: '🏏 Cricket', football: '⚽ Football' };
+  let sportItems = [];
+  let sportFilter = 'all';
+
+  function renderSports() {
+    const grid = $('#sportsGrid');
+    if (!grid) return;
+    const list = sportItems.filter((it) => sportFilter === 'all' || it.sport === sportFilter).slice(0, 8);
+    if (!list.length) {
+      grid.replaceChildren(h('li', { class: 'empty' }, 'এই মুহূর্তে কোনো খেলার খবর নেই। No sports headlines right now.'));
+      return;
+    }
+    grid.replaceChildren(...list.map((it) => h('li', {},
+      h('a', { class: `live-card sport-${it.sport}`, href: safeUrl(it.link), ...ext, 'data-sport': SPORT_LABEL[it.sport] || 'Sports' },
+        h('h3', { lang: it.lang }, it.title),
+        h('div', { class: 'live-meta' },
+          h('span', { class: 'src-badge' }, it.source || 'Google News'),
+          h('time', { datetime: it.pubDate, lang: it.lang }, relTime(it.pubDate, it.lang)))))));
+  }
+
+  async function loadSports() {
+    const grid = $('#sportsGrid');
+    if (!grid) return;
+    try {
+      const res = await fetch(`${dataUrl('sports.json')}?v=${Math.floor(Date.now() / 3e5)}`);
+      if (!res.ok) throw new Error(res.status);
+      const data = await res.json();
+      sportItems = (data.items || []).filter((i) => i && i.title && i.link);
+      if (!sportItems.length) throw new Error('empty');
+      renderSports();
+      const upd = $('#sportsUpdated');
+      if (upd && data.updated) {
+        upd.textContent = `আপডেট: ${relTime(data.updated, 'bn')}`;
+        upd.title = new Date(data.updated).toLocaleString();
+      }
+    } catch (err) {
+      console.warn('Sports headlines unavailable:', err);
+      grid.replaceChildren(h('li', { class: 'empty' }, 'খেলার খবর এই মুহূর্তে পাওয়া যাচ্ছে না — উপরের লাইভ স্কোর লিংক ব্যবহার করুন। Sports headlines are temporarily unavailable.'));
+    }
+  }
+
+  function initSports() {
+    const filter = $('#sportFilter');
+    if (!filter) return;
+    filter.addEventListener('click', (e) => {
+      const b = e.target.closest('[data-sport]');
+      if (!b) return;
+      sportFilter = b.dataset.sport;
+      $$('[data-sport]', filter).forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      renderSports();
+    });
+    loadSports();
+  }
+
   /* ---------------- Newspaper directory ---------------- */
   const TOP_N = 10;      // cards shown per section before "Show More"
   const AD_EVERY = 12;   // in-feed ad after every 12 cards inside a grid
@@ -292,7 +389,7 @@
 
   function paperCard(p, { cat, div, q, showTag }) {
     const tag = div ? `${div.bn} বিভাগ` : showTag && cat ? cat.bn : null;
-    return h('a', { class: 'paper', href: safeUrl(p.url), ...ext, title: `${p.name_en} — ${hostOf(p.url)}` },
+    return h('a', { class: 'paper', style: `--c:${colorFor(p)}`, href: safeUrl(p.url), ...ext, title: `${p.name_en} — ${hostOf(p.url)}` },
       logoTile(p, q),
       h('span', { class: 'paper-en' }, highlight(p.name_en, q)),
       tag ? h('span', { class: 'paper-tag', lang: 'bn' }, tag) : null);
@@ -511,6 +608,7 @@
 
   /* ---------------- Boot ---------------- */
   initTheme();
+  initReader();
   initDate();
   initMisc();
   initAnchor();
@@ -518,6 +616,7 @@
   initNav();
   initStrip();
   loadNews();
+  initSports();
   initDirectory();
-  if ($('#liveGrid')) setInterval(() => { if (!document.hidden) loadNews(); }, 6e5);
+  if ($('#liveGrid')) setInterval(() => { if (!document.hidden) { loadNews(); loadSports(); } }, 6e5);
 })();
