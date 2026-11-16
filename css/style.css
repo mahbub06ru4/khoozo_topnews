@@ -329,6 +329,41 @@ button, input { font: inherit; color: inherit; }
 .ad-infeed { grid-column: 1 / -1; min-height: 120px; }
 .ad-sidebar { min-height: 250px; }
 
+/* House ads: the fallback creative shown when a network has nothing for a slot. */
+.ad-slot.is-house { background: none; border: 0; padding: 0; }
+.ad-slot.is-house::before { content: none; }
+.house-ad {
+  display: flex; align-items: center; gap: .875rem; flex-wrap: wrap; width: 100%; height: 100%;
+  padding: 1rem 1.25rem; border-radius: var(--radius-sm); text-decoration: none; color: var(--text);
+  background: linear-gradient(120deg, color-mix(in srgb, var(--c) 14%, var(--surface)), var(--surface) 70%);
+  border: 1px solid color-mix(in srgb, var(--c) 35%, var(--border));
+  transition: border-color .25s, transform .25s var(--ease), box-shadow .25s;
+}
+.house-ad:hover { border-color: var(--c); transform: translateY(-2px); box-shadow: var(--shadow); }
+.house-tag {
+  flex: none; font: 700 .625rem/1 var(--font-en); text-transform: uppercase; letter-spacing: .12em;
+  padding: .35rem .6rem; border-radius: var(--pill); background: var(--c); color: #fff;
+}
+.house-title { font: 700 1.0625rem/1.3 var(--font-bn-head); letter-spacing: 0; }
+.house-text { font-size: .875rem; color: var(--muted); flex: 1 1 14rem; min-width: 0; }
+.house-cta {
+  margin-left: auto; flex: none; font: 700 .8125rem/1 var(--font-en); color: var(--c);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+}
+.house-cta::after { content: " →"; }
+.ad-infeed .house-ad { flex-direction: column; align-items: flex-start; justify-content: center; text-align: left; gap: .5rem; }
+.ad-infeed .house-cta { margin-left: 0; }
+/* The anchor is a fixed 50px, so it stays one line: tag + title, no wrapping. */
+.ad-anchor .house-ad { padding: .5rem .75rem; gap: .5rem; border-radius: var(--radius-sm); flex-wrap: nowrap; }
+.ad-anchor .house-title { font-size: .875rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.ad-anchor .house-tag { font-size: .5625rem; padding: .3rem .5rem; }
+.ad-anchor .house-cta { display: none; }
+@media (max-width: 560px) {
+  .house-ad { padding: .875rem 1rem; gap: .625rem; }
+  .house-text { flex-basis: 100%; }
+  .house-cta { margin-left: 0; }
+}
+
 .ad-anchor {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
   display: flex; justify-content: center; padding: .375rem 0 calc(.375rem + env(safe-area-inset-bottom));

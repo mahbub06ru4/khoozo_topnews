@@ -43,12 +43,6 @@
   <link rel="preload" href="data/newspapers.json" as="fetch" type="application/json" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 
-  <!--
-    ============ GOOGLE ADSENSE ============
-    After approval, uncomment and replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID.
-    Also add the same ID to /ads.txt.
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
-  -->
 
   <script type="application/ld+json">
   {
@@ -74,6 +68,8 @@
   }
   </script>
 
+  <script src="js/ads-config.js" defer></script>
+  <script src="js/ads.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -161,13 +157,8 @@
   <main id="main">
     <div class="container">
 
-      <!-- ============ AD SLOT: Top Leaderboard ============
-           Desktop 728x90 · Mobile 320x100. min-height reserved to prevent CLS.
-           Replace inner text with:
-           <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXX" data-ad-slot="XXXX" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      -->
-      <div class="ad-slot ad-leaderboard" data-ad-slot="top-leaderboard" role="complementary" aria-label="Advertisement">Leaderboard Ad</div>
+      <!-- Ad slot — filled by js/ads.js from js/ads-config.js -->
+      <div class="ad-slot ad-leaderboard" data-ad-type="leaderboard" role="complementary" aria-label="Advertisement"></div>
 
       <!-- ===================== LIVE HEADLINES (10%) ===================== -->
       <section class="section" id="live" aria-labelledby="liveTitle">
@@ -354,14 +345,12 @@
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
   </button>
 
-  <!-- ============ AD SLOT: Sticky Mobile Anchor (320x50) ============
-       Visible only on screens < 768px. Close state is remembered for the session.
-  -->
+  <!-- Sticky bottom slot on phones; closing it is remembered for the session. -->
   <div class="ad-anchor" id="adAnchor" hidden>
     <button class="ad-anchor-close" id="adAnchorClose" type="button" aria-label="Close advertisement">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
-    <div class="ad-slot" data-ad-slot="mobile-anchor" role="complementary" aria-label="Advertisement">320×50 Ad</div>
+    <div class="ad-slot" data-ad-type="anchor" role="complementary" aria-label="Advertisement"></div>
   </div>
 </body>
 </html>

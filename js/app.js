@@ -9,6 +9,7 @@
    - Directory as "TOP 10" category sections with Read More / Show More,
      category filter tabs, instant search, in-feed ad slots
    - Sticky mobile anchor ad with close button
+   - Ad slots are filled by js/ads.js (configured in js/ads-config.js)
    ========================================================================= */
 (() => {
   'use strict';
@@ -383,8 +384,10 @@
   const AD_SECTIONS = 2; // in-feed ad between every 2 sections
 
   function inFeedAd(n) {
-    // AdSense in-feed slot. Replace the placeholder text with your <ins class="adsbygoogle" ...> unit.
-    return h('div', { class: 'ad-slot ad-infeed', 'data-ad-slot': `infeed-${n}`, role: 'complementary', 'aria-label': 'Advertisement' }, 'In-Feed Ad');
+    // The network is chosen in js/ads-config.js; js/ads.js fills the box.
+    if (window.KhoozoAds?.enabled === false) return null;
+    const el = h('div', { class: 'ad-slot ad-infeed', 'data-ad-type': 'infeed', 'data-ad-id': `infeed-${n}`, role: 'complementary', 'aria-label': 'Advertisement' });
+    return window.KhoozoAds?.fill(el) === false ? null : el;
   }
 
   function paperCard(p, { cat, div, q, showTag }) {
@@ -426,8 +429,10 @@
         grid.append(card);
         if ((i + 1) % AD_EVERY === 0 && i + 1 < list.length) {
           const ad = inFeedAd(++adN);
-          if (i >= TOP_N) ad.classList.add('extra');
-          grid.append(ad);
+          if (ad) {
+            if (i >= TOP_N) ad.classList.add('extra');
+            grid.append(ad);
+          }
         }
       });
 
@@ -460,8 +465,10 @@
       sectionNodes.push(sec);
       if ((si + 1) % AD_SECTIONS === 0 && si + 1 < sectionCats.length) {
         const ad = inFeedAd(`sec-${si}`);
-        ad.classList.add('between-sec');
-        sectionNodes.push(ad);
+        if (ad) {
+          ad.classList.add('between-sec');
+          sectionNodes.push(ad);
+        }
       }
     });
 
@@ -530,7 +537,10 @@
         const nodes = [];
         list.forEach((p, i) => {
           nodes.push(paperCard(p, { cat: catMap[p.category], div: divMap[p.division], q, showTag: true }));
-          if ((i + 1) % AD_EVERY === 0 && i + 1 < list.length) nodes.push(inFeedAd(`s${i}`));
+          if ((i + 1) % AD_EVERY === 0 && i + 1 < list.length) {
+            const ad = inFeedAd(`s${i}`);
+            if (ad) nodes.push(ad);
+          }
         });
         if (!list.length) nodes.push(h('div', { class: 'empty' }, `"${q}" — কোনো পত্রিকা পাওয়া যায়নি। No newspaper matched your search.`));
         resultsGrid.replaceChildren(...nodes);

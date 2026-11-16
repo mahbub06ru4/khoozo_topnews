@@ -1,2 +1,7 @@
-# Replace pub-XXXXXXXXXXXXXXXX with your AdSense publisher ID after approval, then remove the leading "#".
+# ads.txt — authorised sellers. One line per network, uncommented once you are approved.
+# Google AdSense: replace pub-XXXXXXXXXXXXXXXX with your publisher ID (the same one in js/ads-config.js).
 # google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Adsterra: the exact line is shown in your Adsterra dashboard under Websites.
+# adsterra.com, XXXXXX, DIRECT
+# Monetag:
+# monetag.com, XXXXXX, DIRECT
