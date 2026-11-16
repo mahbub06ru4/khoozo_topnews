@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://topnews.khoozo.com/sitemap.xml

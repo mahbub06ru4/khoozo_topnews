@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="bn" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Top News by Khoozo — সব বাংলা পত্রিকা ও লাইভ খবর | All Bangla Newspapers</title>
+  <meta name="description" content="Top News by Khoozo: বাংলাদেশের সব জাতীয় দৈনিক, অনলাইন পোর্টাল, টিভি নিউজ, ই-পেপার ও ইংরেজি পত্রিকা এক জায়গায়, সাথে লাইভ শিরোনাম। All Bangladeshi newspapers, e-papers and live headlines in one fast directory.">
+  <meta name="keywords" content="all bangla newspaper, bangla news, bangladesh newspaper list, e-paper, prothom alo, jugantor, kaler kantho, daily star, বাংলা পত্রিকা, সব পত্রিকা">
+  <link rel="canonical" href="https://topnews.khoozo.com/">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Top News by Khoozo">
+  <meta property="og:title" content="Top News by Khoozo — সব বাংলা পত্রিকা এক জায়গায়">
+  <meta property="og:description" content="বাংলাদেশের সব সংবাদপত্র, ই-পেপার, টিভি নিউজ ও লাইভ শিরোনাম — দ্রুত ও মোবাইল-বান্ধব।">
+  <meta property="og:url" content="https://topnews.khoozo.com/">
+  <meta property="og:locale" content="bn_BD">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Theme before paint (prevents flash) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Fonts: Hind Siliguri (Bangla) + Inter (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.google.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap">
+
+  <link rel="preload" href="data/newspapers.json" as="fetch" type="application/json" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--
+    ============ GOOGLE ADSENSE ============
+    After approval, uncomment and replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID.
+    Also add the same ID to /ads.txt.
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://topnews.khoozo.com/#website",
+        "url": "https://topnews.khoozo.com/",
+        "name": "Top News by Khoozo",
+        "alternateName": "সব বাংলা পত্রিকা — Top News",
+        "inLanguage": ["bn-BD", "en"],
+        "publisher": { "@id": "https://khoozo.com/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://khoozo.com/#org",
+        "name": "Khoozo",
+        "url": "https://khoozo.com",
+        "email": "support@khoozo.com"
+      }
+    ]
+  }
+  </script>
+
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#directory">Skip to newspapers</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Top News by Khoozo — home">
+        <span class="brand-mark" aria-hidden="true">TN</span>
+        <span class="brand-text">
+          <span class="brand-name">Top<span>News</span></span>
+        </span>
+      </a>
+      <div class="header-date" aria-live="off">
+        <span class="bn" id="dateBn">&nbsp;</span>
+        <span id="dateEn">&nbsp;</span>
+      </div>
+      <form class="search" role="search" action="./#directory" onsubmit="return false">
+        <label for="searchInput" class="sr-only">পত্রিকা খুঁজুন / Search newspapers</label>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="searchInput" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="পত্রিকা খুঁজুন… Search newspapers">
+        <kbd aria-hidden="true">/</kbd>
+      </form>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="Site">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="by-khoozo" href="https://khoozo.com" target="_blank" rel="noopener" title="A Khoozo product">by Khoozo</a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark mode">
+          <svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== BREAKING TICKER ===================== -->
+  <div class="ticker" aria-label="Breaking news">
+    <div class="container ticker-inner">
+      <div class="ticker-label"><span class="live-dot" aria-hidden="true"></span>ব্রেকিং</div>
+      <div class="ticker-track">
+        <div class="ticker-move" id="tickerMove">
+          <a href="#live">সর্বশেষ শিরোনাম লোড হচ্ছে…</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+
+      <!-- ============ AD SLOT: Top Leaderboard ============
+           Desktop 728x90 · Mobile 320x100. min-height reserved to prevent CLS.
+           Replace inner text with:
+           <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXX" data-ad-slot="XXXX" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+      <div class="ad-slot ad-leaderboard" data-ad-slot="top-leaderboard" role="complementary" aria-label="Advertisement">Leaderboard Ad</div>
+
+      <!-- ===================== LIVE HEADLINES (10%) ===================== -->
+      <section class="section" id="live" aria-labelledby="liveTitle">
+        <div class="section-head">
+          <h1 class="section-title" id="liveTitle"><span class="bar" aria-hidden="true"></span><span>Top Stories Right Now <span class="bn">(লাইভ শিরোনাম)</span></span></h1>
+          <p class="section-sub"><span class="live-badge"><span class="live-dot" aria-hidden="true"></span>Live</span> · <span id="newsUpdated">Google News Bangladesh</span></p>
+        </div>
+        <ul class="live-grid" id="liveGrid" aria-live="polite">
+          <li class="skeleton"></li><li class="skeleton"></li><li class="skeleton"></li><li class="skeleton"></li>
+          <li class="skeleton"></li><li class="skeleton"></li><li class="skeleton"></li><li class="skeleton"></li>
+        </ul>
+      </section>
+
+      <!-- ===================== KHOOZO PROMO ===================== -->
+      <aside class="promo" aria-label="Khoozo">
+        <div>
+          <div class="promo-tag">From Khoozo</div>
+          <h2 class="bn">Khoozo App &amp; Khoozo Shop</h2>
+          <p class="bn">খুঁজুন, কিনুন, এগিয়ে যান — Khoozo-র ডিজিটাল পণ্য ও সেবা এক জায়গায়। Discover Khoozo's apps, digital products and online shop.</p>
+        </div>
+        <div class="promo-actions">
+          <a class="btn btn-light" href="https://khoozo.com" target="_blank" rel="noopener">Get the App →</a>
+          <a class="btn btn-ghost" href="https://khoozo.com" target="_blank" rel="noopener">Visit Shop</a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ===================== NEWSPAPER DIRECTORY (90%) ===================== -->
+    <section class="section" id="directory" aria-labelledby="dirTitle">
+      <div class="container section-head" style="margin-bottom:8px">
+        <h2 class="section-title" id="dirTitle"><span class="bar" aria-hidden="true"></span><span><span class="bn">সব বাংলা পত্রিকা</span> · All Newspapers</span></h2>
+        <p class="section-sub" id="dirStatus" aria-live="polite"></p>
+      </div>
+      <div class="tabs-wrap">
+        <div class="container">
+          <div class="tabs" id="catTabs" role="tablist" aria-label="Newspaper categories">
+            <button class="tab" role="tab" aria-selected="true" type="button">All</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <!-- In-feed ad slots are injected by js/app.js after every 12 cards -->
+        <div class="paper-grid" id="paperGrid" role="tabpanel">
+          <noscript>
+            <p class="empty">এই তালিকা দেখতে JavaScript চালু করুন। Please enable JavaScript to view the newspaper list.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDITORIAL / SEO CONTENT ===================== -->
+    <div class="container">
+      <section class="section prose" aria-labelledby="aboutDir">
+        <h2 id="aboutDir" class="bn">বাংলাদেশের সংবাদপত্র: এক জায়গায় সব পত্রিকা</h2>
+        <p class="bn">Top News by Khoozo একটি দ্রুতগতির, মোবাইল-বান্ধব সংবাদপত্র ডিরেক্টরি। এখানে বাংলাদেশের জাতীয় দৈনিক, অনলাইন নিউজ পোর্টাল, টেলিভিশন চ্যানেলের নিউজ সাইট, ই-পেপার, ইংরেজি দৈনিক, বিভাগীয় ও আঞ্চলিক পত্রিকা এবং আন্তর্জাতিক বাংলা সংবাদমাধ্যমের লিংক বিষয়ভিত্তিকভাবে সাজানো আছে। প্রতিটি লিংক সরাসরি প্রকাশকের নিজস্ব ওয়েবসাইটে খোলে — আমরা কোনো সংবাদ কপি করি না, শুধু পাঠককে সঠিক উৎসে পৌঁছে দিই।</p>
+        <p class="bn">কম ইন্টারনেট ডেটায় দ্রুত লোড হওয়ার জন্য সাইটটি হালকা রাখা হয়েছে। উপরের সার্চ বক্সে পত্রিকার বাংলা বা ইংরেজি নাম লিখলেই তালিকা সঙ্গে সঙ্গে ছোট হয়ে আসবে, আর ক্যাটাগরি ট্যাব দিয়ে নির্দিষ্ট ধরনের সংবাদমাধ্যম আলাদা করে দেখা যাবে।</p>
+        <p>Top News by Khoozo is a lightweight directory of Bangladeshi and international news websites. Instead of republishing articles, we organise trusted publishers by category and send you straight to the original source, with a small live-headline section that refreshes automatically from Google News Bangladesh every 30 minutes.</p>
+      </section>
+
+      <div class="info-grid section">
+        <details class="acc" open>
+          <summary class="bn">বাংলা সংবাদপত্রের সংক্ষিপ্ত ইতিহাস</summary>
+          <div class="bn">
+            <p>বাংলা ভাষার সংবাদপত্রের যাত্রা শুরু উনিশ শতকের শুরুতে। ১৮১৮ সালে শ্রীরামপুর থেকে প্রকাশিত <em>সমাচার দর্পণ</em>-কে প্রথম দিকের বাংলা সংবাদপত্রগুলোর অন্যতম হিসেবে ধরা হয়। পূর্ববঙ্গ অঞ্চলে ১৮৪৭ সালে <em>রংপুর বার্তা</em> এবং ১৮৬১ সালে ঢাকা থেকে <em>ঢাকা প্রকাশ</em> প্রকাশিত হয়, যা এই অঞ্চলের সাংবাদিকতার ভিত্তি গড়ে দেয়।</p>
+            <p>পাকিস্তান আমলে ভাষা আন্দোলন, স্বাধিকার আন্দোলন ও মুক্তিযুদ্ধের সময় সংবাদপত্র জনমত গঠনে গুরুত্বপূর্ণ ভূমিকা রাখে। <em>দৈনিক ইত্তেফাক</em>, <em>সংবাদ</em> ও চট্টগ্রামের <em>আজাদী</em>-র মতো পত্রিকা সেই সময়ের ইতিহাসের সাক্ষী। স্বাধীনতার পর নব্বইয়ের দশকে নতুন প্রজন্মের দৈনিক — যেমন <em>দ্য ডেইলি স্টার</em> ও <em>প্রথম আলো</em> — আধুনিক ছাপা, অনুসন্ধানী প্রতিবেদন ও পেশাদার সম্পাদনার মাধ্যমে পাঠকের প্রত্যাশা বদলে দেয়।</p>
+          </div>
+        </details>
+        <details class="acc" open>
+          <summary>Bangladesh's Digital News Ecosystem</summary>
+          <div>
+            <p>Over the last two decades Bangladeshi journalism has moved decisively online. Dedicated web-first outlets such as bdnews24.com, Bangla Tribune, Jagonews24 and Dhaka Post publish around the clock, while almost every national daily now runs a full website, mobile app and social-video channel alongside its printed edition.</p>
+            <p>Television newsrooms — Somoy, Jamuna, Independent, Channel 24, Ekattor and others — have become major digital publishers too, streaming live bulletins and short clips that reach millions of smartphone users. Cheaper mobile data has made the phone the primary news device for most readers, which is why this directory is built to load quickly on 3G/4G connections.</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="bn">ই-পেপার কী এবং কেন পড়বেন?</summary>
+          <div class="bn">
+            <p>ই-পেপার হলো ছাপা পত্রিকার হুবহু ডিজিটাল সংস্করণ — পাতার বিন্যাস, শিরোনাম, ছবি ও বিজ্ঞাপন সবই ছাপা কাগজের মতো দেখা যায়। যাঁরা প্রবাসে থাকেন বা হাতে পত্রিকা পান না, তাঁরা ই-পেপারের মাধ্যমে প্রতিদিনের পূর্ণ পত্রিকা পড়তে পারেন। চাকরির বিজ্ঞপ্তি, টেন্ডার নোটিশ বা নির্দিষ্ট দিনের পুরোনো সংখ্যা খুঁজতেও ই-পেপার খুব কাজের।</p>
+            <p>আমাদের <strong>ই-পেপার</strong> ক্যাটাগরিতে প্রধান দৈনিকগুলোর অফিশিয়াল ই-পেপার লিংক রাখা আছে, যাতে বিভ্রান্তিকর বা নকল সাইটে না গিয়ে সরাসরি প্রকাশকের সাইটে পৌঁছানো যায়।</p>
+          </div>
+        </details>
+        <details class="acc">
+          <summary>How to read news responsibly</summary>
+          <div>
+            <p>Check the source: before sharing a story, confirm it comes from an established publisher — the cards in this directory link only to official domains. Compare coverage across two or three outlets, especially for breaking news where early reports often change.</p>
+            <p>Look at the date and time stamp, be careful with screenshots that have no link, and remember that opinion columns are different from news reports. If a claim seems surprising, fact-checking initiatives and international outlets such as BBC Bangla or DW Bangla can offer additional context.</p>
+          </div>
+        </details>
+      </div>
+
+      <section class="section" aria-labelledby="faqTitle">
+        <div class="section-head"><h2 class="section-title" id="faqTitle"><span class="bar" aria-hidden="true"></span>প্রশ্নোত্তর · FAQ</h2></div>
+        <div class="faq">
+          <details class="acc">
+            <summary class="bn">Top News by Khoozo কি নিজস্ব সংবাদ প্রকাশ করে?</summary>
+            <div class="bn"><p>না। এটি একটি ডিরেক্টরি ও শিরোনাম সংগ্রাহক। প্রতিটি লিংক মূল প্রকাশকের ওয়েবসাইটে খোলে এবং সংবাদের সব স্বত্ব সংশ্লিষ্ট প্রকাশকের।</p></div>
+          </details>
+          <details class="acc">
+            <summary>How often are the live headlines updated?</summary>
+            <div><p>An automated job fetches the latest Bangla and English headlines from Google News Bangladesh roughly every 30 minutes, and the page also refreshes them while it is open.</p></div>
+          </details>
+          <details class="acc">
+            <summary class="bn">কোনো পত্রিকা তালিকায় নেই — কীভাবে যোগ করব?</summary>
+            <div class="bn"><p>পত্রিকার নাম ও ওয়েবসাইট লিংকসহ <a href="mailto:support@khoozo.com">support@khoozo.com</a>-এ ইমেইল করুন। যাচাই করে আমরা তালিকায় যুক্ত করব।</p></div>
+          </details>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">TN</span><span class="brand-name">Top<span>News</span></span></a>
+          <p class="bn" style="margin-top:10px">বাংলাদেশের সব সংবাদপত্র, ই-পেপার ও লাইভ শিরোনাম — এক জায়গায়। A product of <a href="https://khoozo.com" target="_blank" rel="noopener">Khoozo</a>.</p>
+        </div>
+        <div>
+          <h3>Site</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Khoozo</h3>
+          <ul>
+            <li><a href="https://khoozo.com" target="_blank" rel="noopener">khoozo.com</a></li>
+            <li><a href="https://khoozo.com" target="_blank" rel="noopener">Khoozo App</a></li>
+            <li><a href="https://khoozo.com" target="_blank" rel="noopener">Khoozo Shop</a></li>
+            <li><a href="mailto:support@khoozo.com">support@khoozo.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Top News by Khoozo. All rights reserved.</span>
+        <span>All logos &amp; trademarks belong to their respective publishers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+  </button>
+
+  <!-- ============ AD SLOT: Sticky Mobile Anchor (320x50) ============
+       Visible only on screens < 768px. Close state is remembered for the session.
+  -->
+  <div class="ad-anchor" id="adAnchor" hidden>
+    <button class="ad-anchor-close" id="adAnchorClose" type="button" aria-label="Close advertisement">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="ad-slot" data-ad-slot="mobile-anchor" role="complementary" aria-label="Advertisement">320×50 Ad</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+Build a complete, high-performance, responsive static website for "Top News by Khoozo" (to be hosted on GitHub Pages at `topnews.khoozo.com`). 
+
+### Core Concept & Architecture
+Create a hybrid news portal combining **90% Categorized Bangladesh Newspaper Directory** (inspired by All Newspaper Bangla) and **10% Automated Live News Aggregator** (pulling real-time headlines via Google News Bangladesh RSS). The site must be ultra-fast (95+ Lighthouse score), mobile-first for Bangladeshi mobile data users, and structured to pass Google AdSense approval while maximizing ad impressions.
+
+### Tech Stack & File Structure
+Use pure, zero-dependency semantic HTML5, modern CSS3 (CSS Grid/Flexbox, CSS variables, dark/light mode toggle), and vanilla JavaScript so it deploys directly on GitHub Pages without complex build steps:
+- `index.html` (Main directory & live headlines page)
+- `about.html`, `privacy.html`, `disclaimer.html`, `contact.html` (Mandatory AdSense trust pages linked to Khoozo: `support@khoozo.com`, `https://khoozo.com`)
+- `css/style.css` (Clean, modern UI with Hind Siliguri & Inter Google Fonts for crisp Bangla/English typography)
+- `js/app.js` (Category filtering, instant search bar, dark mode persistence, and rendering live news from `data/news.json`)
+- `data/newspapers.json` (Structured dataset of major Bangladeshi & international newspapers)
+- `data/news.json` (Fallback/initial JSON file populated by the RSS script)
+- `scripts/fetch-news.js` (Node.js script using native fetch/xml parsing—no heavy dependencies—to fetch and parse RSS feeds from Google News BD Bangla `https://google.com` and English `https://google.com`, saving the top 15 latest items with title, link, source, and pubDate into `data/news.json`)
+- `.github/workflows/update-news.yml` (GitHub Actions cron workflow running every 30 minutes to execute `node scripts/fetch-news.js` and auto-commit updated `data/news.json` to the repo)
+- `CNAME` (Containing `topnews.khoozo.com`)
+
+### UI/UX & Layout Requirements
+1. **Top Bar & Header:**
+   - Brand logo: **Top News** with a subtle `"by Khoozo"` badge linking back to `https://khoozo.com`.
+   - Live Bangla/English date display, Dark/Light mode toggle button, and an instant search bar to filter newspapers by name.
+2. **10% Live Breaking News Section (Above the Fold):**
+   - A smooth horizontal breaking-news ticker at the top.
+   - A compact 2-column "Top Stories Right Now (লাইভ শিরোনাম)" card grid displaying the latest 8–10 headlines from `data/news.json` with source badges and relative timestamps, opening original publisher links in a new tab with `rel="noopener noreferrer"`.
+3. **90% Newspaper Directory Grid (`data/newspapers.json`):**
+   - Sticky horizontal category filter tabs: **All**, **Bangla Daily (জাতীয় দৈনিক)**, **Online Portals (অনলাইন পোর্টাল)**, **TV Channels (টিভি নিউজ)**, **e-Paper (ই-পেপার)**, **English Dailies**, **Local/Divisional (বিভাগীয়)**, **Jobs & Tech (চাকরি ও প্রযুক্তি)**, and **International**.
+   - Responsive card grid (2 columns on mobile, 4–6 columns on desktop). Each card features a clean favicon/logo fallback (`https://google.com` so no broken images ever appear), Bangla & English newspaper title, category tag, and external link.
+   - Populate `data/newspapers.json` with at least 45 real, accurate Bangladeshi and global newspapers (Prothom Alo, Kaler Kantho, Jugantor, Samakal, Ittefaq, Bangladesh Pratidin, Manab Zamin, bdnews24, Jagonews24, Dhaka Post, Bangla Tribune, Somoy News, Jamuna TV, Independent TV, The Daily Star, Dhaka Tribune, TBS, BBC Bangla, Al Jazeera, etc.).
+4. **AdSense & Monetization Slots:**
+   - Include clean, clearly commented, responsive placeholder containers (`class="ad-slot"`) with reserved min-heights (to prevent CLS layout shifts) in high-converting zones:
+     - Top Leaderboard (`728x90` desktop / `320x100` mobile) below the header.
+     - In-Feed Native Ad banners injected automatically after every 12 newspaper cards.
+     - Sticky bottom mobile anchor banner (`320x50`) with a close button.
+     - A sleek promotional banner card for **Khoozo App & Khoozo Shop** (`https://khoozo.com`) driving traffic to Khoozo's digital products and services.
+5. **AdSense-Safe SEO Content Blocks:**
+   - Below the directory grid, include well-written, collapsible or structured informational sections in Bangla and English explaining Bangladesh's newspaper ecosystem, e-papers, and digital media history (similar to All Newspaper Bangla) so search engines and AdSense reviewers see rich, original editorial content rather than a thin link list.
+
+### Execution Instructions
+Generate all files cleanly, ensure `scripts/fetch-news.js` works with standard Node 20+ without needing `npm install` (or include a minimal `package.json` if needed), and test that all JSON files are valid and bug-free.

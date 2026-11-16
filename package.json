@@ -1,0 +1,12 @@
+{
+  "name": "topnews-khoozo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Top News by Khoozo — Bangladesh newspaper directory and live headlines (static site for GitHub Pages).",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fetch-news": "node scripts/fetch-news.js",
+    "serve": "node scripts/serve.js"
+  }
+}
