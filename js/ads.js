@@ -37,7 +37,11 @@
   }
 
   const loadOnce = (src, id) => {
+    // Skip when the tag is already in the page — the AdSense snippet is also
+    // hard-coded in each page's <head> so it works without JavaScript first.
     if (!src || document.getElementById(id)) return;
+    const file = src.split('?')[0];
+    if (document.querySelector(`script[src^="${file}"]`)) return;
     const s = document.createElement('script');
     s.id = id;
     s.async = true;
@@ -166,7 +170,12 @@
 
   window.KhoozoAds = { fill, fillAll, enabled };
 
-  // Site-wide tag (Monetag and friends): loaded once, independent of the boxes.
+  // Site-wide tags, loaded once and independent of the boxes above.
+  // AdSense Auto ads: Google places units itself; the boxes keep their own
+  // content (a house ad) until fixed ad-unit IDs are added to the config.
+  if (NET === 'adsense' && CFG.adsense?.autoAds && CFG.adsense.client) {
+    loadOnce(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(CFG.adsense.client)}`, 'adsense-lib');
+  }
   if (NET === 'monetag') loadOnce((CFG.monetag || {}).tag, 'monetag-tag');
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => fillAll());

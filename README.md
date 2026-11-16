@@ -11,6 +11,9 @@ A static, zero-dependency Bangladesh newspaper directory with live headlines fro
 | `js/app.js` | Tabs, instant search, theme, fonts, date, live news, live sports |
 | `js/ads-config.js` | **The only ad file you edit** — which network and which IDs |
 | `js/ads.js` | Fills the ad slots from that config, with house-ad fallback |
+| `data/pages.json` | **The editorial writing** for the 10 category guide pages |
+| `scripts/build-pages.js` | Generates the guide pages + `sitemap.xml` from it |
+| `<category>.html` | Generated — do not edit by hand; edit `pages.json` and rebuild |
 | `data/newspapers.json` | Newspapers and live-score sites, grouped by category |
 | `data/news.json` | Latest 15 headlines, written by the fetch script |
 | `data/sports.json` | Cricket and football headlines, written by the same script |
@@ -22,6 +25,16 @@ A static, zero-dependency Bangladesh newspaper directory with live headlines fro
 node scripts/serve.js 8080
 ```
 Then open http://localhost:8080. The JSON files can't be loaded from `file://`.
+
+## Rebuild the category pages
+Edit the writing in `data/pages.json`, then:
+```bash
+node scripts/build-pages.js
+```
+This regenerates the 10 guide pages and `sitemap.xml`. The page shell (head, header,
+nav, footer) is copied from `about.html`, so changing the header there and rebuilding
+keeps every generated page in sync. The newspaper cards are written as static HTML so
+search engines and ad reviewers see them without running JavaScript.
 
 ## Update the headlines by hand
 ```bash
@@ -60,14 +73,24 @@ Preview a network before switching the site over by adding `?ads=` to any URL �
 `https://topnews.khoozo.com/?ads=adsterra`, or `?ads=off` to see the page with no slots at
 all. It only affects your own browser.
 
-Because this site is a directory of outbound links and syndicated headlines, AdSense often
-rejects it as "low value content". The networks above do not have that restriction;
-Adsterra and Monetag are the usual fallbacks and both pay out via Payoneer, which works in
-Bangladesh. Monetag's formats are intrusive by nature, so prefer Adsterra banners or a
-direct sponsor if you care about the reading experience.
+### AdSense setup for this site
+The publisher ID `ca-pub-8779372289272533` is already configured in `js/ads-config.js`
+with `autoAds: true`, and the `google-adsense-account` meta tag is on every page.
 
-To improve the odds with AdSense later, grow the original writing (the category intros and
-editorial sections are the parts AdSense counts) rather than the number of links.
+**`ads.txt` must live on the root domain.** Google reads `khoozo.com/ads.txt`, not this
+subdomain's copy, so the line below has to be served from the root domain for ads here to
+be authorised. A `subdomain=` record is only needed if the publisher ID differs.
+```
+google.com, pub-8779372289272533, DIRECT, f08c47fec0942fa0
+```
+
+Fixed ad units are optional: Auto ads alone are enough. To place units in exact positions,
+create them in AdSense → Ads → By ad unit and paste each numeric ID into
+`adsense.slots` in `js/ads-config.js`. Slots left blank keep showing a house ad.
+
+A directory of outbound links is the kind of site AdSense rejects as "low value content",
+which is why the 10 category guides exist — they carry roughly 4,900 words of original
+writing. If more is needed, expand `data/pages.json` rather than adding more links.
 
 ## Add a newspaper
 Add an object to `data/newspapers.json`:

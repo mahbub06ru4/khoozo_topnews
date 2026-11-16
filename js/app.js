@@ -248,7 +248,8 @@
       megaAll.replaceChildren(h('div', { class: 'mega-grid' }, cats.map((c) => {
         const list = by(c.id);
         return h('div', { class: 'mega-col' },
-          h('a', { class: 'mega-head', href: catHref(c.id) }, h('span', { lang: 'bn' }, c.bn), h('small', {}, `${c.en} · ${list.length}`)),
+          // Link the heading to the category's guide page when one exists.
+          h('a', { class: 'mega-head', href: c.page ? new URL(c.page, ROOT).href : catHref(c.id) }, h('span', { lang: 'bn' }, c.bn), h('small', {}, `${c.en} · ${list.length}`)),
           h('ul', {}, list.slice(0, 6).map(link)),
           list.length > 6 ? h('a', { class: 'mega-more', href: catHref(c.id) }, `সব ${toBn(list.length)}টি দেখুন →`) : null);
       })));
@@ -458,7 +459,8 @@
         grid,
         h('div', { class: 'sec-actions' },
           moreBtn,
-          h('a', { class: 'sec-link', href: `#cat=${c.id}` }, `সব ${c.bn} (${toBn(list.length)}) →`)));
+          h('a', { class: 'sec-link', href: `#cat=${c.id}` }, `সব ${c.bn} (${toBn(list.length)}) →`),
+          c.page ? h('a', { class: 'sec-link', href: c.page }, `${c.en} guide →`) : null));
       moreBtn?.addEventListener('click', () => setExpanded(c.id, !sec.classList.contains('expanded')));
 
       sections[c.id] = { sec, moreBtn, hiddenCount, count: list.length };

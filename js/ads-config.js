@@ -21,14 +21,20 @@
    shows an empty box. See README.md → "Ads" for how to get each ID.
    ========================================================================= */
 window.ADS_CONFIG = {
-  network: 'house',
+  network: 'adsense',
 
   /* ---- Google AdSense ----------------------------------------------------
-     client: your publisher ID, e.g. 'ca-pub-1234567890123456'
-     slots:  the numeric ad-unit ID from AdSense → Ads → By ad unit
-     Put the same pub- ID in /ads.txt as well. */
+     client:  the publisher ID. The same ID must also appear in the root
+              domain's ads.txt — that is khoozo.com/ads.txt, NOT this
+              subdomain's, because Google reads ads.txt from the root domain.
+     autoAds: true lets Google place ads on the page by itself. This is all
+              that is needed for review and for the first ads to appear.
+     slots:   optional. Fill these in only after you create fixed ad units in
+              AdSense → Ads → By ad unit, and paste each unit's numeric ID.
+              Any slot left blank keeps showing a Khoozo house ad. */
   adsense: {
-    client: '',
+    client: 'ca-pub-8779372289272533',
+    autoAds: true,
     slots: { leaderboard: '', infeed: '', anchor: '' },
   },
 

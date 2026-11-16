@@ -1,0 +1,508 @@
+{
+  "_comment": "Editorial content for the per-category pages. scripts/build-pages.js turns each entry into a static HTML page, combining this text with the matching newspapers from newspapers.json. Edit the writing here, then run: node scripts/build-pages.js",
+  "pages": {
+    "bangla": {
+      "slug": "bangla-newspapers",
+      "title": "Bangla Newspapers of Bangladesh — National Daily List",
+      "meta": "A guide to Bangladesh's national Bangla dailies: their history, what each one is known for, and how the printed press moved online. With direct links to every major Bangla newspaper.",
+      "h1": "National Bangla Daily Newspapers",
+      "lead": "The national Bangla dailies are where most of Bangladesh still reads its news. This page explains how they came to be, what distinguishes them from one another, and how to get the most out of them — followed by a direct link to each paper's own website.",
+      "sections": [
+        {
+          "h2": "Two centuries of Bangla journalism",
+          "p": [
+            "Bangla-language journalism is older than Bangladesh itself. Samachar Darpan, printed at Serampore from 1818, is counted among the first Bangla newspapers, and the press reached eastern Bengal soon after — Dhaka Prokash began publishing from Dhaka in 1861 and gave the region its own journalistic voice.",
+            "The twentieth century turned that voice political. Through the Pakistan period, the Language Movement and the struggle that led to independence in 1971, newspapers were not neutral observers; they were part of how a national identity was argued into existence. Dainik Ittefaq, which grew under editor Tofazzal Hossain Manik Mia, became the most prominent example, and papers like Sangbad shared that role.",
+            "The 1990s brought a different kind of change. A new generation of dailies arrived with cleaner layouts, professional editing and a stated commitment to investigative reporting, and readers' expectations of what a newspaper should look like and deliver shifted permanently."
+          ]
+        },
+        {
+          "h2": "What separates one daily from another",
+          "p": [
+            "On any given morning the front pages will overlap heavily — the same parliamentary session, the same flood, the same match. The differences show up in everything around the lead story: which sections get space, which columnists appear, how much room goes to business or district news, and which stories a paper chooses to follow for weeks rather than days.",
+            "Circulation leaders such as Prothom Alo built their position on broad national coverage and a strong Friday magazine culture. Others carved out specific strengths — detailed economic reporting, agriculture and rural affairs, education and exam coverage, or sport. Reading two papers rather than one is the cheapest way to notice what each leaves out.",
+            "Editorial positions differ too, and in a politically polarised media environment that is worth keeping in mind. A directory like this one lists publishers across the spectrum without endorsing any of them; the judgement stays with you."
+          ]
+        },
+        {
+          "h2": "ছাপা কাগজ থেকে মোবাইল স্ক্রিনে",
+          "lang": "bn",
+          "p": [
+            "একসময় সকালে পত্রিকা হাতে পাওয়াই ছিল খবর জানার প্রধান উপায়। এখন বেশিরভাগ পাঠক দিনের প্রথম খবরটি পড়েন মোবাইল ফোনে। প্রায় প্রতিটি জাতীয় দৈনিকের নিজস্ব ওয়েবসাইট, অ্যাপ ও ফেসবুক পেজ রয়েছে, যেখানে সারাদিন খবর হালনাগাদ হয় — ছাপা সংস্করণ বের হওয়ার জন্য অপেক্ষা করতে হয় না।",
+            "এর একটা সুবিধা আছে, একটা ঝুঁকিও আছে। সুবিধা হলো গতি; ঝুঁকি হলো তাড়াহুড়োয় ভুল তথ্য ছড়িয়ে পড়া। বড় কোনো ঘটনার প্রথম আধা ঘণ্টার খবর প্রায়ই অসম্পূর্ণ থাকে, পরে সংশোধন আসে। তাই গুরুত্বপূর্ণ খবর শেয়ার করার আগে অন্তত দুটি পত্রিকায় মিলিয়ে নেওয়া ভালো অভ্যাস।",
+            "এই তালিকার প্রতিটি লিংক সরাসরি সংশ্লিষ্ট পত্রিকার নিজস্ব ওয়েবসাইটে নিয়ে যায়। আমরা কোনো সংবাদ কপি করি না বা নিজেদের সাইটে ধরে রাখি না — পাঠক যেন মূল উৎসেই পৌঁছান, সেটিই উদ্দেশ্য।"
+          ]
+        },
+        {
+          "h2": "Getting more out of a daily",
+          "p": [
+            "Read the dateline and the byline. A report filed by the paper's own correspondent from the district carries different weight than an agency copy rewritten in Dhaka, and the dateline tells you which you are looking at.",
+            "Separate reporting from opinion. Editorials and op-eds are argument, not news, even when they sit on adjacent pages. Many readers form impressions from columns while believing they are reading reportage.",
+            "Follow corrections. Papers that publish corrections are not less reliable than those that never do; usually the opposite is true. A publication willing to say it got something wrong is one worth more of your attention."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which is the largest Bangla daily newspaper?",
+          "a": "Prothom Alo is generally regarded as the largest-circulation Bangla daily in Bangladesh, with Dainik Ittefaq, Kaler Kantho, Jugantor, Samakal and Bangladesh Pratidin also among the most widely read. Circulation figures move over time, so treat any ranking as approximate."
+        },
+        {
+          "q": "Are these newspapers free to read online?",
+          "a": "Almost all Bangladeshi dailies publish their web editions free of charge, funded by advertising rather than subscriptions. A few put magazine supplements or archive access behind registration, but day-to-day news is open."
+        },
+        {
+          "q": "Does Top News publish these newspapers' articles?",
+          "a": "No. This is a directory. Every link opens the publisher's own website in a new tab, and all rights to the reporting stay with the publisher that produced it."
+        }
+      ]
+    },
+
+    "online": {
+      "slug": "online-news-portals",
+      "title": "Online Bangla News Portals — Web-First News Sites of Bangladesh",
+      "meta": "Bangladesh's web-first news portals publish around the clock. A guide to how online Bangla journalism developed, what it does well, how to read it critically, and links to every major portal.",
+      "h1": "Online Bangla News Portals",
+      "lead": "Web-first news portals have no print edition to wait for, so they publish continuously. They are now where most breaking news in Bangladesh appears first — and where the most care is needed in reading it.",
+      "sections": [
+        {
+          "h2": "How online-only news took hold",
+          "p": [
+            "For most of the country's history, a news organisation meant a printing press. That changed in the 2000s when bdnews24.com launched as Bangladesh's first internet-only news service, built around wire-style speed rather than a daily deadline. It proved that an outlet could be serious, staffed and profitable without ever printing a page.",
+            "A wave of portals followed. Jagonews24, Bangla Tribune, Dhaka Post, Risingbd, Banglanews24 and others built newsrooms designed from the start for the web: short lead paragraphs, constant updates, heavy use of photographs and, increasingly, vertical video.",
+            "Cheap mobile data was the other half of the story. Once a smartphone and a data pack cost less than a monthly newspaper subscription, the portal became the default way for millions of people to read the news."
+          ]
+        },
+        {
+          "h2": "What portals do better — and worse",
+          "p": [
+            "Speed is the obvious advantage. Election results, court verdicts, match scores and weather warnings appear within minutes, and a story can be updated as many times as the facts change rather than frozen at midnight.",
+            "Range is the second advantage. Without a fixed page count, a portal can run a short district item that would never survive the competition for space in a printed paper, which is genuinely useful for local news.",
+            "The costs are real too. Publishing continuously rewards being first, and being first rewards publishing before verification is complete. Headlines are written for clicks; early reports get numbers wrong; stories from social media are sometimes picked up before anyone confirms them. The better portals correct quickly, but corrections rarely travel as far as the original."
+          ]
+        },
+        {
+          "h2": "অনলাইন খবর যাচাই করার সহজ অভ্যাস",
+          "lang": "bn",
+          "p": [
+            "কোনো চমকপ্রদ খবর দেখলে প্রথমেই দেখুন সেটি কোন প্রতিষ্ঠানের সাইটে প্রকাশিত হয়েছে এবং প্রতিবেদকের নাম আছে কি না। নামহীন ও সূত্রহীন খবর নিয়ে সতর্ক থাকা ভালো।",
+            "প্রকাশের সময় ও তারিখ দেখুন। পুরোনো একটি ঘটনার খবর নতুন করে ছড়িয়ে পড়া বাংলাদেশে খুব সাধারণ একটি সমস্যা — বিশেষ করে ছবি বা স্ক্রিনশটের মাধ্যমে।",
+            "স্ক্রিনশটের বদলে লিংক খুঁজুন। যে খবরের কোনো মূল লিংক নেই, সেটি যাচাই করা প্রায় অসম্ভব। আর একই খবর অন্তত দুটি স্বতন্ত্র সংবাদমাধ্যমে এলে তবেই সেটিকে নিশ্চিত ধরা নিরাপদ।"
+          ]
+        },
+        {
+          "h2": "Portals, aggregators and social feeds",
+          "p": [
+            "It is worth keeping three things apart. A news portal employs reporters and editors and is accountable for what it publishes. An aggregator — including this directory — organises links to those publishers without producing journalism of its own. A social feed shows you whatever an algorithm predicts will hold your attention, from any source or none.",
+            "Most misinformation reaches people through the third category while appearing to come from the first. Going directly to a publisher you recognise, which is what the links below are for, removes that layer of ambiguity."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which was the first online news portal in Bangladesh?",
+          "a": "bdnews24.com is widely credited as the country's first internet-only news organisation, launching in the mid-2000s and establishing the model that later portals followed."
+        },
+        {
+          "q": "Are online portals less reliable than printed newspapers?",
+          "a": "Not inherently — several portals maintain large professional newsrooms. The difference is the publishing cycle: continuous publishing means early reports are more likely to be incomplete, so it is worth rechecking an important story a few hours later."
+        },
+        {
+          "q": "Do these sites work well on a slow connection?",
+          "a": "It varies. Portals are generally lighter than video-heavy sites, but many load large advertisements. Most offer a mobile app that uses less data than the full website."
+        }
+      ]
+    },
+
+    "tv": {
+      "slug": "tv-news-channels",
+      "title": "Bangladeshi TV News Channels — Live News Websites",
+      "meta": "Bangladesh's television newsrooms are now major digital publishers. A guide to the country's TV news channels, their online bulletins and live streams, with links to every channel's news website.",
+      "h1": "Television News Channels",
+      "lead": "Bangladesh's television newsrooms no longer stop at the broadcast. Their websites, apps and video channels publish continuously, and for many viewers the clip arrives long before the bulletin.",
+      "sections": [
+        {
+          "h2": "From the evening bulletin to the endless feed",
+          "p": [
+            "Satellite television arrived in Bangladesh in the 1990s and private news channels followed, breaking the single-broadcaster era. The nightly bulletin became an appointment that households planned around, and live reporting from the scene changed how fast the country learned about a cyclone, a verdict or an election result.",
+            "Streaming dismantled that schedule. Channels such as Somoy, Jamuna, Channel 24, Independent, Ekattor, NTV and ATN News now publish continuously to their own websites and video channels, and a two-minute clip of a single exchange routinely reaches more people than the bulletin it came from.",
+            "This has made television newsrooms some of the largest digital publishers in the country. Their sites carry written reports alongside video, which means they compete directly with the newspaper portals rather than occupying a separate medium."
+          ]
+        },
+        {
+          "h2": "What television does that text cannot",
+          "p": [
+            "Some stories need to be seen. Flooding, fire, crowd size, the condition of a road or an embankment, the atmosphere in a courtroom corridor — footage conveys these in a way a paragraph cannot, and live reporting from the location is television's enduring strength.",
+            "Television also reaches people who do not read comfortably in either Bangla or English, which matters in a country where literacy varies widely by region and age. For many households it remains the primary source of national news.",
+            "The limitation is depth. A broadcast item runs for a minute or two and cannot carry the documentation, figures and caveats a written investigation can. The channels that handle this best pair their video with a full written report on the website — worth looking for when a story matters to you."
+          ]
+        },
+        {
+          "h2": "লাইভ স্ট্রিম ও ক্লিপ দেখার সময় যা খেয়াল রাখবেন",
+          "lang": "bn",
+          "p": [
+            "টেলিভিশনের ক্লিপ সামাজিক যোগাযোগমাধ্যমে ছড়ায় খুব দ্রুত, কিন্তু অনেক সময় ক্লিপটি কেটে নেওয়া হয় প্রসঙ্গ বাদ দিয়ে। কারও বক্তব্যের ১৫ সেকেন্ড শুনে সিদ্ধান্তে আসার আগে পুরো অংশটি দেখা ভালো।",
+            "চ্যানেলের নিজস্ব ওয়েবসাইট বা অফিশিয়াল পেজ থেকে দেখলে ক্লিপের তারিখ ও পূর্ণ প্রতিবেদন পাওয়া যায়। পুনঃআপলোড করা ভিডিওতে সেই তথ্য থাকে না।",
+            "লাইভ স্ট্রিম মোবাইল ডেটা দ্রুত খরচ করে। ওয়াই-ফাই ছাড়া দেখলে কম রেজ়োলিউশন বেছে নেওয়া বা লিখিত প্রতিবেদন পড়াই বেশি সাশ্রয়ী।"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I watch Bangladeshi TV news live online?",
+          "a": "Yes. Most national channels stream their broadcast free on their own website and official video channel, and many also run a separate live page during major events such as elections or budget sessions."
+        },
+        {
+          "q": "Do TV channel websites carry written news as well?",
+          "a": "Most do. Alongside video, the larger channels publish full written reports, which are easier to read on a slow connection and usually contain more detail than the broadcast item."
+        },
+        {
+          "q": "Why does the same clip appear on many pages?",
+          "a": "Clips are widely re-uploaded by third-party pages, often without the original date or context. Watching from the channel's own site or verified page is the reliable way to see when a clip is from and what surrounded it."
+        }
+      ]
+    },
+
+    "epaper": {
+      "slug": "bangla-epapers",
+      "title": "Bangla e-Paper — Digital Editions of Bangladeshi Newspapers",
+      "meta": "An e-paper is the printed newspaper reproduced page by page online. A guide to what e-papers are good for — job circulars, tenders, archives and expatriate readers — with links to the official e-paper of each daily.",
+      "h1": "e-Papers · Digital Print Editions",
+      "lead": "An e-paper is not a news website. It is the printed newspaper itself, reproduced page by page, with the same layout, headlines, photographs and advertisements — which makes it useful for things a news website handles poorly.",
+      "sections": [
+        {
+          "h2": "What an e-paper actually is",
+          "p": [
+            "When a newspaper is laid out for print, every item has a fixed position on a numbered page. The e-paper preserves exactly that: you turn pages rather than scroll a feed, and a story appears at the size and position the editors gave it.",
+            "That page position carries information a website strips away. A report at the top of page one was judged more important than one at the bottom of page five, and on an e-paper you can see that judgement at a glance. The web edition of the same paper flattens everything into a list.",
+            "Most Bangladeshi dailies publish the day's e-paper free each morning, with a window of recent back issues. Some keep longer archives behind free registration."
+          ]
+        },
+        {
+          "h2": "When the e-paper is the right tool",
+          "p": [
+            "Job circulars and tender notices. These are published as formal printed notices with exact wording, deadlines and reference numbers, and they frequently never appear on the news website at all. For government recruitment and procurement, the e-paper is often the only full source.",
+            "Proof of publication. If you need to show that a notice, a legal announcement or a result was published on a particular date, the dated page of an e-paper is the record.",
+            "Readers abroad. For Bangladeshis living overseas, the e-paper is the closest thing to the morning paper they grew up with, available at the same time as in Dhaka.",
+            "Archive work. Students, researchers and journalists checking how an event was reported on the day it happened need the page as printed, not a later web rewrite."
+          ]
+        },
+        {
+          "h2": "ই-পেপার পড়ার সময় কিছু পরামর্শ",
+          "lang": "bn",
+          "p": [
+            "ই-পেপার সাধারণত ছবির মতো পৃষ্ঠা আকারে লোড হয়, তাই ফাইলের আকার বড় হয় এবং ধীর সংযোগে সময় নেয়। সম্ভব হলে ওয়াই-ফাইতে খুলুন, আর মোবাইলে পড়ার সময় নির্দিষ্ট অংশে জুম করে নিন।",
+            "চাকরির বিজ্ঞপ্তি বা টেন্ডার নোটিশ পেলে পৃষ্ঠার স্ক্রিনশট বা পিডিএফ সংরক্ষণ করে রাখুন — পরদিন নতুন সংস্করণ এলে আগেরটি খুঁজে পাওয়া কঠিন হতে পারে।",
+            "সবচেয়ে গুরুত্বপূর্ণ বিষয়: সবসময় পত্রিকার নিজস্ব অফিশিয়াল ই-পেপার ঠিকানা ব্যবহার করুন। নকল বা অনুলিপি সাইটে পুরোনো সংস্করণ, ভুল তথ্য কিংবা ক্ষতিকর বিজ্ঞাপন থাকতে পারে। নিচের প্রতিটি লিংক প্রকাশকের নিজস্ব ঠিকানায় যায়।"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is the e-paper the same as the newspaper's website?",
+          "a": "No. The website is written for the screen and updated all day; the e-paper is the printed edition reproduced page by page, fixed as it was printed that morning. Many stories appear in only one of the two."
+        },
+        {
+          "q": "Can I read yesterday's or last week's e-paper?",
+          "a": "Usually yes. Most papers keep a short archive of recent editions, though how far back it goes differs by publisher and some require free registration for older issues."
+        },
+        {
+          "q": "Why do people use e-papers for job circulars?",
+          "a": "Government and corporate recruitment notices are published as formal printed advertisements with exact deadlines and reference numbers, and they often never appear on the news website. The e-paper page is the complete, citable version."
+        }
+      ]
+    },
+
+    "english": {
+      "slug": "english-newspapers",
+      "title": "English Newspapers of Bangladesh — Dailies and Business Press",
+      "meta": "Bangladesh's English-language press serves diplomats, business readers, students and the diaspora. A guide to the country's English dailies and business papers, with a direct link to each.",
+      "h1": "English Newspapers of Bangladesh",
+      "lead": "Bangladesh's English-language press is small in circulation but carries weight well beyond its numbers. It is how much of the outside world reads the country, and how a good deal of policy and business argument gets conducted.",
+      "sections": [
+        {
+          "h2": "A press with a particular audience",
+          "p": [
+            "English dailies in Bangladesh were never aimed at the mass market. Their readership concentrates among civil servants, diplomats, development and NGO staff, corporate management, university students and Bangladeshis living abroad — a small share of the population that holds a disproportionate amount of decision-making.",
+            "That shapes the journalism. English papers typically devote more space to economic policy, trade, foreign affairs, governance and long-form investigation, and less to the local-court and district reporting that fills the Bangla press. The Daily Star, established in the early 1990s, is the most prominent, with Dhaka Tribune, New Age, The Financial Express, The Business Standard and others serving overlapping audiences.",
+            "Because international wire services, embassies and foreign correspondents follow these papers closely, a story that breaks in the English press often travels abroad faster than a larger story in a Bangla daily."
+          ]
+        },
+        {
+          "h2": "Business and economic reporting",
+          "p": [
+            "Some of the most specialised journalism in the country sits in the English-language business press: ready-made garment exports and buyer behaviour, banking and non-performing loans, energy pricing, capital markets, remittance flows and the annual budget.",
+            "For anyone studying or working in these areas, these papers are a primary source rather than a convenience. They publish figures, quote officials on the record and track policy changes in detail that general-interest coverage compresses into a sentence."
+          ]
+        },
+        {
+          "h2": "ইংরেজি পত্রিকা পড়ে ভাষা শেখা",
+          "lang": "bn",
+          "p": [
+            "অনেক শিক্ষার্থী ইংরেজি দৈনিক পড়েন ভাষা চর্চার জন্য — বিশেষ করে বিসিএস, আইইএলটিএস বা বিশ্ববিদ্যালয় ভর্তির প্রস্তুতিতে। এর সুবিধা হলো, খবরের প্রসঙ্গ আপনি আগে থেকেই জানেন, তাই নতুন শব্দের অর্থ অনুমান করা সহজ হয়।",
+            "কার্যকর একটি পদ্ধতি: একই ঘটনার খবর প্রথমে বাংলা পত্রিকায় পড়ুন, তারপর ইংরেজি পত্রিকায়। দুটি প্রতিবেদন মিলিয়ে পড়লে শব্দভান্ডার দ্রুত বাড়ে এবং বাক্যগঠন স্পষ্ট হয়।",
+            "সম্পাদকীয় ও মতামত কলাম সাধারণত সবচেয়ে উন্নত ভাষায় লেখা হয়, তবে শুরুতে সেগুলো কঠিন মনে হতে পারে। প্রথমে সংবাদ প্রতিবেদন দিয়ে শুরু করে ধীরে ধীরে কলামে যাওয়াই ভালো।"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which is the leading English newspaper in Bangladesh?",
+          "a": "The Daily Star, founded in 1991, is generally considered the most widely read English daily, with Dhaka Tribune, New Age, The Financial Express and The Business Standard also established national titles."
+        },
+        {
+          "q": "Are English papers just translations of the Bangla ones?",
+          "a": "No. They are independent newsrooms with their own reporters and editorial priorities. Coverage of the same event frequently differs in emphasis, detail and framing between the two language presses."
+        },
+        {
+          "q": "Which paper is best for business news?",
+          "a": "The Financial Express and The Business Standard specialise in economic and financial coverage, while the general English dailies maintain substantial business desks. For a specific sector it is worth comparing two of them."
+        }
+      ]
+    },
+
+    "local": {
+      "slug": "local-newspapers",
+      "title": "Local & Divisional Newspapers of Bangladesh — District News",
+      "meta": "District and divisional newspapers cover what the national press has no room for. A guide to Bangladesh's regional press by division, why local journalism matters, and links to each paper.",
+      "h1": "Local & Divisional Newspapers",
+      "lead": "National dailies report Bangladesh from Dhaka. The divisional and district press reports it from where people actually live — and for a great deal of news, it is the only press that reports it at all.",
+      "sections": [
+        {
+          "h2": "The news that never reaches Dhaka",
+          "p": [
+            "A union parishad dispute, a bridge left unfinished for three years, a local college's exam results, a river eroding a particular village, the price of produce at a specific market — these shape daily life for the people involved and will almost never earn space in a national daily.",
+            "Regional newspapers exist for exactly this. Chattogram's Dainik Azadi, published since 1960, is among the oldest and best known, and most divisions sustain their own established titles alongside a larger number of district weeklies and online outlets.",
+            "They also function as a feeder system. A story that starts in a district paper is sometimes picked up by a national desk days later, by which point it has already been documented locally by a reporter who knows the place."
+          ]
+        },
+        {
+          "h2": "Working under pressure",
+          "p": [
+            "Local journalism in Bangladesh is demanding work. Revenue is thin, newsroom staff are few, and reporters often live in the same small community as the people their reporting affects, which makes covering local power considerably harder than it is from a capital-city desk.",
+            "That proximity cuts both ways. It produces reporting with genuine knowledge of local history and personalities that no parachuting correspondent can match — and it makes independence harder to maintain. Readers of the local press learn quickly which outlets have earned trust in their own area.",
+            "Many regional papers now publish online as well as in print, which has extended their reach to district residents working in Dhaka or abroad who want to follow news from home."
+          ]
+        },
+        {
+          "h2": "বিভাগ অনুযায়ী আঞ্চলিক পত্রিকা",
+          "lang": "bn",
+          "p": [
+            "বাংলাদেশের প্রতিটি বিভাগেই নিজস্ব দৈনিক ও সাপ্তাহিক পত্রিকা আছে। চট্টগ্রাম, সিলেট, রাজশাহী, খুলনা, রংপুর, বরিশাল, ময়মনসিংহ ও ঢাকার আঞ্চলিক পত্রিকাগুলো স্থানীয় প্রশাসন, শিক্ষা, কৃষি, নদীভাঙন ও স্থানীয় রাজনীতির খবর নিয়মিত প্রকাশ করে।",
+            "প্রবাসে বা ঢাকায় থাকা মানুষের কাছে এই পত্রিকাগুলোর আলাদা গুরুত্ব আছে — নিজের জেলার খবর জাতীয় দৈনিকে সাধারণত আসে না, কিন্তু আঞ্চলিক পত্রিকায় প্রতিদিনই থাকে।",
+            "এই তালিকায় যে বিভাগের পত্রিকা যুক্ত আছে, সেগুলো বিভাগ অনুযায়ী চিহ্নিত করা হয়েছে। আপনার জেলার কোনো পত্রিকা এখানে না থাকলে নাম ও ওয়েবসাইটসহ আমাদের জানাতে পারেন।"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why read a local newspaper when national dailies cover the country?",
+          "a": "National papers cover districts only when something large happens. Routine local administration, education, agriculture and infrastructure news — the things that affect daily life in a specific area — appear almost exclusively in the regional press."
+        },
+        {
+          "q": "Which is the oldest regional newspaper in Bangladesh?",
+          "a": "Dainik Azadi of Chattogram, published since 1960, is among the oldest continuously running regional dailies and remains one of the most prominent outside Dhaka."
+        },
+        {
+          "q": "My district's newspaper is not listed. Can you add it?",
+          "a": "Yes. Send the paper's name and official website address to support@khoozo.com and it will be added after the link is checked."
+        }
+      ]
+    },
+
+    "sports": {
+      "slug": "sports-live-score",
+      "title": "Live Cricket & Football Scores — Bangladesh Sports Sites",
+      "meta": "Where to follow live cricket and football scores, ball-by-ball commentary, fixtures and tables, plus the Bangladeshi sports desks worth reading. Direct links to every live score site.",
+      "h1": "Sports & Live Score Sites",
+      "lead": "Cricket and football are followed in Bangladesh with an intensity that needs no introduction. This page collects the sites that carry live scores and commentary, and explains which is worth opening for what.",
+      "sections": [
+        {
+          "h2": "Following cricket ball by ball",
+          "p": [
+            "For a live international, the scorecard sites are unmatched: ball-by-ball commentary, partnership and run-rate detail, fall of wickets and full scorecards for both innings, updated within seconds of the delivery. Cricbuzz and ESPNcricinfo are the two most widely used, and both are free.",
+            "Around the national team there is a domestic calendar worth knowing — the Bangladesh Premier League, the National Cricket League and the Dhaka Premier League — along with age-group and women's cricket, which the main scorecard sites now cover in far more detail than they once did.",
+            "The Bangladesh Cricket Board's own site carries squad announcements, fixture changes and official statements, which is the place to check when a rumour about selection or injury starts circulating."
+          ]
+        },
+        {
+          "h2": "Football, at home and abroad",
+          "p": [
+            "Football interest in Bangladesh splits between the European leagues — where support for particular clubs and for Argentina or Brazil at World Cups runs deep — and the domestic and regional game, including the Bangladesh Premier League and SAFF competitions.",
+            "LiveScore and Sofascore cover fixtures, live scores, lineups and tables across virtually every league, with Sofascore going further into match statistics and player ratings. The Bangladesh Football Federation publishes the domestic calendar and national team news.",
+            "For the women's national team, whose results have drawn large audiences in recent years, the federation site and the sports desks of the national dailies are generally the most reliable sources."
+          ]
+        },
+        {
+          "h2": "খেলার খবর কোথায় পড়বেন",
+          "lang": "bn",
+          "p": [
+            "লাইভ স্কোরের জন্য আন্তর্জাতিক সাইটগুলো সবচেয়ে দ্রুত, কিন্তু বিশ্লেষণ, সাক্ষাৎকার ও দেশের ঘরোয়া খেলার খবরের জন্য বাংলা ও ইংরেজি দৈনিকের ক্রীড়া বিভাগই ভরসা। প্রথম আলো, ডেইলি স্টার ও টি স্পোর্টসের ক্রীড়া পাতায় ম্যাচের পরের বিশ্লেষণ পাওয়া যায়।",
+            "ম্যাচ চলাকালে লাইভ স্কোর পাতা বারবার রিফ্রেশ হয়, তাই মোবাইল ডেটা দ্রুত খরচ হয়। ডেটা বাঁচাতে চাইলে স্কোর অ্যাপ ব্যবহার করা বা নির্দিষ্ট সময় পরপর দেখা ভালো।",
+            "খেলোয়াড়ের চোট বা দল নির্বাচনের গুজব সামাজিক মাধ্যমে দ্রুত ছড়ায়। বিসিবি বা বাফুফের অফিশিয়াল ঘোষণা না আসা পর্যন্ত সেগুলো নিশ্চিত ধরে নেওয়া ঠিক নয়।"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Where can I see live cricket scores for Bangladesh matches?",
+          "a": "Cricbuzz and ESPNcricinfo both carry free ball-by-ball commentary and full scorecards for every Bangladesh international, along with the BPL and domestic competitions. Both are linked below."
+        },
+        {
+          "q": "Is there a site for live football scores across all leagues?",
+          "a": "LiveScore and Sofascore both cover live scores, fixtures and tables for European and Asian competitions, including the domestic Bangladeshi league. Sofascore adds detailed match statistics."
+        },
+        {
+          "q": "Does Top News show live scores on this site?",
+          "a": "No. The homepage shows live sports headlines, and the links here open each score provider's own live page. Scores themselves stay with the services that are licensed to publish them."
+        }
+      ]
+    },
+
+    "jobs": {
+      "slug": "jobs-tech-portals",
+      "title": "Job Circulars & Tech Portals in Bangladesh — Govt and Private Jobs",
+      "meta": "Where government and private job circulars are published in Bangladesh, how the application process works, and which technology portals to follow. Direct links to each official site.",
+      "h1": "Jobs, Tech & Government Portals",
+      "lead": "Job circulars in Bangladesh are scattered across newspaper advertisements, government portals and private job boards. This page explains where each kind is published and links to the official sources.",
+      "sections": [
+        {
+          "h2": "Government recruitment",
+          "p": [
+            "Public sector recruitment follows a formal process. A circular is published as a printed advertisement and on the recruiting authority's own website, applications are usually submitted through an official online portal, and admit cards and results are released the same way.",
+            "The Teletalk-operated jobs portal handles applications for a large share of government positions, and the Bangladesh Public Service Commission runs the BCS examination and other cadre recruitment on its own system. The national information portal links out to individual ministry and department sites.",
+            "Because the newspaper advertisement is the formal notice, the e-paper edition of the dailies is often where a circular appears in full, with the exact deadline, reference number and conditions. That is worth checking against any summary you see elsewhere."
+          ]
+        },
+        {
+          "h2": "Private sector hiring",
+          "p": [
+            "Private recruitment runs mostly through job boards, with Bdjobs the largest and longest-established. Employers post there directly, applications are made through the site, and most listings carry a visible closing date.",
+            "Newspaper classified pages still matter for certain sectors, and many national dailies maintain a dedicated jobs section on their website that reproduces those listings.",
+            "Technology portals such as TechShohor and Techtunes cover the local technology industry, which is useful for anyone tracking where hiring in software and IT services is actually happening."
+          ]
+        },
+        {
+          "h2": "চাকরির বিজ্ঞপ্তি নিয়ে সতর্কতা",
+          "lang": "bn",
+          "p": [
+            "চাকরির নামে প্রতারণা বাংলাদেশে একটি বাস্তব সমস্যা। মনে রাখবেন, সরকারি চাকরির আবেদন ফি নির্দিষ্ট অফিশিয়াল পদ্ধতিতেই জমা দিতে হয় — ব্যক্তিগত বিকাশ বা নগদ নম্বরে টাকা চাইলে সেটি প্রতারণা।",
+            "নিয়োগের নিশ্চয়তা দিয়ে কেউ টাকা চাইলে তা বিশ্বাস করবেন না। বৈধ কোনো প্রতিষ্ঠান নিয়োগের বিনিময়ে অর্থ দাবি করে না।",
+            "বিজ্ঞপ্তিটি সবসময় সংশ্লিষ্ট দপ্তরের নিজস্ব ওয়েবসাইট বা পত্রিকার ই-পেপারে মিলিয়ে দেখুন। ফেসবুকে ছড়ানো স্ক্রিনশটে পুরোনো বা বানানো বিজ্ঞপ্তি থাকতে পারে, আর আবেদনের শেষ তারিখ প্রায়ই বদলে দেওয়া হয়।"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Where are government job circulars officially published?",
+          "a": "On the recruiting authority's own website and as printed newspaper advertisements, with applications generally submitted through the official Teletalk jobs portal or the PSC's own system for cadre recruitment."
+        },
+        {
+          "q": "Is there a fee to apply for a government job?",
+          "a": "Most government applications carry an official examination fee, but it is paid only through the prescribed official channel stated in the circular. Anyone asking you to send money to a personal mobile wallet number is attempting fraud."
+        },
+        {
+          "q": "Why check the e-paper for a job circular?",
+          "a": "The newspaper advertisement is the formal notice and carries the complete wording, deadline and reference number. Summaries circulating on social media often omit conditions or show an outdated deadline."
+        }
+      ]
+    },
+
+    "kolkata": {
+      "slug": "kolkata-bangla-newspapers",
+      "title": "Kolkata Bangla Newspapers — West Bengal Daily List",
+      "meta": "Bangla newspapers published from Kolkata and West Bengal, their history and how their language and coverage differ from Bangladeshi dailies. Direct links to each paper.",
+      "h1": "Kolkata & West Bengal Bangla Newspapers",
+      "lead": "Bangla is read on both sides of the border, and the Kolkata press has its own long tradition, its own style and its own concerns. For many readers in Bangladesh it is a familiar second window on the language.",
+      "sections": [
+        {
+          "h2": "A parallel tradition",
+          "p": [
+            "Calcutta was the birthplace of Bangla journalism, and several Kolkata titles trace their history back a century or more — Anandabazar Patrika, founded in 1922, being the best known. Others such as Bartaman, Sangbad Pratidin, Aajkaal and Ei Samay serve a large daily readership across West Bengal.",
+            "Their news agenda is naturally Indian: state politics in West Bengal, national politics in Delhi, the Indian economy, Bollywood and Tollywood, and Indian cricket. Bangladesh appears mainly when the two countries intersect — trade, rivers, borders, cricket.",
+            "For Bangladeshi readers the attraction is usually cultural rather than political: literature, film, music, the Durga Puja magazine editions, and sport."
+          ]
+        },
+        {
+          "h2": "ভাষার পার্থক্য",
+          "lang": "bn",
+          "p": [
+            "একই ভাষা হলেও দুই পাড়ের সংবাদপত্রের বাংলা হুবহু এক নয়। শব্দচয়ন, বানানরীতি ও বাক্যগঠনে পার্থক্য আছে — কলকাতার পত্রিকায় কিছু শব্দ ব্যবহৃত হয় যা বাংলাদেশে কম প্রচলিত, আবার উল্টোটাও সত্য।",
+            "সংখ্যা, তারিখ ও পরিমাপের প্রকাশভঙ্গিতেও পার্থক্য চোখে পড়ে। ভাষা নিয়ে আগ্রহ থাকলে একই ঘটনার খবর দুই দেশের পত্রিকায় পড়ে তুলনা করা বেশ উপভোগ্য একটি অভ্যাস।",
+            "সাহিত্য, চলচ্চিত্র ও পূজা সংখ্যার জন্য কলকাতার পত্রিকাগুলোর আলাদা ঐতিহ্য রয়েছে, যা বাংলাদেশের পাঠকদের কাছেও বহু বছর ধরে জনপ্রিয়।"
+          ]
+        },
+        {
+          "h2": "Reading across the border",
+          "p": [
+            "When a story involves both countries — a river-water agreement, a border incident, a trade decision, a cricket series — reading the Dhaka and Kolkata coverage side by side is instructive. The facts usually match; the framing, the choice of quotes and the sense of what matters often do not.",
+            "That contrast is one of the more useful habits a reader can develop, and it applies well beyond these two presses."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which is the largest Bangla newspaper in Kolkata?",
+          "a": "Anandabazar Patrika, published since 1922, is generally regarded as the largest-circulation Bangla daily in West Bengal, with Bartaman, Sangbad Pratidin and Ei Samay among the other major titles."
+        },
+        {
+          "q": "Is the Bangla used in Kolkata papers different?",
+          "a": "The language is the same, but vocabulary, spelling conventions and sentence style differ in noticeable ways between the Kolkata and Dhaka press. Most readers adjust within a few articles."
+        },
+        {
+          "q": "Can I read these papers from Bangladesh?",
+          "a": "Yes, the websites are open to read from anywhere. A few carry subscription prompts for magazine or archive sections."
+        }
+      ]
+    },
+
+    "international": {
+      "slug": "international-news",
+      "title": "International News in Bangla & English — Global Media",
+      "meta": "International broadcasters and news agencies, including the Bangla services of BBC, DW and VOA. Why cross-checking global coverage matters and how to read it, with links to each outlet.",
+      "h1": "International News Sources",
+      "lead": "For news beyond Bangladesh — and sometimes for a different perspective on news inside it — international broadcasters and agencies are worth reading directly. Several of them publish in Bangla.",
+      "sections": [
+        {
+          "h2": "Bangla from abroad",
+          "p": [
+            "Some of the longest-running Bangla journalism in the world is produced outside the region. BBC Bangla has broadcast since the 1940s and became a familiar voice in Bengali households, particularly during periods when domestic news was constrained. Deutsche Welle and Voice of America also maintain Bangla services.",
+            "These outlets apply international editorial standards to stories that matter to Bangla-speaking audiences, which makes them a useful reference point when a domestic story is contested or when coverage at home is cautious.",
+            "They are not neutral by virtue of being foreign. Every international broadcaster operates within its own national and institutional context, and that shapes what it covers and how. The value lies in comparison, not in substitution."
+          ]
+        },
+        {
+          "h2": "Agencies and global outlets",
+          "p": [
+            "Wire agencies such as Reuters and Agence France-Presse supply much of the foreign news that appears in Bangladeshi papers. Reading the agency report directly often gives you more detail and more careful attribution than the shortened version that runs locally.",
+            "For world affairs, outlets including Al Jazeera, The Guardian and the major international broadcasters cover stories at a length and depth that local foreign desks cannot match, given their resources.",
+            "On stories where Bangladesh itself is the subject — Rohingya refugees, climate and flooding, garment industry conditions, migration — international coverage and domestic coverage frequently emphasise very different aspects. Reading both is the only way to see the whole shape of the story."
+          ]
+        },
+        {
+          "h2": "আন্তর্জাতিক খবর পড়ার সময়",
+          "lang": "bn",
+          "p": [
+            "কোনো গুরুত্বপূর্ণ আন্তর্জাতিক ঘটনার খবর পড়ার সময় অন্তত দুটি ভিন্ন দেশের সংবাদমাধ্যম দেখা ভালো। একই ঘটনার উপস্থাপন ভিন্ন হতে পারে, এবং সেই ভিন্নতা থেকেই পুরো চিত্রটি বোঝা যায়।",
+            "অনুবাদ করা খবরে তথ্য সংক্ষিপ্ত হয়ে যেতে পারে। সম্ভব হলে মূল সংবাদমাধ্যমের প্রতিবেদনটি দেখে নিন — বিশেষ করে পরিসংখ্যান বা কারও উদ্ধৃতির ক্ষেত্রে।",
+            "বাংলাদেশ সম্পর্কিত আন্তর্জাতিক প্রতিবেদন পড়ার সময় মনে রাখবেন, বিদেশি সংবাদমাধ্যমও নিজস্ব দৃষ্টিভঙ্গি থেকে লেখে। দেশি ও বিদেশি — দুই ধরনের প্রতিবেদন মিলিয়ে পড়াই সবচেয়ে ভারসাম্যপূর্ণ পদ্ধতি।"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which international outlets publish news in Bangla?",
+          "a": "BBC Bangla, DW Bangla and VOA Bangla all maintain Bangla-language services with their own reporting and video, in addition to their English coverage."
+        },
+        {
+          "q": "Why read international coverage of Bangladesh?",
+          "a": "International and domestic newsrooms often emphasise different aspects of the same story. Comparing them is the most practical way to form a complete picture, particularly on contested or sensitive subjects."
+        },
+        {
+          "q": "Are these sites free to read?",
+          "a": "The broadcasters are free. Some international newspapers limit the number of free articles per month, though their Bangladesh and South Asia reporting is frequently outside the paywall."
+        }
+      ]
+    }
+  }
+}

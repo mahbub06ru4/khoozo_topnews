@@ -12,7 +12,8 @@
       "bn": "জাতীয় দৈনিক",
       "title_en": "Bangla Daily Newspapers",
       "intro_bn": "বাংলাদেশের জাতীয় দৈনিকগুলো দেশের সংবাদ জগতের মূল ভিত্তি। রাজনীতি, অর্থনীতি, খেলা, বিনোদন থেকে শুরু করে মতামত ও অনুসন্ধানী প্রতিবেদন — প্রতিদিন সকালে লাখো পাঠকের হাতে পৌঁছায় এসব পত্রিকা। ছাপা সংস্করণের পাশাপাশি প্রায় প্রতিটি দৈনিকের এখন নিজস্ব ওয়েবসাইট ও মোবাইল অ্যাপ রয়েছে, যেখানে সারাদিন সর্বশেষ খবর হালনাগাদ করা হয়।",
-      "intro_en": "National Bangla dailies remain the backbone of news in Bangladesh. From politics and the economy to sport, culture and long-form investigations, these papers set the national agenda every morning, and nearly all of them now publish around the clock on the web and on mobile apps."
+      "intro_en": "National Bangla dailies remain the backbone of news in Bangladesh. From politics and the economy to sport, culture and long-form investigations, these papers set the national agenda every morning, and nearly all of them now publish around the clock on the web and on mobile apps.",
+      "page": "bangla-newspapers.html"
     },
     {
       "id": "online",
@@ -20,7 +21,8 @@
       "bn": "অনলাইন পোর্টাল",
       "title_en": "Online Bangla News Portals",
       "intro_bn": "অনলাইন নিউজ পোর্টালগুলো ছাপা কাগজের অপেক্ষা না করে মুহূর্তেই খবর প্রকাশ করে। দ্রুত হালনাগাদ, লাইভ কভারেজ ও ভিডিও প্রতিবেদনের কারণে মোবাইল ব্যবহারকারীদের কাছে এগুলো এখন সবচেয়ে জনপ্রিয় সংবাদ উৎস। তথ্য মন্ত্রণালয়ের নিবন্ধিত পোর্টালগুলো দেশের ডিজিটাল সাংবাদিকতার বড় অংশ জুড়ে আছে।",
-      "intro_en": "Web-first news portals publish the moment a story breaks, without waiting for the next print run. Fast updates, live blogs and video reports have made them the go-to source for smartphone readers across Bangladesh."
+      "intro_en": "Web-first news portals publish the moment a story breaks, without waiting for the next print run. Fast updates, live blogs and video reports have made them the go-to source for smartphone readers across Bangladesh.",
+      "page": "online-news-portals.html"
     },
     {
       "id": "tv",
@@ -28,7 +30,8 @@
       "bn": "টিভি নিউজ",
       "title_en": "Bangla TV Channel News Portals",
       "intro_bn": "বাংলাদেশের টেলিভিশন চ্যানেলগুলো এখন শুধু পর্দায় সীমাবদ্ধ নয়। প্রতিটি চ্যানেলের ওয়েবসাইটে লাইভ সম্প্রচার, সংবাদ বুলেটিন, টক শো ও ছোট ভিডিও ক্লিপ পাওয়া যায়। ব্রেকিং নিউজ ও সরাসরি সম্প্রচারের জন্য টিভি নিউজ পোর্টালগুলো বিশেষভাবে জনপ্রিয়।",
-      "intro_en": "Bangladeshi TV newsrooms are now major digital publishers. Their websites stream live bulletins, talk shows and short clips, which makes them especially popular for breaking news and live events."
+      "intro_en": "Bangladeshi TV newsrooms are now major digital publishers. Their websites stream live bulletins, talk shows and short clips, which makes them especially popular for breaking news and live events.",
+      "page": "tv-news-channels.html"
     },
     {
       "id": "sports",
@@ -36,7 +39,8 @@
       "bn": "খেলা ও লাইভ স্কোর",
       "title_en": "Sports & Live Score Sites",
       "intro_bn": "ক্রিকেট ও ফুটবলের লাইভ স্কোর, বল-বাই-বল ধারাভাষ্য, সূচি ও পয়েন্ট টেবিল দেখার জন্য নির্ভরযোগ্য সাইটগুলো এখানে সাজানো আছে। বাংলাদেশ দলের ম্যাচ, বিপিএল, আইপিএল, বিশ্বকাপ থেকে শুরু করে ইউরোপীয় লিগ — প্রতিটি লিংক সরাসরি মূল সাইটের লাইভ পাতায় খোলে।",
-      "intro_en": "Trusted sites for live cricket and football scores, ball-by-ball commentary, fixtures and tables. From Bangladesh internationals and the BPL to the World Cup and European leagues, every link opens the official live page of the publisher."
+      "intro_en": "Trusted sites for live cricket and football scores, ball-by-ball commentary, fixtures and tables. From Bangladesh internationals and the BPL to the World Cup and European leagues, every link opens the official live page of the publisher.",
+      "page": "sports-live-score.html"
     },
     {
       "id": "epaper",
@@ -44,7 +48,8 @@
       "bn": "ই-পেপার",
       "title_en": "Bangla e-Papers",
       "intro_bn": "ই-পেপার হলো ছাপা পত্রিকার হুবহু ডিজিটাল রূপ। পাতা উল্টে উল্টে পুরো পত্রিকা পড়ার অভিজ্ঞতা, চাকরির বিজ্ঞপ্তি, টেন্ডার নোটিশ কিংবা পুরোনো সংখ্যা খোঁজার জন্য ই-পেপার খুবই কাজের — বিশেষ করে প্রবাসী পাঠকদের জন্য।",
-      "intro_en": "An e-paper is a page-by-page digital replica of the printed edition — ideal for reading the full paper abroad, finding job circulars and tender notices, or browsing past issues."
+      "intro_en": "An e-paper is a page-by-page digital replica of the printed edition — ideal for reading the full paper abroad, finding job circulars and tender notices, or browsing past issues.",
+      "page": "bangla-epapers.html"
     },
     {
       "id": "english",
@@ -52,7 +57,8 @@
       "bn": "ইংরেজি দৈনিক",
       "title_en": "Bangladeshi English Newspapers",
       "intro_bn": "বাংলাদেশের ইংরেজি দৈনিকগুলো দেশি-বিদেশি পাঠক, কূটনীতিক, ব্যবসায়ী ও শিক্ষার্থীদের কাছে দেশের খবর পৌঁছে দেয়। অর্থনীতি, ব্যবসা ও নীতিনির্ধারণী বিশ্লেষণে এসব পত্রিকার বিশেষ গুরুত্ব রয়েছে।",
-      "intro_en": "Bangladesh's English-language press serves diplomats, investors, students and the diaspora, with strong coverage of business, policy and the economy."
+      "intro_en": "Bangladesh's English-language press serves diplomats, investors, students and the diaspora, with strong coverage of business, policy and the economy.",
+      "page": "english-newspapers.html"
     },
     {
       "id": "local",
@@ -60,7 +66,8 @@
       "bn": "বিভাগীয়",
       "title_en": "Division & Local Newspapers",
       "intro_bn": "ঢাকার বাইরের খবরের জন্য বিভাগীয় ও আঞ্চলিক পত্রিকার বিকল্প নেই। চট্টগ্রাম, সিলেট, রাজশাহী, খুলনাসহ বিভিন্ন বিভাগের স্থানীয় পত্রিকাগুলো এলাকার উন্নয়ন, সমস্যা ও মানুষের কথা তুলে ধরে।",
-      "intro_en": "For news from outside Dhaka, divisional and regional newspapers are indispensable. They cover local development, civic issues and community life in Chattogram, Sylhet, Rajshahi, Khulna and beyond."
+      "intro_en": "For news from outside Dhaka, divisional and regional newspapers are indispensable. They cover local development, civic issues and community life in Chattogram, Sylhet, Rajshahi, Khulna and beyond.",
+      "page": "local-newspapers.html"
     },
     {
       "id": "jobs",
@@ -68,7 +75,8 @@
       "bn": "চাকরি ও প্রযুক্তি",
       "title_en": "Jobs, Tech & Govt. Portals",
       "intro_bn": "সরকারি ও বেসরকারি চাকরির বিজ্ঞপ্তি, প্রযুক্তির খবর ও সরকারি সেবার তথ্য — সব এক জায়গায়। চাকরিপ্রার্থী ও প্রযুক্তিপ্রেমীদের জন্য দরকারি ওয়েবসাইটগুলো এখানে রাখা হয়েছে।",
-      "intro_en": "Job circulars, technology news and official government portals in one place — useful links for job seekers and tech readers."
+      "intro_en": "Job circulars, technology news and official government portals in one place — useful links for job seekers and tech readers.",
+      "page": "jobs-tech-portals.html"
     },
     {
       "id": "kolkata",
@@ -76,7 +84,8 @@
       "bn": "কলকাতার পত্রিকা",
       "title_en": "West Bengal / Kolkata Bangla Newspapers",
       "intro_bn": "পশ্চিমবঙ্গের বাংলা সংবাদপত্র ও নিউজ পোর্টালগুলো বিশ্বজুড়ে বাংলাভাষী পাঠকের কাছে জনপ্রিয়। ভারতের রাজনীতি, সংস্কৃতি ও সাহিত্যের খবরের জন্য এসব পত্রিকা পড়া হয়।",
-      "intro_en": "Bangla newspapers and portals from West Bengal are read by Bangla speakers worldwide for Indian politics, culture and literature."
+      "intro_en": "Bangla newspapers and portals from West Bengal are read by Bangla speakers worldwide for Indian politics, culture and literature.",
+      "page": "kolkata-bangla-newspapers.html"
     },
     {
       "id": "international",
@@ -84,7 +93,8 @@
       "bn": "আন্তর্জাতিক",
       "title_en": "International News",
       "intro_bn": "বিশ্বের খবর জানতে আন্তর্জাতিক সংবাদমাধ্যমের বিকল্প নেই। বিবিসি বাংলা, ডয়চে ভেলে ও ভয়েস অব আমেরিকার মতো প্রতিষ্ঠান বাংলায় এবং আল জাজিরা, রয়টার্স ও সিএনএন ইংরেজিতে বিশ্বজুড়ে সংবাদ পরিবেশন করে।",
-      "intro_en": "Global outlets — some in Bangla such as BBC Bangla, DW and VOA, and others in English such as Al Jazeera, Reuters and CNN — bring world news and an outside perspective on Bangladesh."
+      "intro_en": "Global outlets — some in Bangla such as BBC Bangla, DW and VOA, and others in English such as Al Jazeera, Reuters and CNN — bring world news and an outside perspective on Bangladesh.",
+      "page": "international-news.html"
     }
   ],
   "newspapers": [

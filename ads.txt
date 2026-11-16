@@ -1,7 +1,6 @@
-# ads.txt — authorised sellers. One line per network, uncommented once you are approved.
-# Google AdSense: replace pub-XXXXXXXXXXXXXXXX with your publisher ID (the same one in js/ads-config.js).
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-# Adsterra: the exact line is shown in your Adsterra dashboard under Websites.
-# adsterra.com, XXXXXX, DIRECT
-# Monetag:
-# monetag.com, XXXXXX, DIRECT
+# ads.txt for topnews.khoozo.com
+#
+# NOTE: Google reads ads.txt from the ROOT domain, so the line below must also
+# be present at https://khoozo.com/ads.txt for ads to be authorised here.
+# A subdomain= record in the root file is only needed if the publisher ID differs.
+google.com, pub-8779372289272533, DIRECT, f08c47fec0942fa0
