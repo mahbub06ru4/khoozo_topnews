@@ -2,21 +2,30 @@
    Top News by Khoozo — app.js (vanilla, zero dependencies)
    - Dark/light theme with persistence
    - Live Bangla (Gregorian + Bangabda) / English date
+   - Mega-menu navigation + logo carousel built from data/newspapers.json
    - Breaking ticker + live headlines from data/news.json
-   - Newspaper directory from data/newspapers.json with category tabs,
-     instant search, and in-feed ad slots every 12 cards
+   - Directory as "TOP 10" category sections with Read More / Show More,
+     category filter tabs, instant search, in-feed ad slots
    - Sticky mobile anchor ad with close button
    ========================================================================= */
 (() => {
   'use strict';
 
   const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch { /* private mode */ } },
   };
   const BN_DIGITS = '০১২৩৪৫৬৭৮৯';
   const toBn = (v) => String(v).replace(/\d/g, (d) => BN_DIGITS[d]);
+
+  // Site root, resolved from this script's URL so every page (incl. 404) works.
+  const ROOT = new URL('../', document.currentScript?.src || location.href);
+  const HOME = ROOT.href;
+  const dataUrl = (f) => new URL(`data/${f}`, ROOT).href;
+  const IS_HOME = !!$('#paperGrid');
+  const catHref = (id) => (IS_HOME ? `#cat=${id}` : `${HOME}#cat=${id}`);
 
   /** Tiny DOM builder — always uses textContent, so feed data can't inject HTML. */
   function h(tag, attrs = {}, ...children) {
@@ -35,7 +44,14 @@
   }
   const safeUrl = (u) => (/^https?:\/\//i.test(u || '') ? u : '#');
   const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return ''; } };
-  const ICON_EXT = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+  const ext = { target: '_blank', rel: 'noopener noreferrer' };
+
+  /* ---------------- Data (shared by nav + directory) ---------------- */
+  let papersPromise;
+  const loadPapers = () => (papersPromise ||= fetch(dataUrl('newspapers.json')).then((r) => {
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }));
 
   /* ---------------- Theme ---------------- */
   function initTheme() {
@@ -43,7 +59,7 @@
     const btn = $('#themeToggle');
     const apply = (t) => {
       root.dataset.theme = t;
-      if (btn) btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      btn?.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
       const meta = $('meta[name="theme-color"]');
       if (meta) meta.content = t === 'dark' ? '#0d1015' : '#ffffff';
     };
@@ -53,7 +69,6 @@
       apply(next);
       store.set('theme', next);
     });
-    // Follow OS changes only if the user never chose explicitly.
     matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', (e) => {
       if (!store.get('theme')) apply(e.matches ? 'dark' : 'light');
     });
@@ -82,7 +97,6 @@
     if (!bnEl && !enEl) return;
     const tz = 'Asia/Dhaka';
     const render = () => {
-      // Use Dhaka time so visitors abroad still see the BD date.
       const now = new Date(new Date().toLocaleString('en-US', { timeZone: tz }));
       if (bnEl) {
         const g = new Intl.DateTimeFormat('bn-BD', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(now);
@@ -106,6 +120,126 @@
     return lang === 'bn' ? 'এইমাত্র' : 'just now';
   }
 
+  /* ---------------- Logos ---------------- */
+  const PALETTE = ['#d71920', '#0b6e4f', '#1d4ed8', '#7c3aed', '#c2410c', '#0e7490', '#be185d', '#4d7c0f'];
+  const colorFor = (p) => p.color || PALETTE[[...hostOf(p.url)].reduce((a, c) => a + c.charCodeAt(0), 0) % PALETTE.length];
+
+  /** Small favicon <img>; removes itself if the icon is missing or a generic globe. */
+  function favicon(p, size = 32) {
+    const host = hostOf(p.url);
+    if (!host) return null;
+    const img = h('img', {
+      class: 'fav', src: `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=64`,
+      alt: '', width: size, height: size, loading: 'lazy', decoding: 'async',
+    });
+    img.addEventListener('error', () => img.remove(), { once: true });
+    img.addEventListener('load', () => { if (img.naturalWidth && img.naturalWidth < 20) img.remove(); }, { once: true });
+    return img;
+  }
+
+  /** Logo tile: real logo image if `logo` is set in JSON, otherwise a coloured Bangla wordmark. */
+  function logoTile(p, q) {
+    const tile = h('span', { class: 'paper-logo', style: `--c:${colorFor(p)}` });
+    if (p.logo) {
+      const img = h('img', { class: 'logo-img', src: new URL(p.logo, ROOT).href, alt: p.name_en, loading: 'lazy', decoding: 'async', height: 48 });
+      img.addEventListener('error', () => img.replaceWith(wordmark(p, q)), { once: true });
+      tile.append(img);
+    } else {
+      tile.append(favicon(p) || '', wordmark(p, q));
+    }
+    return tile;
+  }
+  function wordmark(p, q) {
+    const len = [...p.name_bn].length;
+    return h('span', { class: `wm${len > 14 ? ' wm-sm' : len > 9 ? ' wm-md' : ''}`, lang: 'bn' }, highlight(p.name_bn, q));
+  }
+
+  function highlight(text, q) {
+    if (!q) return text;
+    const i = text.toLowerCase().indexOf(q.toLowerCase());
+    if (i < 0) return text;
+    const frag = document.createDocumentFragment();
+    frag.append(text.slice(0, i), h('mark', {}, text.slice(i, i + q.length)), text.slice(i + q.length));
+    return frag;
+  }
+
+  /* ---------------- Mega menu ---------------- */
+  async function initNav() {
+    const nav = $('#mainNav');
+    if (!nav) return;
+    const items = $$('.mn-item', nav);
+    const close = (except) => items.forEach((it) => {
+      if (it === except) return;
+      it.classList.remove('open');
+      $('.mn-btn', it)?.setAttribute('aria-expanded', 'false');
+    });
+    const toggle = (it, force) => {
+      const open = force ?? !it.classList.contains('open');
+      close(it);
+      it.classList.toggle('open', open);
+      $('.mn-btn', it).setAttribute('aria-expanded', String(open));
+    };
+    const hoverable = matchMedia('(hover: hover) and (pointer: fine)');
+    items.forEach((it) => {
+      $('.mn-btn', it).addEventListener('click', (e) => { e.stopPropagation(); toggle(it); });
+      let t;
+      it.addEventListener('mouseenter', () => { if (hoverable.matches) { clearTimeout(t); toggle(it, true); } });
+      it.addEventListener('mouseleave', () => { if (hoverable.matches) t = setTimeout(() => toggle(it, false), 150); });
+      it.addEventListener('click', (e) => { if (e.target.closest('a')) close(); });
+    });
+    document.addEventListener('click', (e) => { if (!nav.contains(e.target)) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+    // Fix home/category links so they work from every page (incl. 404).
+    $$('a[data-home]', nav).forEach((a) => { a.href = HOME; });
+    $$('a[data-cat]', nav).forEach((a) => { a.setAttribute('href', catHref(a.dataset.cat)); });
+
+    let data;
+    try { data = await loadPapers(); } catch { return; }
+    const cats = data.categories.filter((c) => c.id !== 'all');
+    const by = (id) => data.newspapers.filter((p) => p.category === id);
+    const link = (p) => h('li', {}, h('a', { href: safeUrl(p.url), ...ext }, favicon(p, 16) || '', h('span', { lang: 'bn' }, p.name_bn)));
+
+    const megaAll = $('#mega-all');
+    if (megaAll) {
+      megaAll.replaceChildren(h('div', { class: 'mega-grid' }, cats.map((c) => {
+        const list = by(c.id);
+        return h('div', { class: 'mega-col' },
+          h('a', { class: 'mega-head', href: catHref(c.id) }, h('span', { lang: 'bn' }, c.bn), h('small', {}, `${c.en} · ${list.length}`)),
+          h('ul', {}, list.slice(0, 6).map(link)),
+          list.length > 6 ? h('a', { class: 'mega-more', href: catHref(c.id) }, `সব ${toBn(list.length)}টি দেখুন →`) : null);
+      })));
+    }
+    const megaLocal = $('#mega-local');
+    if (megaLocal) {
+      const local = by('local');
+      // Only divisions that have at least one paper (add more in data/newspapers.json).
+      megaLocal.replaceChildren(h('div', { class: 'mega-grid' }, (data.divisions || []).map((d) => {
+        const list = local.filter((p) => p.division === d.id);
+        if (!list.length) return null;
+        return h('div', { class: 'mega-col' },
+          h('a', { class: 'mega-head', href: catHref('local') }, h('span', { lang: 'bn' }, `${d.bn} বিভাগ`), h('small', {}, `${d.en} Division`)),
+          h('ul', {}, list.map(link)));
+      })));
+    }
+  }
+
+  /* ---------------- Logo carousel ---------------- */
+  async function initStrip() {
+    const strip = $('#logoStrip');
+    if (!strip) return;
+    let data;
+    try { data = await loadPapers(); } catch { return; }
+    // A few top picks from each Bangladeshi category.
+    const picks = ['bangla', 'online', 'tv', 'english', 'international']
+      .flatMap((id) => data.newspapers.filter((p) => p.category === id).slice(0, id === 'bangla' ? 8 : 5));
+    strip.replaceChildren(...picks.map((p) => h('a', { class: 'chip', href: safeUrl(p.url), ...ext, title: p.name_en, style: `--c:${colorFor(p)}` },
+      favicon(p, 20) || '', h('span', { lang: 'bn' }, p.name_bn))));
+    const step = () => Math.max(200, strip.clientWidth * 0.8);
+    $('#stripPrev')?.addEventListener('click', () => strip.scrollBy({ left: -step(), behavior: 'smooth' }));
+    $('#stripNext')?.addEventListener('click', () => strip.scrollBy({ left: step(), behavior: 'smooth' }));
+  }
+
   /* ---------------- Live news ---------------- */
   async function loadNews() {
     const grid = $('#liveGrid');
@@ -113,23 +247,22 @@
     if (!grid && !ticker) return;
     try {
       // Cache-bust every 5 minutes so GitHub Pages' CDN copy refreshes regularly.
-      const res = await fetch(`data/news.json?v=${Math.floor(Date.now() / 3e5)}`);
+      const res = await fetch(`${dataUrl('news.json')}?v=${Math.floor(Date.now() / 3e5)}`);
       if (!res.ok) throw new Error(res.status);
       const data = await res.json();
       const items = (data.items || []).filter((i) => i && i.title && i.link);
       if (!items.length) throw new Error('empty');
 
       if (ticker) {
-        const links = items.map((it) => h('a', { href: safeUrl(it.link), target: '_blank', rel: 'noopener noreferrer', lang: it.lang }, it.title));
+        const links = items.map((it) => h('a', { href: safeUrl(it.link), ...ext, lang: it.lang }, it.title));
         // Duplicate the list for a seamless -50% loop; the copy is hidden from AT.
         const copy = links.map((a) => { const c = a.cloneNode(true); c.tabIndex = -1; c.setAttribute('aria-hidden', 'true'); return c; });
         ticker.replaceChildren(...links, ...copy);
         ticker.style.setProperty('--ticker-dur', `${Math.max(40, items.length * 7)}s`);
       }
-
       if (grid) {
         grid.replaceChildren(...items.slice(0, 10).map((it) => h('li', {},
-          h('a', { class: 'live-card', href: safeUrl(it.link), target: '_blank', rel: 'noopener noreferrer' },
+          h('a', { class: 'live-card', href: safeUrl(it.link), ...ext },
             h('h3', { lang: it.lang }, it.title),
             h('div', { class: 'live-meta' },
               h('span', { class: 'src-badge' }, it.source || 'Google News'),
@@ -143,123 +276,187 @@
     } catch (err) {
       console.warn('Live news unavailable:', err);
       grid?.replaceChildren(h('li', { class: 'empty' }, 'লাইভ শিরোনাম এই মুহূর্তে পাওয়া যাচ্ছে না। Live headlines are temporarily unavailable.'));
-      ticker?.replaceChildren(h('a', { href: 'https://news.google.com/?hl=bn&gl=BD&ceid=BD:bn', target: '_blank', rel: 'noopener noreferrer' }, 'সর্বশেষ খবর দেখুন Google News-এ'));
+      ticker?.replaceChildren(h('a', { href: 'https://news.google.com/?hl=bn&gl=BD&ceid=BD:bn', ...ext }, 'সর্বশেষ খবর দেখুন Google News-এ'));
     }
   }
 
   /* ---------------- Newspaper directory ---------------- */
-  const AD_EVERY = 12;
-  const PALETTE = ['#d71920', '#0b6e4f', '#1d4ed8', '#7c3aed', '#c2410c', '#0e7490', '#be185d', '#4d7c0f'];
-
-  function logoFor(p) {
-    const host = hostOf(p.url);
-    const wrap = h('span', { class: 'paper-logo' });
-    const fallback = () => {
-      const letter = (p.name_bn || p.name_en || '?').trim().charAt(0);
-      const color = PALETTE[[...host].reduce((a, c) => a + c.charCodeAt(0), 0) % PALETTE.length];
-      wrap.replaceChildren(h('span', { class: 'initial', style: `background:${color}`, 'aria-hidden': 'true' }, letter));
-    };
-    if (!host) { fallback(); return wrap; }
-    const img = h('img', {
-      src: `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=64`,
-      alt: '', width: 32, height: 32, loading: 'lazy', decoding: 'async',
-    });
-    img.addEventListener('error', fallback, { once: true });
-    // Google returns a 16px generic globe when it has no icon — treat as missing.
-    img.addEventListener('load', () => { if (img.naturalWidth && img.naturalWidth < 20) fallback(); }, { once: true });
-    wrap.append(img);
-    return wrap;
-  }
-
-  function highlight(text, q) {
-    if (!q) return text;
-    const i = text.toLowerCase().indexOf(q.toLowerCase());
-    if (i < 0) return text;
-    const frag = document.createDocumentFragment();
-    frag.append(text.slice(0, i), h('mark', {}, text.slice(i, i + q.length)), text.slice(i + q.length));
-    return frag;
-  }
+  const TOP_N = 10;      // cards shown per section before "Show More"
+  const AD_EVERY = 12;   // in-feed ad after every 12 cards inside a grid
+  const AD_SECTIONS = 2; // in-feed ad between every 2 sections
 
   function inFeedAd(n) {
     // AdSense in-feed slot. Replace the placeholder text with your <ins class="adsbygoogle" ...> unit.
     return h('div', { class: 'ad-slot ad-infeed', 'data-ad-slot': `infeed-${n}`, role: 'complementary', 'aria-label': 'Advertisement' }, 'In-Feed Ad');
   }
 
+  function paperCard(p, { cat, div, q, showTag }) {
+    const tag = div ? `${div.bn} বিভাগ` : showTag && cat ? cat.bn : null;
+    return h('a', { class: 'paper', href: safeUrl(p.url), ...ext, title: `${p.name_en} — ${hostOf(p.url)}` },
+      logoTile(p, q),
+      h('span', { class: 'paper-en' }, highlight(p.name_en, q)),
+      tag ? h('span', { class: 'paper-tag', lang: 'bn' }, tag) : null);
+  }
+
   async function initDirectory() {
-    const grid = $('#paperGrid');
+    const wrap = $('#paperGrid');
     const tabs = $('#catTabs');
     const search = $('#searchInput');
     const status = $('#dirStatus');
-    if (!grid) return;
+    if (!wrap) return;
 
     let data;
-    try {
-      const res = await fetch('data/newspapers.json');
-      data = await res.json();
-    } catch (err) {
-      grid.replaceChildren(h('p', { class: 'empty' }, 'তালিকা লোড করা যায়নি। Please refresh the page.'));
+    try { data = await loadPapers(); } catch {
+      wrap.replaceChildren(h('p', { class: 'empty' }, 'তালিকা লোড করা যায়নি। Please refresh the page.'));
       return;
     }
     const cats = data.categories;
     const catMap = Object.fromEntries(cats.map((c) => [c.id, c]));
+    const divMap = Object.fromEntries((data.divisions || []).map((d) => [d.id, d]));
     const papers = data.newspapers.map((p) => ({ ...p, _q: `${p.name_bn} ${p.name_en} ${hostOf(p.url)}`.toLowerCase() }));
+    const sectionCats = cats.filter((c) => c.id !== 'all' && papers.some((p) => p.category === c.id));
 
+    // ---- Build all category sections once ----
+    let adN = 0;
+    const sections = {};
+    const sectionNodes = [];
+    sectionCats.forEach((c, si) => {
+      const list = papers.filter((p) => p.category === c.id);
+      const grid = h('div', { class: 'paper-grid' });
+      list.forEach((p, i) => {
+        const card = paperCard(p, { cat: c, div: divMap[p.division] });
+        if (i >= TOP_N) card.classList.add('extra');
+        grid.append(card);
+        if ((i + 1) % AD_EVERY === 0 && i + 1 < list.length) {
+          const ad = inFeedAd(++adN);
+          if (i >= TOP_N) ad.classList.add('extra');
+          grid.append(ad);
+        }
+      });
+
+      const intro = h('div', { class: 'cat-intro', id: `intro-${c.id}` },
+        c.intro_bn ? h('p', { lang: 'bn' }, c.intro_bn) : null,
+        c.intro_en ? h('p', { lang: 'en' }, c.intro_en) : null);
+      const readBtn = h('button', { class: 'read-more', type: 'button', 'aria-expanded': 'false', 'aria-controls': intro.id }, 'Read More');
+      readBtn.addEventListener('click', () => {
+        const open = intro.classList.toggle('open');
+        readBtn.setAttribute('aria-expanded', String(open));
+        readBtn.textContent = open ? 'Read Less' : 'Read More';
+      });
+
+      const hiddenCount = Math.max(0, list.length - TOP_N);
+      const moreBtn = hiddenCount
+        ? h('button', { class: 'show-more', type: 'button', 'aria-expanded': 'false' }, `আরও ${toBn(hiddenCount)}টি দেখুন ↓ · Show More`)
+        : null;
+      const sec = h('section', { class: 'cat-sec', id: `sec-${c.id}`, 'aria-labelledby': `h-${c.id}` },
+        h('h2', { class: 'cat-title', id: `h-${c.id}` },
+          h('span', { lang: 'bn' }, `${list.length >= TOP_N ? 'সেরা ১০' : 'সেরা'} ${c.bn}`),
+          h('small', {}, `${list.length >= TOP_N ? 'Top 10 ' : 'Top '}${c.title_en || c.en}`)),
+        h('div', { class: 'cat-intro-wrap' }, intro, readBtn),
+        grid,
+        h('div', { class: 'sec-actions' },
+          moreBtn,
+          h('a', { class: 'sec-link', href: `#cat=${c.id}` }, `সব ${c.bn} (${toBn(list.length)}) →`)));
+      moreBtn?.addEventListener('click', () => setExpanded(c.id, !sec.classList.contains('expanded')));
+
+      sections[c.id] = { sec, moreBtn, hiddenCount, count: list.length };
+      sectionNodes.push(sec);
+      if ((si + 1) % AD_SECTIONS === 0 && si + 1 < sectionCats.length) {
+        const ad = inFeedAd(`sec-${si}`);
+        ad.classList.add('between-sec');
+        sectionNodes.push(ad);
+      }
+    });
+
+    function setExpanded(id, on) {
+      const s = sections[id];
+      if (!s) return;
+      s.sec.classList.toggle('expanded', on);
+      if (s.moreBtn) {
+        s.moreBtn.setAttribute('aria-expanded', String(on));
+        s.moreBtn.textContent = on ? 'কম দেখুন ↑ · Show Less' : `আরও ${toBn(s.hiddenCount)}টি দেখুন ↓ · Show More`;
+      }
+    }
+
+    const resultsGrid = h('div', { class: 'paper-grid search-results', hidden: '' });
+    wrap.replaceChildren(resultsGrid, ...sectionNodes);
+
+    // ---- Tabs ----
     const fromHash = () => (location.hash.match(/cat=([a-z]+)/) || [])[1];
     let current = catMap[fromHash()] ? fromHash() : 'all';
 
-    // Tabs
     tabs.replaceChildren(...cats.map((c) => {
       const count = c.id === 'all' ? papers.length : papers.filter((p) => p.category === c.id).length;
-      const b = h('button', { class: 'tab', role: 'tab', type: 'button', 'data-cat': c.id, 'aria-selected': String(c.id === current), 'aria-controls': 'paperGrid' },
+      return h('button', { class: 'tab', role: 'tab', type: 'button', 'data-cat': c.id, 'aria-selected': String(c.id === current), 'aria-controls': 'paperGrid' },
         c.en, c.id !== 'all' ? h('span', { class: 'bn' }, `(${c.bn})`) : null, h('span', { class: 'count' }, count));
-      return b;
     }));
 
-    tabs.addEventListener('click', (e) => {
-      const b = e.target.closest('.tab');
-      if (!b) return;
-      current = b.dataset.cat;
-      history.replaceState(null, '', current === 'all' ? location.pathname : `#cat=${current}`);
-      render();
-      b.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    const scrollToDir = () => {
       const dir = $('#directory');
-      if (dir && dir.getBoundingClientRect().top < 0) dir.scrollIntoView({ behavior: 'smooth' });
-    });
+      if (dir && Math.abs(dir.getBoundingClientRect().top) > 80) dir.scrollIntoView({ behavior: 'smooth' });
+    };
+    const selectCat = (id, scroll = true) => {
+      current = catMap[id] ? id : 'all';
+      if (search && search.value) search.value = '';
+      const url = location.pathname + (current === 'all' ? '' : `#cat=${current}`);
+      if (location.pathname + location.hash !== url) history.replaceState(null, '', url);
+      render();
+      $(`.tab[data-cat="${current}"]`, tabs)?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      if (scroll) scrollToDir();
+    };
 
-    // Keyboard navigation for tabs (arrow keys)
+    tabs.addEventListener('click', (e) => { const b = e.target.closest('.tab'); if (b) selectCat(b.dataset.cat); });
     tabs.addEventListener('keydown', (e) => {
       if (!['ArrowLeft', 'ArrowRight'].includes(e.key)) return;
-      const all = [...tabs.querySelectorAll('.tab')];
-      const i = all.indexOf(document.activeElement);
-      const next = all[(i + (e.key === 'ArrowRight' ? 1 : -1) + all.length) % all.length];
-      next.focus(); next.click();
+      const all = $$('.tab', tabs);
+      const next = all[(all.indexOf(document.activeElement) + (e.key === 'ArrowRight' ? 1 : -1) + all.length) % all.length];
+      next.focus(); selectCat(next.dataset.cat, false);
     });
+    // "See all" links inside sections and mega-menu links on this page
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href^="#cat="]');
+      if (!a) return;
+      e.preventDefault();
+      selectCat(a.getAttribute('href').slice(5));
+    });
+    window.addEventListener('hashchange', () => { const c = fromHash(); if (catMap[c] && c !== current) selectCat(c); });
 
+    // ---- Render ----
     function render() {
       const q = (search?.value || '').trim();
       const ql = q.toLowerCase();
-      tabs.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.cat === current)));
+      $$('.tab', tabs).forEach((t) => t.setAttribute('aria-selected', String(!q && t.dataset.cat === current)));
 
-      const list = papers.filter((p) => (current === 'all' || p.category === current) && (!ql || p._q.includes(ql)));
-      const nodes = [];
-      list.forEach((p, i) => {
-        const cat = catMap[p.category];
-        nodes.push(h('a', { class: 'paper', href: safeUrl(p.url), target: '_blank', rel: 'noopener noreferrer', title: `${p.name_en} — ${hostOf(p.url)}` },
-          logoFor(p),
-          h('span', { class: 'paper-bn', lang: 'bn' }, highlight(p.name_bn, q)),
-          h('span', { class: 'paper-en' }, highlight(p.name_en, q)),
-          cat ? h('span', { class: 'paper-tag', lang: 'bn' }, cat.bn) : null,
-          h('span', { class: 'paper-ext', html: ICON_EXT })));
-        if ((i + 1) % AD_EVERY === 0 && i + 1 < list.length) nodes.push(inFeedAd((i + 1) / AD_EVERY));
-      });
-
-      if (!list.length) {
-        nodes.push(h('div', { class: 'empty' }, `"${q}" — কোনো পত্রিকা পাওয়া যায়নি। No newspaper matched your search.`));
+      if (q) {
+        // Search mode: flat result grid across all (or the current) category.
+        const list = papers.filter((p) => (current === 'all' || p.category === current) && p._q.includes(ql));
+        const nodes = [];
+        list.forEach((p, i) => {
+          nodes.push(paperCard(p, { cat: catMap[p.category], div: divMap[p.division], q, showTag: true }));
+          if ((i + 1) % AD_EVERY === 0 && i + 1 < list.length) nodes.push(inFeedAd(`s${i}`));
+        });
+        if (!list.length) nodes.push(h('div', { class: 'empty' }, `"${q}" — কোনো পত্রিকা পাওয়া যায়নি। No newspaper matched your search.`));
+        resultsGrid.replaceChildren(...nodes);
+        resultsGrid.hidden = false;
+        sectionNodes.forEach((n) => { n.hidden = true; });
+        if (status) status.textContent = `${toBn(list.length)}টি ফলাফল · ${list.length} results for "${q}"`;
+        return;
       }
-      grid.replaceChildren(...nodes);
+
+      resultsGrid.hidden = true;
+      resultsGrid.replaceChildren();
+      for (const n of sectionNodes) {
+        if (n.classList.contains('between-sec')) { n.hidden = current !== 'all'; continue; }
+        const id = n.id.slice(4);
+        n.hidden = current !== 'all' && id !== current;
+      }
+      // A single category view shows every paper in it.
+      Object.keys(sections).forEach((id) => { if (current !== 'all') setExpanded(id, id === current); });
+      if (current === 'all') Object.keys(sections).forEach((id) => setExpanded(id, false));
+
       if (status) {
-        const label = catMap[current];
-        status.textContent = `${toBn(list.length)}টি পত্রিকা · ${list.length} sites in ${label.en}${q ? ` matching "${q}"` : ''}`;
+        const n = current === 'all' ? papers.length : sections[current]?.count || 0;
+        status.textContent = `${toBn(n)}টি পত্রিকা · ${n} sites in ${catMap[current].en}`;
       }
     }
 
@@ -271,10 +468,10 @@
     search?.addEventListener('input', () => { clearTimeout(t); t = setTimeout(render, 80); });
     search?.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') { search.value = ''; render(); search.blur(); }
-      if (e.key === 'Enter') { e.preventDefault(); $('#directory')?.scrollIntoView({ behavior: 'smooth' }); }
+      if (e.key === 'Enter') { e.preventDefault(); scrollToDir(); }
     });
-    window.addEventListener('hashchange', () => { const c = fromHash(); if (catMap[c]) { current = c; render(); } });
     render();
+    if (fromHash() || preset) requestAnimationFrame(() => $('#directory')?.scrollIntoView());
   }
 
   /* ---------------- Search shortcut ("/") ---------------- */
@@ -306,11 +503,10 @@
   function initMisc() {
     const btn = $('#toTop');
     if (btn) {
-      const onScroll = () => btn.classList.toggle('show', scrollY > 800);
-      addEventListener('scroll', onScroll, { passive: true });
+      addEventListener('scroll', () => btn.classList.toggle('show', scrollY > 800), { passive: true });
       btn.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
     }
-    document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+    $$('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
   }
 
   /* ---------------- Boot ---------------- */
@@ -319,8 +515,9 @@
   initMisc();
   initAnchor();
   initSearchShortcut();
+  initNav();
+  initStrip();
   loadNews();
   initDirectory();
-  // Refresh live headlines every 10 minutes while the tab is open.
   if ($('#liveGrid')) setInterval(() => { if (!document.hidden) loadNews(); }, 6e5);
 })();

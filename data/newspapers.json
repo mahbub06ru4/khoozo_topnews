@@ -1,105 +1,674 @@
 {
   "updated": "2026-11-16",
   "categories": [
-    { "id": "all", "en": "All", "bn": "সব" },
-    { "id": "bangla", "en": "Bangla Daily", "bn": "জাতীয় দৈনিক" },
-    { "id": "online", "en": "Online Portals", "bn": "অনলাইন পোর্টাল" },
-    { "id": "tv", "en": "TV Channels", "bn": "টিভি নিউজ" },
-    { "id": "epaper", "en": "e-Paper", "bn": "ই-পেপার" },
-    { "id": "english", "en": "English Dailies", "bn": "ইংরেজি দৈনিক" },
-    { "id": "local", "en": "Local/Divisional", "bn": "বিভাগীয়" },
-    { "id": "jobs", "en": "Jobs & Tech", "bn": "চাকরি ও প্রযুক্তি" },
-    { "id": "international", "en": "International", "bn": "আন্তর্জাতিক" }
+    {
+      "id": "all",
+      "en": "All",
+      "bn": "সব"
+    },
+    {
+      "id": "bangla",
+      "en": "Bangla Daily",
+      "bn": "জাতীয় দৈনিক",
+      "title_en": "Bangla Daily Newspapers",
+      "intro_bn": "বাংলাদেশের জাতীয় দৈনিকগুলো দেশের সংবাদ জগতের মূল ভিত্তি। রাজনীতি, অর্থনীতি, খেলা, বিনোদন থেকে শুরু করে মতামত ও অনুসন্ধানী প্রতিবেদন — প্রতিদিন সকালে লাখো পাঠকের হাতে পৌঁছায় এসব পত্রিকা। ছাপা সংস্করণের পাশাপাশি প্রায় প্রতিটি দৈনিকের এখন নিজস্ব ওয়েবসাইট ও মোবাইল অ্যাপ রয়েছে, যেখানে সারাদিন সর্বশেষ খবর হালনাগাদ করা হয়।",
+      "intro_en": "National Bangla dailies remain the backbone of news in Bangladesh. From politics and the economy to sport, culture and long-form investigations, these papers set the national agenda every morning, and nearly all of them now publish around the clock on the web and on mobile apps."
+    },
+    {
+      "id": "online",
+      "en": "Online Portals",
+      "bn": "অনলাইন পোর্টাল",
+      "title_en": "Online Bangla News Portals",
+      "intro_bn": "অনলাইন নিউজ পোর্টালগুলো ছাপা কাগজের অপেক্ষা না করে মুহূর্তেই খবর প্রকাশ করে। দ্রুত হালনাগাদ, লাইভ কভারেজ ও ভিডিও প্রতিবেদনের কারণে মোবাইল ব্যবহারকারীদের কাছে এগুলো এখন সবচেয়ে জনপ্রিয় সংবাদ উৎস। তথ্য মন্ত্রণালয়ের নিবন্ধিত পোর্টালগুলো দেশের ডিজিটাল সাংবাদিকতার বড় অংশ জুড়ে আছে।",
+      "intro_en": "Web-first news portals publish the moment a story breaks, without waiting for the next print run. Fast updates, live blogs and video reports have made them the go-to source for smartphone readers across Bangladesh."
+    },
+    {
+      "id": "tv",
+      "en": "TV Channels",
+      "bn": "টিভি নিউজ",
+      "title_en": "Bangla TV Channel News Portals",
+      "intro_bn": "বাংলাদেশের টেলিভিশন চ্যানেলগুলো এখন শুধু পর্দায় সীমাবদ্ধ নয়। প্রতিটি চ্যানেলের ওয়েবসাইটে লাইভ সম্প্রচার, সংবাদ বুলেটিন, টক শো ও ছোট ভিডিও ক্লিপ পাওয়া যায়। ব্রেকিং নিউজ ও সরাসরি সম্প্রচারের জন্য টিভি নিউজ পোর্টালগুলো বিশেষভাবে জনপ্রিয়।",
+      "intro_en": "Bangladeshi TV newsrooms are now major digital publishers. Their websites stream live bulletins, talk shows and short clips, which makes them especially popular for breaking news and live events."
+    },
+    {
+      "id": "epaper",
+      "en": "e-Paper",
+      "bn": "ই-পেপার",
+      "title_en": "Bangla e-Papers",
+      "intro_bn": "ই-পেপার হলো ছাপা পত্রিকার হুবহু ডিজিটাল রূপ। পাতা উল্টে উল্টে পুরো পত্রিকা পড়ার অভিজ্ঞতা, চাকরির বিজ্ঞপ্তি, টেন্ডার নোটিশ কিংবা পুরোনো সংখ্যা খোঁজার জন্য ই-পেপার খুবই কাজের — বিশেষ করে প্রবাসী পাঠকদের জন্য।",
+      "intro_en": "An e-paper is a page-by-page digital replica of the printed edition — ideal for reading the full paper abroad, finding job circulars and tender notices, or browsing past issues."
+    },
+    {
+      "id": "english",
+      "en": "English Dailies",
+      "bn": "ইংরেজি দৈনিক",
+      "title_en": "Bangladeshi English Newspapers",
+      "intro_bn": "বাংলাদেশের ইংরেজি দৈনিকগুলো দেশি-বিদেশি পাঠক, কূটনীতিক, ব্যবসায়ী ও শিক্ষার্থীদের কাছে দেশের খবর পৌঁছে দেয়। অর্থনীতি, ব্যবসা ও নীতিনির্ধারণী বিশ্লেষণে এসব পত্রিকার বিশেষ গুরুত্ব রয়েছে।",
+      "intro_en": "Bangladesh's English-language press serves diplomats, investors, students and the diaspora, with strong coverage of business, policy and the economy."
+    },
+    {
+      "id": "local",
+      "en": "Local/Divisional",
+      "bn": "বিভাগীয়",
+      "title_en": "Division & Local Newspapers",
+      "intro_bn": "ঢাকার বাইরের খবরের জন্য বিভাগীয় ও আঞ্চলিক পত্রিকার বিকল্প নেই। চট্টগ্রাম, সিলেট, রাজশাহী, খুলনাসহ বিভিন্ন বিভাগের স্থানীয় পত্রিকাগুলো এলাকার উন্নয়ন, সমস্যা ও মানুষের কথা তুলে ধরে।",
+      "intro_en": "For news from outside Dhaka, divisional and regional newspapers are indispensable. They cover local development, civic issues and community life in Chattogram, Sylhet, Rajshahi, Khulna and beyond."
+    },
+    {
+      "id": "jobs",
+      "en": "Jobs & Tech",
+      "bn": "চাকরি ও প্রযুক্তি",
+      "title_en": "Jobs, Tech & Govt. Portals",
+      "intro_bn": "সরকারি ও বেসরকারি চাকরির বিজ্ঞপ্তি, প্রযুক্তির খবর ও সরকারি সেবার তথ্য — সব এক জায়গায়। চাকরিপ্রার্থী ও প্রযুক্তিপ্রেমীদের জন্য দরকারি ওয়েবসাইটগুলো এখানে রাখা হয়েছে।",
+      "intro_en": "Job circulars, technology news and official government portals in one place — useful links for job seekers and tech readers."
+    },
+    {
+      "id": "kolkata",
+      "en": "Kolkata Bangla",
+      "bn": "কলকাতার পত্রিকা",
+      "title_en": "West Bengal / Kolkata Bangla Newspapers",
+      "intro_bn": "পশ্চিমবঙ্গের বাংলা সংবাদপত্র ও নিউজ পোর্টালগুলো বিশ্বজুড়ে বাংলাভাষী পাঠকের কাছে জনপ্রিয়। ভারতের রাজনীতি, সংস্কৃতি ও সাহিত্যের খবরের জন্য এসব পত্রিকা পড়া হয়।",
+      "intro_en": "Bangla newspapers and portals from West Bengal are read by Bangla speakers worldwide for Indian politics, culture and literature."
+    },
+    {
+      "id": "international",
+      "en": "International",
+      "bn": "আন্তর্জাতিক",
+      "title_en": "International News",
+      "intro_bn": "বিশ্বের খবর জানতে আন্তর্জাতিক সংবাদমাধ্যমের বিকল্প নেই। বিবিসি বাংলা, ডয়চে ভেলে ও ভয়েস অব আমেরিকার মতো প্রতিষ্ঠান বাংলায় এবং আল জাজিরা, রয়টার্স ও সিএনএন ইংরেজিতে বিশ্বজুড়ে সংবাদ পরিবেশন করে।",
+      "intro_en": "Global outlets — some in Bangla such as BBC Bangla, DW and VOA, and others in English such as Al Jazeera, Reuters and CNN — bring world news and an outside perspective on Bangladesh."
+    }
   ],
   "newspapers": [
-    { "name_bn": "প্রথম আলো", "name_en": "Prothom Alo", "url": "https://www.prothomalo.com", "category": "bangla" },
-    { "name_bn": "কালের কণ্ঠ", "name_en": "Kaler Kantho", "url": "https://www.kalerkantho.com", "category": "bangla" },
-    { "name_bn": "যুগান্তর", "name_en": "Jugantor", "url": "https://www.jugantor.com", "category": "bangla" },
-    { "name_bn": "সমকাল", "name_en": "Samakal", "url": "https://samakal.com", "category": "bangla" },
-    { "name_bn": "ইত্তেফাক", "name_en": "The Daily Ittefaq", "url": "https://www.ittefaq.com.bd", "category": "bangla" },
-    { "name_bn": "বাংলাদেশ প্রতিদিন", "name_en": "Bangladesh Pratidin", "url": "https://www.bd-pratidin.com", "category": "bangla" },
-    { "name_bn": "মানবজমিন", "name_en": "Manab Zamin", "url": "https://mzamin.com", "category": "bangla" },
-    { "name_bn": "নয়া দিগন্ত", "name_en": "Naya Diganta", "url": "https://www.dailynayadiganta.com", "category": "bangla" },
-    { "name_bn": "জনকণ্ঠ", "name_en": "Janakantha", "url": "https://www.dailyjanakantha.com", "category": "bangla" },
-    { "name_bn": "ইনকিলাব", "name_en": "Daily Inqilab", "url": "https://dailyinqilab.com", "category": "bangla" },
-    { "name_bn": "আমাদের সময়", "name_en": "Amader Shomoy", "url": "https://www.dainikamadershomoy.com", "category": "bangla" },
-    { "name_bn": "বণিক বার্তা", "name_en": "Bonik Barta", "url": "https://bonikbarta.com", "category": "bangla" },
-    { "name_bn": "দেশ রূপান্তর", "name_en": "Desh Rupantor", "url": "https://www.deshrupantor.com", "category": "bangla" },
-    { "name_bn": "আজকের পত্রিকা", "name_en": "Ajker Patrika", "url": "https://www.ajkerpatrika.com", "category": "bangla" },
-    { "name_bn": "কালবেলা", "name_en": "Kalbela", "url": "https://www.kalbela.com", "category": "bangla" },
-    { "name_bn": "সংবাদ", "name_en": "The Sangbad", "url": "https://sangbad.net.bd", "category": "bangla" },
-    { "name_bn": "ভোরের কাগজ", "name_en": "Bhorer Kagoj", "url": "https://www.bhorerkagoj.com", "category": "bangla" },
-    { "name_bn": "যায়যায়দিন", "name_en": "Jaijaidin", "url": "https://www.jaijaidinbd.com", "category": "bangla" },
-    { "name_bn": "আলোকিত বাংলাদেশ", "name_en": "Alokito Bangladesh", "url": "https://www.alokitobangladesh.com", "category": "bangla" },
-    { "name_bn": "আমার দেশ", "name_en": "Amar Desh", "url": "https://www.dailyamardesh.com", "category": "bangla" },
-
-    { "name_bn": "বিডিনিউজ২৪", "name_en": "bdnews24.com Bangla", "url": "https://bangla.bdnews24.com", "category": "online" },
-    { "name_bn": "জাগো নিউজ ২৪", "name_en": "Jagonews24", "url": "https://www.jagonews24.com", "category": "online" },
-    { "name_bn": "ঢাকা পোস্ট", "name_en": "Dhaka Post", "url": "https://www.dhakapost.com", "category": "online" },
-    { "name_bn": "বাংলা ট্রিবিউন", "name_en": "Bangla Tribune", "url": "https://www.banglatribune.com", "category": "online" },
-    { "name_bn": "বাংলানিউজ২৪", "name_en": "Banglanews24", "url": "https://www.banglanews24.com", "category": "online" },
-    { "name_bn": "রাইজিংবিডি", "name_en": "Risingbd", "url": "https://www.risingbd.com", "category": "online" },
-    { "name_bn": "সারাবাংলা", "name_en": "Sarabangla", "url": "https://sarabangla.net", "category": "online" },
-    { "name_bn": "বার্তা২৪", "name_en": "Barta24", "url": "https://barta24.com", "category": "online" },
-    { "name_bn": "ডেইলি বাংলাদেশ", "name_en": "Daily Bangladesh", "url": "https://www.daily-bangladesh.com", "category": "online" },
-    { "name_bn": "ঢাকা মেইল", "name_en": "Dhaka Mail", "url": "https://dhakamail.com", "category": "online" },
-    { "name_bn": "টিবিএস বাংলা", "name_en": "TBS Bangla", "url": "https://www.tbsnews.net/bangla", "category": "online" },
-    { "name_bn": "বাসস", "name_en": "BSS (Bangladesh Sangbad Sangstha)", "url": "https://www.bssnews.net/bangla", "category": "online" },
-
-    { "name_bn": "সময় টিভি", "name_en": "Somoy News", "url": "https://www.somoynews.tv", "category": "tv" },
-    { "name_bn": "যমুনা টিভি", "name_en": "Jamuna TV", "url": "https://jamuna.tv", "category": "tv" },
-    { "name_bn": "ইনডিপেনডেন্ট টিভি", "name_en": "Independent TV", "url": "https://www.itvbd.com", "category": "tv" },
-    { "name_bn": "চ্যানেল ২৪", "name_en": "Channel 24", "url": "https://www.channel24bd.tv", "category": "tv" },
-    { "name_bn": "একাত্তর টিভি", "name_en": "Ekattor TV", "url": "https://ekattor.tv", "category": "tv" },
-    { "name_bn": "ডিবিসি নিউজ", "name_en": "DBC News", "url": "https://dbcnews.tv", "category": "tv" },
-    { "name_bn": "চ্যানেল আই", "name_en": "Channel i", "url": "https://www.channelionline.com", "category": "tv" },
-    { "name_bn": "এনটিভি", "name_en": "NTV", "url": "https://www.ntvbd.com", "category": "tv" },
-    { "name_bn": "আরটিভি", "name_en": "RTV", "url": "https://www.rtvonline.com", "category": "tv" },
-    { "name_bn": "এখন টিভি", "name_en": "Ekhon TV", "url": "https://www.ekhon.tv", "category": "tv" },
-    { "name_bn": "এটিএন নিউজ", "name_en": "ATN News", "url": "https://www.atnnewstv.com", "category": "tv" },
-    { "name_bn": "বিটিভি", "name_en": "BTV (Bangladesh Television)", "url": "https://btv.gov.bd", "category": "tv" },
-
-    { "name_bn": "প্রথম আলো ই-পেপার", "name_en": "Prothom Alo e-Paper", "url": "https://epaper.prothomalo.com", "category": "epaper" },
-    { "name_bn": "কালের কণ্ঠ ই-পেপার", "name_en": "Kaler Kantho e-Paper", "url": "https://www.ekalerkantho.com", "category": "epaper" },
-    { "name_bn": "যুগান্তর ই-পেপার", "name_en": "Jugantor e-Paper", "url": "https://epaper.jugantor.com", "category": "epaper" },
-    { "name_bn": "সমকাল ই-পেপার", "name_en": "Samakal e-Paper", "url": "https://epaper.samakal.com", "category": "epaper" },
-    { "name_bn": "ইত্তেফাক ই-পেপার", "name_en": "Ittefaq e-Paper", "url": "https://epaper.ittefaq.com.bd", "category": "epaper" },
-    { "name_bn": "ডেইলি স্টার ই-পেপার", "name_en": "The Daily Star e-Paper", "url": "https://epaper.thedailystar.net", "category": "epaper" },
-
-    { "name_bn": "দ্য ডেইলি স্টার", "name_en": "The Daily Star", "url": "https://www.thedailystar.net", "category": "english" },
-    { "name_bn": "ঢাকা ট্রিবিউন", "name_en": "Dhaka Tribune", "url": "https://www.dhakatribune.com", "category": "english" },
-    { "name_bn": "দ্য বিজনেস স্ট্যান্ডার্ড", "name_en": "The Business Standard (TBS)", "url": "https://www.tbsnews.net", "category": "english" },
-    { "name_bn": "নিউ এজ", "name_en": "New Age", "url": "https://www.newagebd.net", "category": "english" },
-    { "name_bn": "দ্য ফিন্যান্সিয়াল এক্সপ্রেস", "name_en": "The Financial Express", "url": "https://thefinancialexpress.com.bd", "category": "english" },
-    { "name_bn": "ডেইলি সান", "name_en": "Daily Sun", "url": "https://www.daily-sun.com", "category": "english" },
-    { "name_bn": "ডেইলি অবজারভার", "name_en": "The Daily Observer", "url": "https://www.observerbd.com", "category": "english" },
-    { "name_bn": "বিডিনিউজ২৪ ইংরেজি", "name_en": "bdnews24.com", "url": "https://bdnews24.com", "category": "english" },
-    { "name_bn": "বাংলাদেশ পোস্ট", "name_en": "Bangladesh Post", "url": "https://bangladeshpost.net", "category": "english" },
-
-    { "name_bn": "দৈনিক আজাদী (চট্টগ্রাম)", "name_en": "Dainik Azadi (Chattogram)", "url": "https://dainikazadi.net", "category": "local" },
-    { "name_bn": "দৈনিক পূর্বকোণ (চট্টগ্রাম)", "name_en": "Dainik Purbokone (Chattogram)", "url": "https://www.dainikpurbokone.net", "category": "local" },
-    { "name_bn": "সিলেট টুডে (সিলেট)", "name_en": "Sylhet Today (Sylhet)", "url": "https://www.sylhettoday24.news", "category": "local" },
-    { "name_bn": "দৈনিক করতোয়া (বগুড়া)", "name_en": "Daily Karatoa (Bogura)", "url": "https://www.dailykaratoa.com", "category": "local" },
-    { "name_bn": "দৈনিক পূর্বাঞ্চল (খুলনা)", "name_en": "Dainik Purbanchal (Khulna)", "url": "https://www.purbanchal.com", "category": "local" },
-    { "name_bn": "সোনালী সংবাদ (রাজশাহী)", "name_en": "Sonali Sangbad (Rajshahi)", "url": "https://www.sonalisangbad.com", "category": "local" },
-    { "name_bn": "গ্রামের কাগজ (যশোর)", "name_en": "Gramer Kagoj (Jashore)", "url": "https://www.gramerkagoj.com", "category": "local" },
-
-    { "name_bn": "বিডিজবস", "name_en": "Bdjobs", "url": "https://www.bdjobs.com", "category": "jobs" },
-    { "name_bn": "টেলিটক সরকারি চাকরি", "name_en": "Teletalk All Jobs (Govt.)", "url": "https://alljobs.teletalk.com.bd", "category": "jobs" },
-    { "name_bn": "প্রথম আলো চাকরি", "name_en": "Prothom Alo Chakri", "url": "https://www.prothomalo.com/chakri", "category": "jobs" },
-    { "name_bn": "টেকশহর", "name_en": "TechShohor", "url": "https://www.techshohor.com", "category": "jobs" },
-    { "name_bn": "টেকটিউনস", "name_en": "Techtunes", "url": "https://www.techtunes.io", "category": "jobs" },
-    { "name_bn": "বাংলাদেশ জাতীয় তথ্য বাতায়ন", "name_en": "Bangladesh National Portal", "url": "https://bangladesh.gov.bd", "category": "jobs" },
-
-    { "name_bn": "বিবিসি বাংলা", "name_en": "BBC Bangla", "url": "https://www.bbc.com/bengali", "category": "international" },
-    { "name_bn": "আল জাজিরা", "name_en": "Al Jazeera", "url": "https://www.aljazeera.com", "category": "international" },
-    { "name_bn": "ভয়েস অব আমেরিকা বাংলা", "name_en": "VOA Bangla", "url": "https://www.voabangla.com", "category": "international" },
-    { "name_bn": "ডয়চে ভেলে বাংলা", "name_en": "DW Bangla", "url": "https://www.dw.com/bn", "category": "international" },
-    { "name_bn": "আনন্দবাজার পত্রিকা", "name_en": "Anandabazar Patrika", "url": "https://www.anandabazar.com", "category": "international" },
-    { "name_bn": "বিবিসি নিউজ", "name_en": "BBC News", "url": "https://www.bbc.com/news", "category": "international" },
-    { "name_bn": "সিএনএন", "name_en": "CNN", "url": "https://edition.cnn.com", "category": "international" },
-    { "name_bn": "রয়টার্স", "name_en": "Reuters", "url": "https://www.reuters.com", "category": "international" },
-    { "name_bn": "দ্য গার্ডিয়ান", "name_en": "The Guardian", "url": "https://www.theguardian.com", "category": "international" },
-    { "name_bn": "টাইমস অব ইন্ডিয়া", "name_en": "The Times of India", "url": "https://timesofindia.indiatimes.com", "category": "international" }
+    {
+      "name_bn": "প্রথম আলো",
+      "name_en": "Prothom Alo",
+      "url": "https://www.prothomalo.com",
+      "category": "bangla",
+      "color": "#e2231a"
+    },
+    {
+      "name_bn": "কালের কণ্ঠ",
+      "name_en": "Kaler Kantho",
+      "url": "https://www.kalerkantho.com",
+      "category": "bangla",
+      "color": "#1a1a1a"
+    },
+    {
+      "name_bn": "যুগান্তর",
+      "name_en": "Jugantor",
+      "url": "https://www.jugantor.com",
+      "category": "bangla",
+      "color": "#c8102e"
+    },
+    {
+      "name_bn": "সমকাল",
+      "name_en": "Samakal",
+      "url": "https://samakal.com",
+      "category": "bangla",
+      "color": "#111111"
+    },
+    {
+      "name_bn": "ইত্তেফাক",
+      "name_en": "The Daily Ittefaq",
+      "url": "https://www.ittefaq.com.bd",
+      "category": "bangla",
+      "color": "#0b4f9c"
+    },
+    {
+      "name_bn": "বাংলাদেশ প্রতিদিন",
+      "name_en": "Bangladesh Pratidin",
+      "url": "https://www.bd-pratidin.com",
+      "category": "bangla",
+      "color": "#0a8f3c"
+    },
+    {
+      "name_bn": "মানবজমিন",
+      "name_en": "Manab Zamin",
+      "url": "https://mzamin.com",
+      "category": "bangla",
+      "color": "#d71920"
+    },
+    {
+      "name_bn": "নয়া দিগন্ত",
+      "name_en": "Naya Diganta",
+      "url": "https://www.dailynayadiganta.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "জনকণ্ঠ",
+      "name_en": "Janakantha",
+      "url": "https://www.dailyjanakantha.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "ইনকিলাব",
+      "name_en": "Daily Inqilab",
+      "url": "https://dailyinqilab.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "আমাদের সময়",
+      "name_en": "Amader Shomoy",
+      "url": "https://www.dainikamadershomoy.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "বণিক বার্তা",
+      "name_en": "Bonik Barta",
+      "url": "https://bonikbarta.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "দেশ রূপান্তর",
+      "name_en": "Desh Rupantor",
+      "url": "https://www.deshrupantor.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "আজকের পত্রিকা",
+      "name_en": "Ajker Patrika",
+      "url": "https://www.ajkerpatrika.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "কালবেলা",
+      "name_en": "Kalbela",
+      "url": "https://www.kalbela.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "সংবাদ",
+      "name_en": "The Sangbad",
+      "url": "https://sangbad.net.bd",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "ভোরের কাগজ",
+      "name_en": "Bhorer Kagoj",
+      "url": "https://www.bhorerkagoj.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "যায়যায়দিন",
+      "name_en": "Jaijaidin",
+      "url": "https://www.jaijaidinbd.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "আলোকিত বাংলাদেশ",
+      "name_en": "Alokito Bangladesh",
+      "url": "https://www.alokitobangladesh.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "আমার দেশ",
+      "name_en": "Amar Desh",
+      "url": "https://www.dailyamardesh.com",
+      "category": "bangla"
+    },
+    {
+      "name_bn": "বিডিনিউজ২৪",
+      "name_en": "bdnews24.com Bangla",
+      "url": "https://bangla.bdnews24.com",
+      "category": "online",
+      "color": "#c8102e"
+    },
+    {
+      "name_bn": "জাগো নিউজ ২৪",
+      "name_en": "Jagonews24",
+      "url": "https://www.jagonews24.com",
+      "category": "online",
+      "color": "#0a8f3c"
+    },
+    {
+      "name_bn": "ঢাকা পোস্ট",
+      "name_en": "Dhaka Post",
+      "url": "https://www.dhakapost.com",
+      "category": "online",
+      "color": "#0b3b6e"
+    },
+    {
+      "name_bn": "বাংলা ট্রিবিউন",
+      "name_en": "Bangla Tribune",
+      "url": "https://www.banglatribune.com",
+      "category": "online",
+      "color": "#c8102e"
+    },
+    {
+      "name_bn": "বাংলানিউজ২৪",
+      "name_en": "Banglanews24",
+      "url": "https://www.banglanews24.com",
+      "category": "online"
+    },
+    {
+      "name_bn": "রাইজিংবিডি",
+      "name_en": "Risingbd",
+      "url": "https://www.risingbd.com",
+      "category": "online"
+    },
+    {
+      "name_bn": "সারাবাংলা",
+      "name_en": "Sarabangla",
+      "url": "https://sarabangla.net",
+      "category": "online"
+    },
+    {
+      "name_bn": "বার্তা২৪",
+      "name_en": "Barta24",
+      "url": "https://barta24.com",
+      "category": "online"
+    },
+    {
+      "name_bn": "ডেইলি বাংলাদেশ",
+      "name_en": "Daily Bangladesh",
+      "url": "https://www.daily-bangladesh.com",
+      "category": "online"
+    },
+    {
+      "name_bn": "ঢাকা মেইল",
+      "name_en": "Dhaka Mail",
+      "url": "https://dhakamail.com",
+      "category": "online"
+    },
+    {
+      "name_bn": "টিবিএস বাংলা",
+      "name_en": "TBS Bangla",
+      "url": "https://www.tbsnews.net/bangla",
+      "category": "online"
+    },
+    {
+      "name_bn": "বাসস",
+      "name_en": "BSS (Bangladesh Sangbad Sangstha)",
+      "url": "https://www.bssnews.net/bangla",
+      "category": "online"
+    },
+    {
+      "name_bn": "সময় টিভি",
+      "name_en": "Somoy News",
+      "url": "https://www.somoynews.tv",
+      "category": "tv",
+      "color": "#d71920"
+    },
+    {
+      "name_bn": "যমুনা টিভি",
+      "name_en": "Jamuna TV",
+      "url": "https://jamuna.tv",
+      "category": "tv",
+      "color": "#c8102e"
+    },
+    {
+      "name_bn": "ইনডিপেনডেন্ট টিভি",
+      "name_en": "Independent TV",
+      "url": "https://www.itvbd.com",
+      "category": "tv",
+      "color": "#0b4f9c"
+    },
+    {
+      "name_bn": "চ্যানেল ২৪",
+      "name_en": "Channel 24",
+      "url": "https://www.channel24bd.tv",
+      "category": "tv",
+      "color": "#d71920"
+    },
+    {
+      "name_bn": "একাত্তর টিভি",
+      "name_en": "Ekattor TV",
+      "url": "https://ekattor.tv",
+      "category": "tv"
+    },
+    {
+      "name_bn": "ডিবিসি নিউজ",
+      "name_en": "DBC News",
+      "url": "https://dbcnews.tv",
+      "category": "tv"
+    },
+    {
+      "name_bn": "চ্যানেল আই",
+      "name_en": "Channel i",
+      "url": "https://www.channelionline.com",
+      "category": "tv"
+    },
+    {
+      "name_bn": "এনটিভি",
+      "name_en": "NTV",
+      "url": "https://www.ntvbd.com",
+      "category": "tv"
+    },
+    {
+      "name_bn": "আরটিভি",
+      "name_en": "RTV",
+      "url": "https://www.rtvonline.com",
+      "category": "tv"
+    },
+    {
+      "name_bn": "এখন টিভি",
+      "name_en": "Ekhon TV",
+      "url": "https://www.ekhon.tv",
+      "category": "tv"
+    },
+    {
+      "name_bn": "এটিএন নিউজ",
+      "name_en": "ATN News",
+      "url": "https://www.atnnewstv.com",
+      "category": "tv"
+    },
+    {
+      "name_bn": "বিটিভি",
+      "name_en": "BTV (Bangladesh Television)",
+      "url": "https://btv.gov.bd",
+      "category": "tv"
+    },
+    {
+      "name_bn": "প্রথম আলো ই-পেপার",
+      "name_en": "Prothom Alo e-Paper",
+      "url": "https://epaper.prothomalo.com",
+      "category": "epaper"
+    },
+    {
+      "name_bn": "কালের কণ্ঠ ই-পেপার",
+      "name_en": "Kaler Kantho e-Paper",
+      "url": "https://www.ekalerkantho.com",
+      "category": "epaper"
+    },
+    {
+      "name_bn": "যুগান্তর ই-পেপার",
+      "name_en": "Jugantor e-Paper",
+      "url": "https://epaper.jugantor.com",
+      "category": "epaper"
+    },
+    {
+      "name_bn": "সমকাল ই-পেপার",
+      "name_en": "Samakal e-Paper",
+      "url": "https://epaper.samakal.com",
+      "category": "epaper"
+    },
+    {
+      "name_bn": "ইত্তেফাক ই-পেপার",
+      "name_en": "Ittefaq e-Paper",
+      "url": "https://epaper.ittefaq.com.bd",
+      "category": "epaper"
+    },
+    {
+      "name_bn": "ডেইলি স্টার ই-পেপার",
+      "name_en": "The Daily Star e-Paper",
+      "url": "https://epaper.thedailystar.net",
+      "category": "epaper"
+    },
+    {
+      "name_bn": "দ্য ডেইলি স্টার",
+      "name_en": "The Daily Star",
+      "url": "https://www.thedailystar.net",
+      "category": "english",
+      "color": "#0b3b6e"
+    },
+    {
+      "name_bn": "ঢাকা ট্রিবিউন",
+      "name_en": "Dhaka Tribune",
+      "url": "https://www.dhakatribune.com",
+      "category": "english",
+      "color": "#c8102e"
+    },
+    {
+      "name_bn": "দ্য বিজনেস স্ট্যান্ডার্ড",
+      "name_en": "The Business Standard (TBS)",
+      "url": "https://www.tbsnews.net",
+      "category": "english"
+    },
+    {
+      "name_bn": "নিউ এজ",
+      "name_en": "New Age",
+      "url": "https://www.newagebd.net",
+      "category": "english"
+    },
+    {
+      "name_bn": "দ্য ফিন্যান্সিয়াল এক্সপ্রেস",
+      "name_en": "The Financial Express",
+      "url": "https://thefinancialexpress.com.bd",
+      "category": "english"
+    },
+    {
+      "name_bn": "ডেইলি সান",
+      "name_en": "Daily Sun",
+      "url": "https://www.daily-sun.com",
+      "category": "english"
+    },
+    {
+      "name_bn": "ডেইলি অবজারভার",
+      "name_en": "The Daily Observer",
+      "url": "https://www.observerbd.com",
+      "category": "english"
+    },
+    {
+      "name_bn": "বিডিনিউজ২৪ ইংরেজি",
+      "name_en": "bdnews24.com",
+      "url": "https://bdnews24.com",
+      "category": "english"
+    },
+    {
+      "name_bn": "বাংলাদেশ পোস্ট",
+      "name_en": "Bangladesh Post",
+      "url": "https://bangladeshpost.net",
+      "category": "english"
+    },
+    {
+      "name_bn": "দৈনিক আজাদী (চট্টগ্রাম)",
+      "name_en": "Dainik Azadi (Chattogram)",
+      "url": "https://dainikazadi.net",
+      "category": "local",
+      "division": "chattogram"
+    },
+    {
+      "name_bn": "দৈনিক পূর্বকোণ (চট্টগ্রাম)",
+      "name_en": "Dainik Purbokone (Chattogram)",
+      "url": "https://www.dainikpurbokone.net",
+      "category": "local",
+      "division": "chattogram"
+    },
+    {
+      "name_bn": "সিলেট টুডে (সিলেট)",
+      "name_en": "Sylhet Today (Sylhet)",
+      "url": "https://www.sylhettoday24.news",
+      "category": "local",
+      "division": "sylhet"
+    },
+    {
+      "name_bn": "দৈনিক করতোয়া (বগুড়া)",
+      "name_en": "Daily Karatoa (Bogura)",
+      "url": "https://www.dailykaratoa.com",
+      "category": "local",
+      "division": "rajshahi"
+    },
+    {
+      "name_bn": "দৈনিক পূর্বাঞ্চল (খুলনা)",
+      "name_en": "Dainik Purbanchal (Khulna)",
+      "url": "https://www.purbanchal.com",
+      "category": "local",
+      "division": "khulna"
+    },
+    {
+      "name_bn": "সোনালী সংবাদ (রাজশাহী)",
+      "name_en": "Sonali Sangbad (Rajshahi)",
+      "url": "https://www.sonalisangbad.com",
+      "category": "local",
+      "division": "rajshahi"
+    },
+    {
+      "name_bn": "গ্রামের কাগজ (যশোর)",
+      "name_en": "Gramer Kagoj (Jashore)",
+      "url": "https://www.gramerkagoj.com",
+      "category": "local",
+      "division": "khulna"
+    },
+    {
+      "name_bn": "বিডিজবস",
+      "name_en": "Bdjobs",
+      "url": "https://www.bdjobs.com",
+      "category": "jobs"
+    },
+    {
+      "name_bn": "টেলিটক সরকারি চাকরি",
+      "name_en": "Teletalk All Jobs (Govt.)",
+      "url": "https://alljobs.teletalk.com.bd",
+      "category": "jobs"
+    },
+    {
+      "name_bn": "প্রথম আলো চাকরি",
+      "name_en": "Prothom Alo Chakri",
+      "url": "https://www.prothomalo.com/chakri",
+      "category": "jobs"
+    },
+    {
+      "name_bn": "টেকশহর",
+      "name_en": "TechShohor",
+      "url": "https://www.techshohor.com",
+      "category": "jobs"
+    },
+    {
+      "name_bn": "টেকটিউনস",
+      "name_en": "Techtunes",
+      "url": "https://www.techtunes.io",
+      "category": "jobs"
+    },
+    {
+      "name_bn": "বাংলাদেশ জাতীয় তথ্য বাতায়ন",
+      "name_en": "Bangladesh National Portal",
+      "url": "https://bangladesh.gov.bd",
+      "category": "jobs"
+    },
+    {
+      "name_bn": "আনন্দবাজার পত্রিকা",
+      "name_en": "Anandabazar Patrika",
+      "url": "https://www.anandabazar.com",
+      "category": "kolkata"
+    },
+    {
+      "name_bn": "বর্তমান",
+      "name_en": "Bartaman Patrika",
+      "url": "https://bartamanpatrika.com",
+      "category": "kolkata"
+    },
+    {
+      "name_bn": "সংবাদ প্রতিদিন",
+      "name_en": "Sangbad Pratidin",
+      "url": "https://www.sangbadpratidin.in",
+      "category": "kolkata"
+    },
+    {
+      "name_bn": "এই সময়",
+      "name_en": "Ei Samay",
+      "url": "https://eisamay.com",
+      "category": "kolkata"
+    },
+    {
+      "name_bn": "আজকাল",
+      "name_en": "Aajkaal",
+      "url": "https://www.aajkaal.in",
+      "category": "kolkata"
+    },
+    {
+      "name_bn": "জি ২৪ ঘণ্টা",
+      "name_en": "Zee 24 Ghanta",
+      "url": "https://zeenews.india.com/bengali",
+      "category": "kolkata"
+    },
+    {
+      "name_bn": "বিবিসি বাংলা",
+      "name_en": "BBC Bangla",
+      "url": "https://www.bbc.com/bengali",
+      "category": "international",
+      "color": "#b80000"
+    },
+    {
+      "name_bn": "আল জাজিরা",
+      "name_en": "Al Jazeera",
+      "url": "https://www.aljazeera.com",
+      "category": "international",
+      "color": "#d68a00"
+    },
+    {
+      "name_bn": "ভয়েস অব আমেরিকা বাংলা",
+      "name_en": "VOA Bangla",
+      "url": "https://www.voabangla.com",
+      "category": "international"
+    },
+    {
+      "name_bn": "ডয়চে ভেলে বাংলা",
+      "name_en": "DW Bangla",
+      "url": "https://www.dw.com/bn",
+      "category": "international"
+    },
+    {
+      "name_bn": "বিবিসি নিউজ",
+      "name_en": "BBC News",
+      "url": "https://www.bbc.com/news",
+      "category": "international"
+    },
+    {
+      "name_bn": "সিএনএন",
+      "name_en": "CNN",
+      "url": "https://edition.cnn.com",
+      "category": "international"
+    },
+    {
+      "name_bn": "রয়টার্স",
+      "name_en": "Reuters",
+      "url": "https://www.reuters.com",
+      "category": "international"
+    },
+    {
+      "name_bn": "দ্য গার্ডিয়ান",
+      "name_en": "The Guardian",
+      "url": "https://www.theguardian.com",
+      "category": "international"
+    },
+    {
+      "name_bn": "টাইমস অব ইন্ডিয়া",
+      "name_en": "The Times of India",
+      "url": "https://timesofindia.indiatimes.com",
+      "category": "international"
+    }
+  ],
+  "divisions": [
+    {
+      "id": "dhaka",
+      "bn": "ঢাকা",
+      "en": "Dhaka"
+    },
+    {
+      "id": "chattogram",
+      "bn": "চট্টগ্রাম",
+      "en": "Chattogram"
+    },
+    {
+      "id": "rajshahi",
+      "bn": "রাজশাহী",
+      "en": "Rajshahi"
+    },
+    {
+      "id": "khulna",
+      "bn": "খুলনা",
+      "en": "Khulna"
+    },
+    {
+      "id": "sylhet",
+      "bn": "সিলেট",
+      "en": "Sylhet"
+    },
+    {
+      "id": "barishal",
+      "bn": "বরিশাল",
+      "en": "Barishal"
+    },
+    {
+      "id": "rangpur",
+      "bn": "রংপুর",
+      "en": "Rangpur"
+    },
+    {
+      "id": "mymensingh",
+      "bn": "ময়মনসিংহ",
+      "en": "Mymensingh"
+    }
   ]
 }

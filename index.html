@@ -110,6 +110,38 @@
     </div>
   </header>
 
+  <!-- ===================== MAIN NAV (mega menu filled by js/app.js) ===================== -->
+  <nav class="mainnav" id="mainNav" aria-label="Main">
+    <div class="container mainnav-inner">
+      <a class="mn-link" href="./" data-home>হোম</a>
+      <div class="mn-item">
+        <button class="mn-btn" type="button" aria-expanded="false" aria-controls="mega-all">সব পত্রিকা <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="mega" id="mega-all"><p class="mega-empty" style="padding:16px">লোড হচ্ছে…</p></div>
+      </div>
+      <div class="mn-item">
+        <button class="mn-btn" type="button" aria-expanded="false" aria-controls="mega-local">বিভাগীয় পত্রিকা <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="mega" id="mega-local"><p class="mega-empty" style="padding:16px">লোড হচ্ছে…</p></div>
+      </div>
+      <a class="mn-link" href="./#cat=bangla" data-cat="bangla">জাতীয় দৈনিক</a>
+      <a class="mn-link" href="./#cat=online" data-cat="online">অনলাইন</a>
+      <a class="mn-link" href="./#cat=tv" data-cat="tv">টিভি নিউজ</a>
+      <a class="mn-link" href="./#cat=epaper" data-cat="epaper">ই-পেপার</a>
+      <a class="mn-link" href="./#cat=english" data-cat="english">English</a>
+      <a class="mn-link" href="./#cat=jobs" data-cat="jobs">চাকরি</a>
+      <a class="mn-link" href="./#cat=kolkata" data-cat="kolkata">কলকাতা</a>
+      <a class="mn-link" href="./#cat=international" data-cat="international">আন্তর্জাতিক</a>
+    </div>
+  </nav>
+
+  <!-- ===================== LOGO STRIP (carousel) ===================== -->
+  <div class="logo-strip" aria-label="Popular newspapers">
+    <div class="container">
+      <button class="strip-btn" id="stripPrev" type="button" aria-label="Scroll left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+      <div class="strip" id="logoStrip"></div>
+      <button class="strip-btn" id="stripNext" type="button" aria-label="Scroll right"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+    </div>
+  </div>
+
   <!-- ===================== BREAKING TICKER ===================== -->
   <div class="ticker" aria-label="Breaking news">
     <div class="container ticker-inner">
@@ -174,7 +206,7 @@
       </div>
       <div class="container">
         <!-- In-feed ad slots are injected by js/app.js after every 12 cards -->
-        <div class="paper-grid" id="paperGrid" role="tabpanel">
+        <div class="dir-sections" id="paperGrid" role="tabpanel">
           <noscript>
             <p class="empty">এই তালিকা দেখতে JavaScript চালু করুন। Please enable JavaScript to view the newspaper list.</p>
           </noscript>
