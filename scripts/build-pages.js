@@ -78,6 +78,8 @@ function jsonLd(page, cat, count, faq) {
         description: page.meta,
         inLanguage: ['bn-BD', 'en'],
         isPartOf: { '@id': `${SITE}/#website` },
+        dateModified: new Date().toISOString().slice(0, 10),
+        publisher: { '@type': 'Organization', '@id': 'https://khoozo.com/#org', name: 'Khoozo', url: 'https://khoozo.com' },
         about: { '@type': 'Thing', name: cat.title_en || cat.en },
         mainEntity: {
           '@type': 'ItemList',
@@ -217,7 +219,7 @@ async function main() {
   const urls = [
     { loc: `${SITE}/`, pri: '1.0', freq: 'hourly' },
     ...written.map((w) => ({ loc: `${SITE}/${w.slug}.html`, pri: '0.8', freq: 'weekly' })),
-    ...['about', 'contact', 'privacy', 'disclaimer'].map((f) => ({ loc: `${SITE}/${f}.html`, pri: '0.3', freq: 'yearly' })),
+    ...['about', 'contact', 'privacy', 'terms', 'disclaimer'].map((f) => ({ loc: `${SITE}/${f}.html`, pri: '0.3', freq: 'yearly' })),
   ];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`
     + urls.map((u) => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.pri}</priority>\n  </url>`).join('\n')

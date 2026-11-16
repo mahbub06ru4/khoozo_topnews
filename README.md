@@ -18,6 +18,7 @@ A static, zero-dependency Bangladesh newspaper directory with live headlines fro
 | `data/news.json` | Latest 15 headlines, written by the fetch script |
 | `data/sports.json` | Cricket and football headlines, written by the same script |
 | `scripts/fetch-news.js` | RSS fetcher for Node 20+ that needs no npm install |
+| `scripts/check-links.js` | Requests every outbound link and reports failures |
 | `.github/workflows/update-news.yml` | Runs the fetcher every 30 minutes and commits changes |
 
 ## Local preview
@@ -35,6 +36,14 @@ This regenerates the 10 guide pages and `sitemap.xml`. The page shell (head, hea
 nav, footer) is copied from `about.html`, so changing the header there and rebuilding
 keeps every generated page in sync. The newspaper cards are written as static HTML so
 search engines and ad reviewers see them without running JavaScript.
+
+## Check the outbound links
+```bash
+node scripts/check-links.js
+```
+Reports any newspaper link that fails, plus any that redirects to a different host.
+Review the output by hand: sites that block automated requests answer 403 while working
+perfectly in a browser, so a report is a list to look at, not a list to delete.
 
 ## Update the headlines by hand
 ```bash
