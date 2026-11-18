@@ -1,116 +1,84 @@
 {
-  "updated": "2026-11-18T03:19:59.389Z",
+  "updated": "2026-11-18T12:00:08.829Z",
   "count": 24,
   "items": [
     {
-      "title": "সুপার ফিট ক্রিকেটারদেরও কেন পেশিতে টান ধরে?",
-      "link": "https://news.google.com/rss/articles/CBMimARBVV95cUxONlNGZmN6V1ltWmZteWIxNVZ4dVJxMFBlMFZGQWlEUXl4dFMxTzBQNXhvT0pjRzRTdzZjeFo3TFpYbHVfTUpxMlNOWjNlMkwxRURkY0I4VzNHZ0lxSTNSY2puQVZ6NlZ2VXZnOXA4NHUtaGZYU3hTWkYyU2tjb19iOW1nNGdHMjloVzNud3hWZWxvaWFOX0tBNGRIbVJrVjlRZTFCVzVTVXhBNmhlc1EzSWY0Sm1McFJyTUl0RFhQcXY1cTNscUg2SGZRenBjeGw2VVRUTmx1dmxJRXlMbktaME5td2NUbElDeEJBVVMtZXNiRkNYTXcxNEhhbHdBQjFzTjZxSWNFT2FGbzNaZ3NzTHZSN01iWFRqX0tYTV83eENhTlpHWVpydWZaNlRlUEhycXRjel9GY1Q3aC15ZDFnQXhQN2FDcUVTSjRmel9DUVBPSzVST3hQZS1CSUUwSXFITk9iOElTbDRlUUs2eUtGbl93Um5PWGQ1TVBjMDBQRVU1bFlzcEFCeGczVUdreVpwd0Q3STU5WFU0aTVHVUdUQTFULWhLNE1MblZtNWJ6S3FCUW1Cbm5adjdvNFRNaEpDYjJ3RFhId3k2R1hYOGF0MWQtYTVzNzZhTWtTX21NTElqRUpWOE9Nd3psS3lKYjNJdmJSOVNKU19hOG1INWVNUHdVRU1iUG5XcmUwLXhOYmUtNzd3TVhpeNIBngRBVV95cUxOa19ZeFB5ZGt1cnBRRDBDYjMzLTVPeVRsNmRaTHlFUVpnX1l5aEFGVDMxOHRXNU80b1pvYzlGbjFaV2h6UmNFNHJfb2xTQmlNU1hldkFPTjUzZUF2SlFxZUpkZUhiMTlxbjdlTUhld0FPbVp1QnQtV24yQUVCTEl4aUZOTC1DVTZvLV8wSUtfNDlQU2VvYUgtWTAtczlvVHVBZ1lPZ29PbWs5UFU3OGJxM3NsTXFxOGxvQ3JhSlBxM29zMlhpS19KTnRsNnU0cFBQcklfb3hEU1JQVDdaMDFVcUF6amJseldPUUZWMWp4cFZLZVlNT1p1WmhldWFySVJLT04xcTh1UWJzd082VkprSmhDV3l4NWF2ZkdKNmw0TmpRMnBGV2pfcWpLZzU3NmI5TDlEdmlYQ0Y3M0FHUDFUOVZSNXBuNWljSXhYLWIyRGxNRVhEd0p0YmdDTmE0V2M3dDRDYTc1TG1BSmxhRmFOeVdiR2ltYXMweURQMm9ERkVWa3hweEwteEtiUmxJemR3T2VBVG9ZQzNPRmM2azZGcWEzZlVmd0M4RWdfVDNfQi1BbFNqb1JXd2lmdXh1SlFOd1NSS3NJdUMybUhvemdtcTVyUTF3cmxpOXoyUkphTmJ4dzNYWmh5eVgxVlNzTVh5TWZhb1lGa3BtbG4yeUlXWFRYTXhraGZTMWZLZjM1ZWhnWGtyZGVsWTRPNDJWdw?oc=5",
-      "source": "Bangla Tribune",
-      "pubDate": "2026-11-18T03:00:00.000Z",
-      "lang": "bn",
-      "sport": "cricket"
-    },
-    {
-      "title": "কোস্টারিকার জালে আর্জেন্টিনার ‘সেভেন আপ’",
-      "link": "https://news.google.com/rss/articles/CBMi3AVBVV95cUxOZnFjVHowZDAwVXFNOFNCNmtRaXFsRjc4V19xZEpWZXFpUHVEMXRjZm5WMFFhMnd1N0xkWFdJWkxmaEREY2dpSjRhbDhTajRlS1l4XzNJQ2VUZkFEUWpjTEZhUFQ2Snl6RXFZcDM2MVJQUVE4TkxYajN3OHlZc0xnQk9mZ3lJUDdlZkxyOVZLc0JaRkRYNE1vTVRQVkJ5eU1aVUNWbW1IRWcwRnhGODdZdWdFUWNDZG9nZ2cyM0lTX19qTXI4NG5YZmVFMG9VcERKektoeUpjdm5lOUNSZldlbndudWV6czdfcE1VcTdGSC0yTFBHR01YNGx2bWtNaTRoNmZkZmJHVHVDbVNwUkxNOTFCUlhidEthckhUWFpKV1dWME14TkE1S3l2RWo0dXRfTktHSGs1T1RXWXBMU3dHNnNGcFJVbDF3UHlfNkhHRUpSWGltX2s1RlRROHVSbHYtVnY3bjNodDdvOXNwT0Zic2g4eFF5dDVhNXRJMURmVkt2SGdhbnJMNW1CSm9nWFpEbWIyU2tQdnBJakZ1cmJDbndpUmlMbHFuZXpVUzRPQXIzMzBaV1pJV0QwbHI1eXQwVkEyWjB6NmFpM0d6WEE2VGhXeU11bWIxWFVXd3ZNWVhKZUxBSGNKRXhXWWtnTWN0YnBhWENCS1hyV2xSc1ItNFZxSTJCSzVreWY2SnBsbHRnaFA1eFpLQUhaV29HaWxYRzAzNVpPM1o3eXFhYnM2LUNSekNNdkJsRF9vX0xYdmlKNVJiNkZrTnVaQnROc1R3ckt3YU0yNXJYNm1lVlI0UlQ2UkQ4cTNaRl90dnNLY3FVVVFKa2RoQnNkdHpiQTVBX1pacU5xcGFpaTNuWUt4eUxKQjNIeWpjc0tRcnVfcjZIWXBBLUd1T0RheUZZWnpqRzNpN05pNkNvRFlLUHlVdm9ldnc0aTZJN0d4d1c1VWYwc1hCdG51cUZKb0Y?oc=5",
-      "source": "দৈনিক বাংলাদেশ সমাচার",
-      "pubDate": "2026-11-18T03:14:11.000Z",
-      "lang": "bn",
-      "sport": "football"
-    },
-    {
-      "title": "Cricket match player highlights | NZ vs IND, 4th ODI, India tour of New Zealand 2026",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5MUU2dVlvTDBhTklRaHhnSDVXa2M5YU9KcU5NTTduaWN2ejM3N2hINnlFd3ZhT2lKb0hXNk1tQTZfZGhCOTAtQUZRSF84UHh0NHgzZ3M4Zy1BWGxNYjYzMDNUSkFqbzBCU2xnR25zQmxUcC1KSlg5MHprOA?oc=5",
-      "source": "Cricbuzz",
-      "pubDate": "2026-11-18T02:38:27.000Z",
-      "lang": "en",
-      "sport": "cricket"
-    },
-    {
-      "title": "Sources: Michigan to hire Texas A&M's Trev Alberts as athletic director",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdGxfcTdzY2p5bmNpRkZITS1KdDZ6SWpyMGZLOU8tNGJ5UFFBVWF6VVNNeUdOSndrZXlxSi1HNFBZQXd2cXRTUzF1UmlZSTU2Vk1ZODQ3TFRjZXgwd2ZSOTdOMTN3ekw0SVRGaERZVTd2SHZzZmlMcHhJSVNxQ29ZeU9wdUM0eG91WDgzVU9tTlIxbW10alFCVFFrWHJydVB0RVhKM1ZmRFJ3Zw?oc=5",
-      "source": "ESPN",
-      "pubDate": "2026-11-18T02:58:00.000Z",
-      "lang": "en",
-      "sport": "football"
-    },
-    {
-      "title": "হাসানের বোলিংয়ে নিজের ছায়া দেখেন ফিল্যান্ডার",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGdm9rcWRpanhvUlZCMUsyNl9DRFFRUTQ3cGNEbDVJdG9TVF9zQTQ1cDZ0OW1USlhRVVdJTUFnSlhlckxKWWhPcG9UNkpUdTlZeFFOVTNpWG44Zw?oc=5",
-      "source": "bdnews24.com",
-      "pubDate": "2026-11-18T03:00:00.000Z",
-      "lang": "bn",
-      "sport": "cricket"
-    },
-    {
-      "title": "তিনজনের জোড়ায় কোস্টারিকার জালে আর্জেন্টিনার ৭ গোল",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9aR1VHc3piU3NLekl1MzlBWXBTbzNpTlRBM2hCLVRjLXpNT3I3MFI2N3NPckhFT1hWeW9tNmhtaDdnWmZLSWRJUS1rbFdWbF9peGlhVEZNVkZFREtG?oc=5",
-      "source": "VOD Bangla",
-      "pubDate": "2026-11-18T03:12:18.000Z",
-      "lang": "bn",
-      "sport": "football"
-    },
-    {
-      "title": "KER vs AP, Elite Group C, Syed Mushtaq Ali Trophy Elite 2026 - Match News",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNODZReUpIZTlmVEVmQUlFbmZIZkVWalpweWF4RXdpZ1d1VHpCdTBGbnRpMUw1Y0JKVndZSTJ5SndlOFIwRE9hODhHTjJjNldpalFtUXEtcWxDalZiZ0sya1BwT1R1bHprQktJb0p1WHNIcThHX3ZGSWVkXzlBdzNzZlJxYzRqTnJrRXFyVmJOSTRkVS1HbnhiOWtWSlZ1RmFVWGZ2TjBoMC1EYzg?oc=5",
-      "source": "Cricbuzz",
-      "pubDate": "2026-11-18T02:32:20.000Z",
-      "lang": "en",
-      "sport": "cricket"
-    },
-    {
-      "title": "Who's on the move? CFP committee's third top 25 and bracket of 2026",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSEtrMEljV2tJbkt2bnJ0ZTh6SUtDa1ZvT1Eza2l2R2Q0OHFDdWRmV3FKTmczVnhuZkk2LUZ0eHR4VDZNM1pSc3pyeW4xeTlUYU5BaVk3Z3B2ME0yb3hWLV9wTC1tZkZUTHFmSGF1aklfam1LZ1l2b25nWG9OaUZBQkFVUmpoWFJ6bDVxWldRR3ZXcVVxeUxIT3lhVUlwQQ?oc=5",
-      "source": "ESPN",
-      "pubDate": "2026-11-18T02:46:00.000Z",
-      "lang": "en",
-      "sport": "football"
-    },
-    {
-      "title": "টিভিতে আজকের খেলা",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE12UEpfU1FEalVtUlBfN3ZzWFpQWEZPdGtPTm5fSHQtRWNUYk1mQkl1a2dUaVZOUDYzMDdzVWtSbW1FeU41T3RvNm1TbVdNek16?oc=5",
+      "title": "আনভীর ক্রিকেট স্টেডিয়ামে ভারত-পাকিস্তান ম্যাচ, দীনেশ ত্রিবেদীর উচ্ছ্বাস",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBJVTRsXzVTNk13WVRybGk0anp6UkVjcUdRaGlaRXhvSUhCNTZvcTJMNE4yclFpdWd0MDBJN05KN0VNWld0Sm9tQmFmZHRSWUFO?oc=5",
       "source": "Shomoyer Alo",
-      "pubDate": "2026-11-18T02:41:17.000Z",
+      "pubDate": "2026-11-18T11:59:37.000Z",
       "lang": "bn",
       "sport": "cricket"
     },
     {
-      "title": "পাকিস্তানকে হারিয়ে আবারও সাফের চ্যাম্পিয়ন ভারত",
-      "link": "https://news.google.com/rss/articles/CBMixgRBVV95cUxQRWVLVWNyR1FjZ1VqZUJLbHZiWDVnSDhaX3o1b01XV3IzRTB5bjV0d256VlBGQVZGQTZESlBYV09YMTBqSV9kLWhfX3RRT2JnZ2dqenlyS3FBMncycHlPVXFhMkE3bHRobWtvSFdjRWFhY3ZhZEtsUGdUMTA4aFNTV0xOclNVUEZnR0w0eGJBS0txSm5VSXE5S2R4aFRZOGJNUkVKYmxJNHhEdUFlYk55RVUxalhBb1dhZGxSRWthdzAyajR2WE92SDl5NlJMUFRYT0lKWWRBZnNGQVB1aS12aHF2TG16ZEtCS1hMUUJwTXlZYWFOVFVjUDV5RkE1Q2FTTTBUTjJfeFJCckVGanMtbHQwWnJlQmlraHp0QkctNGU3VFJWZ3lKNWNQV0xZV2lvTmNlbHVVOWNxTktqd05raWV5dHpBODc4dGI5azlEX3JVVWRkTnl6TnhGMWVCRmYxWGNUR2M3TkRoZVNmRnh2aU84X0xoOTZEcWhyRWFJMnhuMDMzN1EyeWl5U1o4enBaTXpwOUxETGxTbkNpR0NPNG5MbnJMamZRV3ZWWmZwVWR1dm5NRm4zQW1xVkZmTWoxX1ViTC0tS0ItdlVpYmZnRllkcU1WV012OGRRS2xpck5BN0kxRlB1LWc3eFlfNk9IZ2UyQmhfRFhnWjdiNm1CY3NNQXZJaXQ1dXlNRzZZNEZCVkx2VUlZNzh4UEJRd3BsaFZfRDl3UFh1N3FIVGl6WWpQZkdvNEI2d0ZWVV9CV05HcTVpaEHSAcsEQVVfeXFMUEFrbWNoZjJZSjkxYnZQTERsekxCX25vZkozSnVzTUs2VHhQbS1KSnNicGhwLXk2WGdlOXVrTWRtMW8yV3pObm9mMDZHWTh0TkQ4R3BRVk1qNFlNQ1otT3V6MXFZMC1YcnBESFczMEd2aHhKOXppcGtXVTBIUVo2NnZlOFFOdjlxWlNqdnBCdGx6MzNDLVd6cGQyb1FBMmZRLVhOdVgtZWtDV3M0cFF6Z3ppQTFSS0NkV1JjZmJNNkI3SkJCcDVvSGt0QmVqT3J2aldFSFk0V0hJXzJ2SUhFUFhUcnVFTnpieEdkZ0hXS0lUSDZrMmR0NmdEaUJwbWpfSmc3LTVLWFRfdm9yWHVYcGZpWWhBWWZOaXQ4Q05fWDUzN3JMN0dzT0EySHFzQWtmdU4wX1NLMi04bXJ2X05meXZiNUJ1MUh3SzVVME9Fa29GNlNGdTZvTHFDX2lLMkhDRDEyUUdsWHh3a1N1NmxYTVJXV09pOEg5VkMxUEJud01Vd014M0ptd0xJZ01ONl8yenY4YzNsdC1hVy0zUFlSRHBiUHVyVjRLVVozM2pyOE4tNFpraGh0LW5iV3hPVEI1dXJDclJPZ0FIbjNNbEJNSGN0Qk5JckZaRU0wUFBiN3ZsWWVTVGlmNGRkZEFuSXpEUlozUFlhbnRtaGZKdzQ2U1J0azZsSC1KZFFoTWFxNGdYSnR0d3o4bTJidW1HM2Zwbld4eHc0eEJULThIT3c4N1d0bUVMQW5SbDVxc1RhaGl4a3MtLTJpR3ptM1k?oc=5",
-      "source": "The Daily Ittefaq",
-      "pubDate": "2026-11-18T03:08:27.000Z",
+      "title": "ফুটবলকে হুয়ান মাতার বিদায়",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82V0Y1OFhqMG8yVE9tcm9udmgwU056OUM5d0tOS0hsWUI3ZzhoS0NnNmFMTVRodXFrM2tIU2t4NURjODNpVm1NdkZqaGRIc2llZU0zOXF5NA?oc=5",
+      "source": "bdnews24.com",
+      "pubDate": "2026-11-18T11:48:00.000Z",
       "lang": "bn",
       "sport": "football"
     },
     {
-      "title": "Sandapaper: Mateship, for Baggy Green and dirty laundry in Australian cricket",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUWJSVlVaTzNjaktlbVdnVHplQVNXVVhMaHk2WVdlcjhlQ0UzWlgwaVBwTHlUREk5OWo2aFVqbmozaHFNU3BHOUtja1VvRUFQaWJYLUg0UkYtWmNTS2lfN2RCZkpZZFpsekx1WEVybVNWUnR5TFd6Sk1tdGNCeXkwcnZIT0Roc3R4Y0g3bmNtMWE?oc=5",
+      "title": "ICC Men's Cricket World Cup 2035 schedule, live scores and results",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZmFsTDdHbHlvX2ljcXlvRW40QXlIYTVpQklPSnJiZW04RTVDOURuSmR1bXpfeHdqNks2RnhmZ3hOcGxva0stbDNYek9OZGs2NXNrbV9zdW5LWUhFcjFscUhMVGY4d29uVGp2eENMSW5NNExPc1ZoS0Z1N0JsRWdsRU44eTNvVWhMc0hqUmZ3?oc=5",
       "source": "Cricbuzz",
-      "pubDate": "2026-11-18T02:31:20.000Z",
+      "pubDate": "2026-11-18T11:44:38.000Z",
       "lang": "en",
       "sport": "cricket"
     },
     {
-      "title": "Nations League 2026/27: England into quarter-finals but who will they play in last-eight in March?",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORlE1MWhaNU5LQ1FkLWE5NnlWYmJsUWxnckotQ3NlNDM0Z3NyNGdRdUpfZ3c1QWZKaTUzdU5zdG94cTQ3eFNQTGRRRmJMWDZMR01EV19zbHBZWWdsdGk2M2c3djhWRXlmWVAxbzBSWmdtUTRzNnlGT3hfY21FRHFWLXVWMXRwTzlkREVJVVBuc04xRGM1YXF2OXZtSlctQkw5ai1ZanZEbzZqemE0WVF1emwzdnpwOE5kZkpiOEhmaml1QTVvNXVjS044WDZCNy1NTFl5UkJEUXROaDVzamc?oc=5",
+      "title": "Should Arsenal look younger when they strengthen? - Arsenal squad age analysed",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSlNrQm1LdlBXNFJfYUtzdzB4M3kxWkx3V3NiREF0TkN0SUxnU2hIdzRmZ0lWNnUzRG1hcGQtVlJLeXNycU5NUXBhd2FVQUVucUJVQV93VnRKbERaZi1Gb1FtU0lYX0cxbEZWeXBoLXVGRGpuZ1l4Z3lOaVN2WWNCM2xyOWtvWVFEZ3poOWNjaVdjeksxSWN5SjAzTW9KRmF3dktKNnpJbWpLdy1Jb2JBVU5LZnRsdExGa1E0bVNaaS1XelU?oc=5",
       "source": "Sky Sports",
-      "pubDate": "2026-11-18T02:45:02.000Z",
+      "pubDate": "2026-11-18T11:35:14.000Z",
       "lang": "en",
       "sport": "football"
     },
     {
-      "title": "শৈশব ও ক্রিকেট: দক্ষিণ আফ্রিকার নোবেলজয়ী লেখক কোয়েটজির ‘বয়হুড’",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwMllIQmZLR2tCMFlZc2F5MWVZa2UyWG5nRmlTbVZtMXp1QUt1bFE4OXBuUHdDOVRGZ2dqWkJHdU14S2NreXloYWNPdnVhQnE3WkcxcHotTWpENkpKTEV6NtIBbkFVX3lxTE9MTGFZa1dTNkMxZ3g3SHFlSHd6OEdfdHgzQXhwa1IxeTZDMllqS25pQUJhd0g1RWxaSjFjeW1SQUUtdTRrQzBwaVlIVHlYOWI0MGF2cldiRklBVzRzblBpdWtWeGdERklxWW5CTFh3?oc=5",
-      "source": "প্রথম আলো",
-      "pubDate": "2026-11-18T02:30:00.000Z",
+      "title": "এক ইনিংসে ৮ ডিসমিসাল, টেস্টে বিশ্বরেকর্ড গড়লেন লিটন",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1ILWxhTlc1WjYydVNYMGw0N19kZ2ZDaGxEQkFaQ2NxZG5zQWdpZ0pVa3RjMU1rVmVUVFA1aC1QMklXcWpUVjhvTHAzdmY?oc=5",
+      "source": "ঢাকা ডায়েরি",
+      "pubDate": "2026-11-18T11:47:00.000Z",
       "lang": "bn",
       "sport": "cricket"
     },
     {
-      "title": "হালান্ডের জোড়া গোলে শেষ আটে নরওয়ে, জয়ে ফিরল পর্তুগাল",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yQ3pjR0c4d2NGd2ozdnZTbV8yYVN6YnhoZC12VVozZEFaQUxELURiWElHMGtUV3QxWG9kTndXaHAwRHBzZGdmUDNRbDBMT0JiQ1VZb0RXSnpfUm5IckJNSXpQZ0JMWjMzVjZnYg?oc=5",
-      "source": "দ্য ডেইলি স্টার বাংলা",
-      "pubDate": "2026-11-18T03:07:58.000Z",
+      "title": "ইনফান্তিনোর বিপক্ষে ফিফা সভাপতি নির্বাচনে জাপানের তাশিমা",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBjdjN5RTdER3ZuU1B3U2pyVFkyNnd4SUJKcW5MSHNvWGx0eWFZbXZSbkFfckdoRV84SlBwbFluRHJGRUN1Q094NF9aakhwSF9yUlg0dlZNbF95Q05RblZpMkhB?oc=5",
+      "source": "এইমাত্র",
+      "pubDate": "2026-11-18T11:41:50.000Z",
+      "lang": "bn",
+      "sport": "football"
+    },
+    {
+      "title": "England in Australia: Harry Brook's side win decider for statement series win",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04Njhrc2V4YWhlenVhMUR3QUhQV2w2dzVFTC1waGptM1gwZ3lhWGQxNkFsUWtOM01vbTF0TnZ4aFZCLVozMkV2aDdfamotYmxtRVJnQ2JzMHZ1WlFhWXVGUTlhYTRPZ00?oc=5",
+      "source": "BBC",
+      "pubDate": "2026-11-18T11:10:30.000Z",
+      "lang": "en",
+      "sport": "cricket"
+    },
+    {
+      "title": "Republic of Ireland 3-0 Kosovo: Troy Parrot scores twice to send Heimir Hallgrimsson's side into the Nations League play-offs",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPNTZsbkRjMllqSmV3VXNOT2VIQld1RkI5bWxNRlBaZWdicXUteWVjTjNBUVdYbzFaM3dBUlpBaU9VanNkbm55LVREc2xKNXh3MGhlTHd2RXp0cFExcllmbzJzZ0N0TWVFcFRhaF9LWnFiYUhaelZFX21DQ3pwNzJUcUdzbE1TWG5ydy1ySS1aSkJpcjhlSy1IbE13b2FPcW1EcFBkWjdsLU5RR051a05MTWliLXBQS19hQkM3S05FenozclJEY1BDQ2NEbnNGbGhoUllhaFhrVmxDZldydWJScXlyWFJ6UG1NbTFndXk5TTlTOHBFazI4Z19CMkUtellva0E?oc=5",
+      "source": "Sky Sports",
+      "pubDate": "2026-11-18T11:26:28.000Z",
+      "lang": "en",
+      "sport": "football"
+    },
+    {
+      "title": "২২ দলের অধিনায়কদের নিয়ে প্রথম বিভাগ ক্রিকেট লিগের ট্রফি উন্মোচন",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1QOTI5NUZ1M3Bqbzhuc0dHd2lRdjg2MTB5emhXNGpFZ09yN2k3N295SW5qaXdZZzZJdmc3YWVhb0E4MnZHb3VvZzk5eHVEaThJUHpuOHZxTWNuSDdIVWhWVlo5ZWtGNjczMTVR?oc=5",
+      "source": "Banglanews24",
+      "pubDate": "2026-11-18T11:45:44.000Z",
+      "lang": "bn",
+      "sport": "cricket"
+    },
+    {
+      "title": "২০৩০ সালে একই সময়ে ক্রিকেট ও ফুটবল বিশ্বকাপ",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpdk02a1Y3NURUMGlYcVY2RTExNWVaWmlLUXo5SVJ3cXFaRFFETkFNVExCTkMzMmprMmVTM254UlliUGRIX3RFcndtLUZEY0Z6R2xZ?oc=5",
+      "source": "Gramer Kagoj News",
+      "pubDate": "2026-11-18T11:40:00.000Z",
       "lang": "bn",
       "sport": "football"
     },
@@ -118,81 +86,113 @@
       "title": "EE vs YL, 27th Match, Abu Dhabi T10 2026 - Commentary",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR2s1VTBGaFNRTkNMTDNFbWYyWFlJRVB4bTBBZnhaX3lzNXphTUkwbEY3Sm5yTUdjYjdjc2NKWmpxWEhGa0Y3SURVQ3haOWVnZmlTQzJRU3g4YjFTbWJXUVZyR0ZEM2lBN041ckFWVzRHNHI3M3ZzVkhaRjQyd0VIQjA5blVnQ0lOT1R0Z3BtVmVLOTF0?oc=5",
       "source": "Cricbuzz",
-      "pubDate": "2026-11-18T02:08:15.000Z",
+      "pubDate": "2026-11-18T11:09:34.000Z",
       "lang": "en",
       "sport": "cricket"
     },
     {
-      "title": "Man Utd boss Mauricio Pochettino to appoint club's first-ever female coach - Paper Talk",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPM1dhbXExNkUyNjk5M3N6OThuNGZFRkowZU9vRnVsWEtxYzg5ZkRaMmpMTzBrTEx6aWZmaTNWWXZkWWtKaEpGdExyS3JMcWE4M0w5UDN5LUZWR18tRnhIQWY0dzl6cHFqSFhNWHZZOFlGN2Uwejc3d1ZKclJVV2FFSWpvblRqdDJTcFhPRWlNTmJCT2QwbDh5TlNkelR4allKN1o3MzlxemN3TmwyRTQza05hekFEcEtYeU93NGxhQ3lXOWpkTDBwazdaRnF2b2pRVW9rVk82T1hpMURlNnZObVZn?oc=5",
-      "source": "Sky Sports",
-      "pubDate": "2026-11-18T02:40:02.000Z",
+      "title": "Record crowds and legends - Bordeaux bid to return from French amateur sixth tier",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBQUldZSTZ5X2E2RjNheDk0M19mVFB3RVB5bkRQVzhxWXlyc3R5eTg1d19NQ3J0dVdBVmdFeVFFMWRETnI1Y0ppWnFiU05oblNOcEdoaUNxencyNGFQSVBmWDRndVJXaTJ3?oc=5",
+      "source": "BBC",
+      "pubDate": "2026-11-18T10:51:37.000Z",
       "lang": "en",
       "sport": "football"
     },
     {
-      "title": "শেষ মুহূর্তের রোমাঞ্চে আফগানিস্তানকে হারিয়ে সিরিজ জিতল জিম্বাবুয়ে",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE11alVRMTFBazhqV1dCcUFSTGoxVDltWGxjSWZFem0yV2ItaEtURFFDdW1vbjJubnQyUDU5d21MZTZGSjB0VGNfeUpqblVaZw?oc=5",
-      "source": "Daily Observer",
-      "pubDate": "2026-11-18T02:28:00.000Z",
+      "title": "টেস্ট থেকে কোহলির অবসর নেওয়াকে ‘বড় ভুল’ বললেন কপিল দেব",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1U0lJT1pobWFFaW55V2RpQnd2TGdTRnRPcnNmVUVGQTlsLTJvVjZrTFI2VDRRZ2VnLTU4TWg5WUhXRkx6bUFsNHkyUVhxQ1A4?oc=5",
+      "source": "Jugantor",
+      "pubDate": "2026-11-18T11:45:29.000Z",
       "lang": "bn",
       "sport": "cricket"
     },
     {
-      "title": "মেসির অবসরের পর নতুনদের গোল উৎসব, কোস্টারিকাকে আর্জেন্টিনার ‘সেভেনআপ’",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5mVkVXNTI3Q0FHREstWnRwMmg3aEVCOHZSeUN4U25fUV9ISFhrU3kwcndwY2NtMXFQckZxa25GX1JSdnZJM3BXUnI4RGd3ZVZ1emFsSkRkRQ?oc=5",
-      "source": "Bangla Stream",
-      "pubDate": "2026-11-18T03:07:00.000Z",
+      "title": "‘আমিও মানুষ, ভুল করি’, ছন্দহীনতার কারণ জানালেন ভিনিসিয়ুস",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5EYWRndGI5SGZGXzlZak16TF8xald5ak9RS0tDb0w5NEFhcjhjTTBoR3AxT2dXVUpQSVVUcUx1MC0zUGwwUjJud3A0NVFJckFNNTY0QURIYVZydFNjNThlZzVQR2I3TXFDc2ZScQ?oc=5",
+      "source": "দ্য ডেইলি স্টার বাংলা",
+      "pubDate": "2026-11-18T11:33:29.000Z",
       "lang": "bn",
       "sport": "football"
     },
     {
-      "title": "Johannesburg rain no dampener as Bangladesh remain confident",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNR3owRVk5MzdSNWU2NXdFbFVRbFhvTkVROGhlZnlpRXFXbWxMLVVSN1JWR3FGOTJfMnVuRWhrdnRVVEF2YjNQSFZ6THRsSFJYMUxtbkI5c01jcVdCVlhqTXF5UzJNMGhiTnI5RmVxaUlBSE9FT2VvaG1qaXd6QzZPQ19QMDRzQW9qMDFQV3hjTEt0UW1WR3ZFc1B5UUxxTExSb2VmSTkyUGJRZ2kzUHE2ZFZFR282UVdyMlhjTlpZcW1QSnExSTA1Mg?oc=5",
-      "source": "ICC",
-      "pubDate": "2026-11-18T01:48:51.000Z",
-      "lang": "en",
-      "sport": "cricket"
-    },
-    {
-      "title": "Wake Forest surges into CFP top 12; top 4 unchanged while Texas jumps Notre Dame",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNODlRdURWN29XZnNKaVNnbzNuaExwb0NJX0FwdHZUM2NyZE1tTUNnNXBSRUlaOGI3dGN2alFJZjlFVVFCbmlmRXU1eEJPeVFkYS01eUNRNGdUa202eDYyMlZmYTBCZXRndXU5WERSZm1Ec3gtOGYwYWVoYnNWTEYyNHo2WHFNU0hCNmZzR0FKTklCV1dndkZXMC1DdlVPZlU5TGdxUmhSdzBPakxfLWtn?oc=5",
-      "source": "ESPN",
-      "pubDate": "2026-11-18T02:06:00.000Z",
-      "lang": "en",
-      "sport": "football"
-    },
-    {
-      "title": "টিভি সূচি (বুধবার, ১৮ নভেম্বর ২০২৬)",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8yazd4R2JXWWdQZ01LU2ducVRiUFp0elo0SHhTb01lNXp2dkZJeDVRTFMyNEUwcTRWOEs2TF9WYm1XcEZGa296d1ZmLWhhNGRBTnd2QVpsbw?oc=5",
-      "source": "bdnews24.com",
-      "pubDate": "2026-11-18T02:15:00.000Z",
-      "lang": "bn",
-      "sport": "cricket"
-    },
-    {
-      "title": "হালান্ডের শেষ মুহূর্তের গোলে নাটকীয় জয়ে শেষ আটে নরওয়ে",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE04SnY2RWVyQ2sxZFVvYXM2dkFXNDFPTElvMnd4SlBxby1yU1ktSFZrcldKM1pXNnhtaHVRLVh1NGZGWVZNejNZZ2dyTlFfN0NYdjRvc2R0MzJBbjA?oc=5",
-      "source": "দৈনিক ইনকিলাব",
-      "pubDate": "2026-11-18T03:02:02.000Z",
-      "lang": "bn",
-      "sport": "football"
-    },
-    {
-      "title": "Cricket match squads - Arabian Aces vs United Tigers, 22nd Match, Abu Dhabi T10 2026, Abu Dhabi T10 2026",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTGhKb0llS3JibGFfNGpVMVRaODJHQ2YyYVkyRkZLaW9NQmw0SkUxQXBTYVdMS0RkQkZaV2d4UVZqU0tPd1BRcURacWxQTmxTMkF2RHV5dDBEVXZGaW1rbDIySjVpN251Q0FtUEtBcFZEX1RIdmxEVzR1N0NqUzkycEt3X0N6QzRYNFBGR1hNeGFpWDZUSWtj?oc=5",
+      "title": "AUS vs ENG, 3rd ODI, England tour of Australia, 2026 - Full Commentary",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONHpKdXBQbGxCbHNPX01fV3JTT2tla0VkbXgybWVGRlVnNUxIUHZMSmdFMlVXWjE3WXJueVAzMTBSMy1taE1ldmwtN2hQbnJmUXozRmtBN3ZMUktJZmJ1cmVkMExIMEg5NGlxZGtfWmx4QzU0R3Q3VkNsTFVwLUFZZjVPcERmdjhjcF9YTURUZDhmckpZOWdlTU5oclNCaDVQNDlLVVBwekxaY2FM?oc=5",
       "source": "Cricbuzz",
-      "pubDate": "2026-11-18T01:46:02.000Z",
+      "pubDate": "2026-11-18T11:06:01.000Z",
       "lang": "en",
       "sport": "cricket"
     },
     {
-      "title": "Prosecutors: Emmanuel Clase told bettor to send money to Dominican Republic",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNYlcwUmZhY29OU2l4aTFkbVNxNkN0VVNBUmFmSEFBZ1hKQWVBSTVUMXVxc1dOSFV3RjJaSkk0ZHdsRlIwTmxZeDBpMThic3E4dWJhOGk1TWNJVzdIM2lfTjU3MnQ5cFM2QlZTM3NITThUVkx5aWdLWjNwOHhUOTlfMzIwNXVicjhqTnFLR0xTanoyMWJFT2M1UXJqQmhZQTV5QlY3RTl3SVgzcVZsTjZ2eWVsNm1Oc2pWVGNzejJESk5fOFBzN2VQRFhGR3V1T29W?oc=5",
-      "source": "ESPN",
-      "pubDate": "2026-11-18T01:21:00.000Z",
+      "title": "Ashley Williams set to join temporary Swansea City coaching staff",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaS055ODFkYkxsSGgyX3h2Y183YkJlZTU2Y3h5Q0thUElLMXZ4MXlZSVZnQnBrNFUyNDY2bl9rU2EzbTJ0UEhDYzYxZmZvZjAxd3hscmtpSnp0c2NGVC1CUzBpV2lZY3dy?oc=5",
+      "source": "BBC",
+      "pubDate": "2026-11-18T10:48:39.000Z",
       "lang": "en",
       "sport": "football"
+    },
+    {
+      "title": "২৩ বছর, ৬২৯ উইকেট, নাবিল সামাদের ‘আনন্দময়’ পথচলার সমাপ্তি",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB2TGg0WXNDQnBySnVfMm5GdGJPNUlaVThFSDE5Zng0cjh4SVd6empfSDVuMzJuSDhUN004clFYV0tld0lkSHVyNzFIQmhfeTZuT04xSjQ4MmRtUQ?oc=5",
+      "source": "bdnews24.com",
+      "pubDate": "2026-11-18T11:44:00.000Z",
+      "lang": "bn",
+      "sport": "cricket"
+    },
+    {
+      "title": "সেঞ্চুরির আক্ষেপ নিয়েই আন্তর্জাতিক ফুটবল ছাড়লেন লুকাকু",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJVVNrRXlPbV91ZGh2UkNISzBHR1RKWnFlbTlWLTAzTGZMd2d0V1pidXhpc0h3LUtkTmpfUmdTU2taaHpFU1k5QmxzMldmMlpTVnhrV3VOTm0tZ9IBX0FVX3lxTFB2Sk1MSm10SVdMY3pJQWhUYmpNenk2bElFczdvb0JVQzZKX1BQWUtoNDBGaEJ2OE9pYldORlBpZTBBSDB3Y3JFcjM2eTJSa0FVeUplQWZTenh4c0ZWVmJN?oc=5",
+      "source": "Amar Sangbad",
+      "pubDate": "2026-11-18T11:20:00.000Z",
+      "lang": "bn",
+      "sport": "football"
+    },
+    {
+      "title": "Litton scripts historic Test milestone against South Africa",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOemRGUkZFWjZZY1RkQXc5dUtJX1pHR3AtRGliN19kYWQxRF91OU5yZ3B0T0NMajV5TjlRVWpEZlZ1YUVXU1lnSlFRaWJFZGRpamtJUW5PZWNkbkFkYTVQSW8zUmF2dktjbjhQalRVbk94WDZHRWFBZVliajl0VkZvc3dTTTN3OXo4VnU4OTZaWmFFTEhEUmc4N1NTMWQ0M2pZVDdTdVhxYndaZTJoMUN1SmxYaEVFMGFFY0VlaGpFWUFFaDdhODJ3?oc=5",
+      "source": "ICC",
+      "pubDate": "2026-11-18T11:05:16.000Z",
+      "lang": "en",
+      "sport": "cricket"
+    },
+    {
+      "title": "Nations League 2026/27: England into quarter-finals but who will they play in last-eight in March?",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORlE1MWhaNU5LQ1FkLWE5NnlWYmJsUWxnckotQ3NlNDM0Z3NyNGdRdUpfZ3c1QWZKaTUzdU5zdG94cTQ3eFNQTGRRRmJMWDZMR01EV19zbHBZWWdsdGk2M2c3djhWRXlmWVAxbzBSWmdtUTRzNnlGT3hfY21FRHFWLXVWMXRwTzlkREVJVVBuc04xRGM1YXF2OXZtSlctQkw5ai1ZanZEbzZqemE0WVF1emwzdnpwOE5kZkpiOEhmaml1QTVvNXVjS044WDZCNy1NTFl5UkJEUXROaDVzamc?oc=5",
+      "source": "Sky Sports",
+      "pubDate": "2026-11-18T10:45:02.000Z",
+      "lang": "en",
+      "sport": "football"
+    },
+    {
+      "title": "ইতিহাস গড়ে ফিফা সভাপতি নির্বাচনে ইনফান্তিনোর প্রতিদ্বন্দ্বী কোজো তাশিমা",
+      "link": "https://news.google.com/rss/articles/CBMipARBVV95cUxNbWd0TllLVWdneS05QU9SSUVTMU80Zy1UUVBpbE8yR29UTDlZaWRPdTByanZRNnVWMmFtMTAwc0ljcmtzdk0xZ0dwSDZCQ1QzTnJCb25DODNCV1JYVGFNbXROSExYaXNkc2xTLUR4VVROVk5qVC14bmVnb2NHNVRxclJJOHhKMmRJSW5jblZIOFV6dVJZQnZ0dU1xam15a3RSUldxbkRfazQ0VURoMWt5MzZlMVd0Y0JIeEl6ai1hMmZDSXdWbngwQnpkWExZMV9NSEtSUzdTVk5qTGp1dTN6TnJxT2NkT2RSQzJOUV9lY3FncVBPeE5RRnJtZjBDYVpFMzQycUo3MllYQzJNZnplajU2MGNHSkV6cWxHdFF5dm1hMjVzNHM0SFNZQ08wUHVSMmU3UkNfREswdFV1S1l3NVVvdW1WbjZoUFNHVWFlSjkyVGtPcnVtckYyYUNsVU9FZXhTbkExUTVhWFJBU2N1eGp2enh1NVZKZzM2Yk5oN1AzZ3hZN3Jtclgxb0Q0Y2Z3YTFQTWhGdTBiSWJYQlBmalRZaExiYkRDMUpNa0oxUnNyU1JUUmU1dzB2ZGdIZFV6QUlmSDlFa0I3QzFYMkpyeUt6QVdKRlE0UjdxQ2I3cjFEVkdQczBwMV83M2Z0aklQX2REbFJGQ0duV0dVQS1EYUZRcG4waXBrWmZDOUJiX1AzRVNmUGJhb3hkcVItMktjUkRLdNIBqgRBVV95cUxPeGd5NWFaTEM0NnJ6TEhUdUw2eHVVZUk2RGd2V296Wnh4SWhUSGV6ZGdlak1HMnIxcUVHVVVHbDBtS3JCRV8za2wtQU9BMXQ4S25XeU4wNzFzZkJzVXM3T09LY2lKam94b0RrcjFLTTd4RlhTb0ZPMk9uRU5tTjcxSlRCenVoOFpZLWxpUUVualBQQWJuNmZjNS1LQlVGTHV6c3ZwNHEtd241RXNJMmluTGs0OHZmSUk4Tkpiajdaa2pjZUJWOG9mamN1TDgyQUs0a2JqUWNuVEFoREpzVTRQNGk3QXJ1RzUwTnM3bjc1aXJaazRmeDdYS0hNaTl0Z2xpTk9HNmdwakNEaERlbnRXM2JRU2QwTEkxZko4Zk9sNEJWUXhsZ3A1QUU1U3NlekNpTWJzWERGRnRkWXF4Qy1XNzl3OWp1dEZCX3BScHQ5YmYxVmlGMWxWTW9EWTdfRVN1TUw1dm1HS1hXdjZ0MEJIT0pZVVBuTDcxdWFETmxqZUVEZ3JmME5pSnJLY2pvRmhPLURTc0oxNDdFcnl3S0xDOEFONUVTWEQtcEVIWURzam9EZVc2ekNmYVd2VjZTdFZQVkFvd0tHLXFzekNHSHNUZlFvR25VS2xfRTFqclVoQktrSF9IaGhlQzB4a1NKY3VrRmtRc3U4Y25JdWt3UGIxN3lMbUJSZTFlU3FTZWpCQTluQllpZTlvSFEtblBxY0xLd09tczVpeEtxUQ?oc=5",
+      "source": "The Daily Ittefaq",
+      "pubDate": "2026-11-18T11:15:31.000Z",
+      "lang": "bn",
+      "sport": "football"
+    },
+    {
+      "title": "AUS vs ENG, 3rd ODI, England tour of Australia, 2026 - Match News",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZzFwTWg3dm5taU9reFFCS2NuVXk0RGxPWTVhUjVObmV0RTh3aWNrRVRhQ1VDT2Y3TzA3TzlwWEpfT0N3ajdtUWoxeEFoZjNadktUTjVJcTNGMnB6OVdOdHV0Yi05QWgtNnIzbHB2SXlLTkNNUmV6bEh5RHYxU2tVWF9UMjJiQjNRWlZ0b3F6SUNvZkFmUGtYQWcxMzdsLXM?oc=5",
+      "source": "Cricbuzz",
+      "pubDate": "2026-11-18T11:00:28.000Z",
+      "lang": "en",
+      "sport": "cricket"
+    },
+    {
+      "title": "Mauricio Pochettino at Man Utd: Incoming head coach calls for time to topple Man City ahead of Old Trafford arrival",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOOW14MUFHekZKMGFEcjdTcFE5cVVaNVJWNFhnampXTzBaeWM1ejFkOHRfcm9hR1EzMU4zTU1HSElVNlhsOWpUN3FHUU40UEE2cjkyYThrRW9hSmQ0LWxXdG95cXkyTExtVGpZd1Zsa0xWRkR0UnJuWkZLQ21hUmdFT2hKMmwyMEF3Vko2Mk5RQXkzeWNnM0h3c3hZblI1R2d5Vy1vZXNBbndxNG9uSkMtR1YzdE1wTVBNTk83VXpad0xTTUxyZFlSZXdJUUU3cDFTWVpBc21wS1FtV194U3UzVkg1aW9oWUFIM1FJVTUtQ3paaGgxbEsyUUdrMExkVHI0Z0puVTBNQjI?oc=5",
+      "source": "Sky Sports",
+      "pubDate": "2026-11-18T10:23:55.000Z",
+      "lang": "en",
+      "sport": "football"
+    },
+    {
+      "title": "টেস্ট ক্রিকেটে বিশ্বরেকর্ড লিটন দাসের",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOb2xRX2dlbEwtNi1kQWROWml3YjRfTkRSTXlRRERXRWJuVS1fVnE3NXUzZGZKNGFhdVJXMDdQaUZ2YWNwdldfc2dmTF9iQlJKcFd0dG1lMUU0R0pWX3RZdXBwb3JCRU13eGRHODg1cEJlTS1Dd29hSmY4TnZrcm5CQXVfa2c2dUJaeV8tRlZURXdualg4TmFzN9IBpgFBVV95cUxNOUF6alU0a3ZlMVVhZE93QU5KSGY4XzZUTDRGa3JaYXdJV1Z0YkI0alhhRmM5c3hKUnBIb0tmekNRT1JFYVJMUW80R09Cd1JlcW9jajhYbHVOT3VibnhoZUdQUGxHRzRVamJnMm52VllYZ2VXc213Z21FU2ZaSXh1Y0FQS2ZBb2k5LWhVUUtpYWpoWFhOMkNSZVptS09ZcmNBZHhVOVVn?oc=5",
+      "source": "Ei Samay",
+      "pubDate": "2026-11-18T11:37:12.000Z",
+      "lang": "bn",
+      "sport": "cricket"
     }
   ]
 }
