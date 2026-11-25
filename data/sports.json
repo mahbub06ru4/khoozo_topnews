@@ -1,188 +1,28 @@
 {
-  "updated": "2026-11-25T01:12:28.846Z",
+  "updated": "2026-11-25T10:00:35.439Z",
   "count": 24,
   "items": [
     {
-      "title": "আইপিএলকে না বললেন মোস্তাফিজ",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBBYkF0dlpzNE1weE1FVnNpaW5WS2xvWEZCRzFuRmptTjgwN09pWDhGYXc0VUFxZE1MU0hYbHNDdWxNWHkzWjJtWVcwQ21yZC05?oc=5",
-      "source": "Shomoyer Alo",
-      "pubDate": "2026-11-24T21:16:49.000Z",
+      "title": "র‍্যাঙ্কিংয়ে এগুলেন লিটন-হৃদয়, পেছালেন শান্ত-মুমিনুল",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NNm1YdDBsbGdpcnZQakhHUWlnbUlIaTctUUdDWWliOG91ZjVzTHhlSzJIbU9qc3NMZDZJQWFNenhBVmZIc0I2eXc4dTZuODAtb0ZsV25hM1N6am9zTGRweG1EVVg1SEVIREJN?oc=5",
+      "source": "দ্য ডেইলি স্টার বাংলা",
+      "pubDate": "2026-11-25T09:58:42.000Z",
       "lang": "bn",
       "sport": "cricket"
     },
     {
-      "title": "আজকের ফুটবল সূচি, ২৫শে নভেম্বর: ম্যানচেস্টার ইউনাইটেড বনাম স্পোর্টিং",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUTRiZkRxWEZYT1VIQmRNb2VGZkM4VDZaMlJhUGF5VEc1Z2dUV2lpMGpILTJTOHJBajRreWNCRDN3dmtWdmo5WGJleGowMFk2RDEwODBrbm5oMUxCUlB5alBPaFJlTDdLNFhaM0RLOWcxUzBpY3ljSWwyOWxacjlfeC1R?oc=5",
-      "source": "Vietnam.vn",
-      "pubDate": "2026-11-25T00:29:54.000Z",
+      "title": "বেলিংহ্যামের দুর্দান্ত ফর্মের নেপথ্যে মরিনিয়ো",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5SV0FyYUdXSXJBRExLVi1uUnY1VDhSVk15QlZqZWtlNmNoOEZkVEVEeGI2V3dETVNhT0hEWXluWXp5cDAtOVE2TDFOOG9LTXpVTDBsSmkwZw?oc=5",
+      "source": "bdnews24.com",
+      "pubDate": "2026-11-25T09:23:00.000Z",
       "lang": "bn",
       "sport": "football"
     },
     {
-      "title": "Women's Big Bash 2026-27 LIVE: Melbourne Renegades vs Brisbane Heat - cricket score & commentary",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1NMkwwdGpfWjRXR21TRzVKbDEwOVR4XzV4RUc0bGZhVmI0Sm5GNWZhZW90a1l4Rl9Ud0t4VVJmd0RmdnZ6cy1hMEdwSXVJN3E0M19Odi1KX2F3YjBqTGVuNmZn?oc=5",
-      "source": "BBC",
-      "pubDate": "2026-11-25T00:51:47.000Z",
-      "lang": "en",
-      "sport": "cricket"
-    },
-    {
-      "title": "Charlton Athletic 4-0 Lincoln City: Addicks sweep to victory at The Valley",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbEF1cDJlb3BMR0JJQmdqWkdyLWFpNFdaOTdMVzVEVWp2OVBBanc3dDVGeU01ZkRQSzQ2Wk55ZFFTckVfZUJXam0taGxEQ0VGVFhlTjl2c2VFczJnNlFqUjFXTGZSd29lS2VuaUpaU0xyZWozNlBzSkRCcUNrWXZzam9Qa0VKcEtxMGN1c0ltd1NQYk9DLVEzTzJkMk1LeVRINEl3ZDRIVXhSejJINFZ1Y1kxODRMQWczS3FkNFBVSQ?oc=5",
-      "source": "Sky Sports",
-      "pubDate": "2026-11-25T01:08:12.000Z",
-      "lang": "en",
-      "sport": "football"
-    },
-    {
-      "title": "গোপালগঞ্জ শহরের ক্রিকেট স্টেডিয়াম সংলগ্ন এলাকায় দুই গ্রামবাসীর সং/ঘ/র্ষে আহত অন্তত ২০",
-      "link": "https://news.google.com/rss/articles/CBMiiwRBVV95cUxPd29iQUg1Rnh4NGh4UVN2NDVyV0F4NElMdHB5S21Wc3p6b1dfamJHSHRCNTVoY1ExWGU2RXRkQl9zWkk1NmFSYTg4SFNXTVEtcmNtWV8ybXNBT0NOWC1mTUs4WXdKOGszbnBxMkVFZjFMRnhOTFJ1RjdTWVBucXc0MW1ZR3AwQ2MwWXNxWUdETFZRdUl5eS1hTThzWjdBc3hGdnJmam5mMzJER1MxSXBVdngwM0ludzFObGFIT0lQWUtDQUtsU1hhTVlTa2M0TE9tWE81dUNvTE92RHhwWEhZMlhpQllfVVVJQlFWbEhDZkt5X0Nhbnhzbjg0UFhrR25LRWwyOW9IaElyakRnaEhFV00yeW40Y3VmcWNwRlo3djk2SU9lNUdMZWtmYWZsSl9SVG1VS1BscHBjREpvOXZGbzg4Uk9pd0syd2VsWlY4dFhEVWtnNmtITWFYRmVuaDA2MDM1Q3Nrdjg5WEZyTWNXNmVWRkh2V3JzRHVycXZJWUJQcmhjMmRaQWEtXzNFaW14UC13eEhtNWd6bXh1cm1POUV2WHNRY2VXeXA0ZVV2cFMwNmptLS1tVS1Cb1FfTW9LeGlhc1gyOWw5ekIyNEM2SUFDQU8tbmx0T1oxMFEzODRCOElrRG84WTc2cFJ5YnFBbUpxVE5XMG5zcWJua29rbHBPb3dJaTBtZjdR?oc=5",
-      "source": "জাতীয় অর্থনীতি",
-      "pubDate": "2026-11-24T21:05:55.000Z",
-      "lang": "bn",
-      "sport": "cricket"
-    },
-    {
-      "title": "ফর্টিসের জার্সি খুলে জাপানে ফিরছেন শুকি",
-      "link": "https://news.google.com/rss/articles/CBMi8wNBVV95cUxOd0NfZFZfcDNXNU5TdWJSc0Z3b1dyQlYyZUxtYVlDbzNaalhLSlNCazBnUHFTN05SUDNpaThIQnBSeHZNTVU3LXlZOTh6X0dPVUNsX21TcGNvc1ZPTGV3OEZqYkRPXzc3VndzVkNPSy1VLUx4OHdiNjVTcHc5d280UG1UbzNNMTRvcExablpkN3ROaWU0ZWVDekhiSTZQQy1SYTdhZ2dYSmxHdVdWdnloMkhWcDRicUNkdWFzSWRFTE9KYjlOOHh1ZWtuTl85czk5bm13WXZNZUFhQXBpVkRneXBUblotLXpxTWQ4cUFPd1FCQkdIa3R3Mm5rY2VMNHZSekhFdmxCbi1iQjlIRTZZWk1uZ3l1V1JZUW96U2pQX2J2U1F5VWQydU1obEJ3eHdYVkIwN0xDYjlUcDRWNnFTYTN3aEhSMVdsaE5sdnRiTC04dGMtRzBvRTRUN0xnSG1vbExiTkp2SVRmT1IwYjZZXzFpc2pVc1BZLUloU3RoUXpiWEV5SzkzdkQtRFhVVG9Idm9vYzVSZlFQWVZ2cDU0cjZrM0UzZFpEWmZHVkFzNmtGNkFDYlhUUlJ2cDRndFpDdzdnOHNSZmNVM01JLTk2MkhmSUh4d1BaQXVvbzdGWHh1NHVwTjNLTmlDbjQ2bWVZU0pJ?oc=5",
-      "source": "SAMAKAL",
-      "pubDate": "2026-11-24T23:48:51.000Z",
-      "lang": "bn",
-      "sport": "football"
-    },
-    {
-      "title": "England not motivated by No.1 ranking as new star emerges",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQ0JmdGEzaU5WMXdOd05aT2d1WkZfQWJuRUFhem9QRkxwX1lLQnQxVmdsS2JKVWxBcklXZ2lRYWMyVVdocl9FZGFBaExlNkFELWh0NklmZ19XRGJvWEFHZmgwM2ExTElXWC1aTDdmeEtmMk91NzlBYnMxZlJZRFpidGJKS1djVHBlVjZUTXU1UTZzVjdq?oc=5",
-      "source": "ICC",
-      "pubDate": "2026-11-25T00:38:22.000Z",
-      "lang": "en",
-      "sport": "cricket"
-    },
-    {
-      "title": "Arsenal vs Borussia Dortmund LIVE! Champions League lineups, match updates, news, score and analysis",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWWxBTnc2dl9LRm9pS1hMLUR4RXZOTGdVMzFfQk9DU3R5QUhlMTRvLWp6UUFKaVkwazFZcGlOdk5ucDFacUdYV01aLUtKRC1kVHRrUGMxbXprTmVvdWc2VjVESHVkZnEzQkxTSi1MM0MwWm05bW5Iak95djZBWlBURlhYZWZhZk43cUlzSTZueHUzcEQyZ0ZUZlcyZW5yRWVRS0ZlVXZ0bFFsR1Y4emh2ZUFFaUFGeWZLSEFnYzh1dGt2OExjWTVZejcySXFkUW1oaF92eG83MVhFQ3hzQThKQmpuRWU?oc=5",
-      "source": "Sky Sports",
-      "pubDate": "2026-11-25T01:07:30.000Z",
-      "lang": "en",
-      "sport": "football"
-    },
-    {
-      "title": "কখন ইনিংস ঘোষণা? যে জবাব ডি জর্জির",
-      "link": "https://news.google.com/rss/articles/CBMiigNBVV95cUxQbDVMT1NVZDFRc1ZaR21CT3hRekpxdks2NWd2ZkE2VXlveHF3Sm44VklRZUZzQjlLQ2plcXZSX2Nkdnk3U2ZNSVFtYVhrZlBEcXpuS1BTVkVhbDR1SHg3M0UwRzZvanVvYmFwSDBzMVZ3X19oeU9nbUxXT2RvQXd2Nk52eDBRdDhQVGNidy1hQkxIVnV4QkRYeWdPOWRqSVp2RlItbS1oX2pERlg2MGdzVUlqbGVkNFRIRTgyVjVER2dEOE1tSDNZOFV1N093ZGd2cExyZDZfT044VVV6N1B5T3Y5UG5iM19UX281cmYxNHBMVnZlMHVlMFpYSENQSy1wa25wZ2hwcWg0RHNJVXhCczJJY2RKcFdnd0xzZV94NHZrZlhfRFFOU1hrREI1ck5ybUR6R3F2am56NUJ2SUFITE16SUlGbDRXX3Z0T2hsWjRxNEJyRjRaTTlQRUFnSkFoeUFydExnVk5mb0QwcTBCb29GNlRILS1XXzVnX0tsQzlFcXFpY3FLcFpB?oc=5",
-      "source": "বিডিক্রিকটাইম",
-      "pubDate": "2026-11-24T20:45:05.000Z",
-      "lang": "bn",
-      "sport": "cricket"
-    },
-    {
-      "title": "বেলিংহামের জাদুতে রিয়ালের ৫ গোলের উৎসব",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnOGJfRlY2dFVXM2lrZGJ6b0kxeGFIUk9nb2ktaTJiMjg5UXBjcWlud29XSV9NUkk2QkpqbFRBbmpYa3djdm16WW1qUHhNS0dlTE5sOHdFNVlKVERyeXpBdkZUd9IBcEFVX3lxTFBHLVF6YllTdUMxNjM0bFloVHk4Z3dxRWlwdnBjaTNMV2FHYkVqQzVMb091OWZXaElOZGZ4ODV1cDBjdldFblZySDdRQ2tQX0djNFdneTlYeEpOTzFyMThGdHVFdUs5T0EwcjhLakJaVHo?oc=5",
-      "source": "প্রথম আলো",
-      "pubDate": "2026-11-24T22:38:57.000Z",
-      "lang": "bn",
-      "sport": "football"
-    },
-    {
-      "title": "Arteta says Arsenal need more luck to kill off games",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA5MnJqVy04WlpOaHpyTW1ldlhuV210UjNVdWNMcmlQMDRJQy1YOWR1SUFNRUpqS01SZzNxTWYtdG4yYzFyOTJTVGl4TFRGTlRpdWZKNEVWZ1dUQjlkSVdCS243RnAxczJ4?oc=5",
-      "source": "BBC",
-      "pubDate": "2026-11-24T23:44:04.000Z",
-      "lang": "en",
-      "sport": "cricket"
-    },
-    {
-      "title": "Arsenal 1-1 Dortmund: Viktor Gyokeres goal cancelled out as Gunners frustrated in Champions League",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTG83MlQ5ZUp2X1hBZEUybmVMcExfQWROcWUtRW8xODdjWlJKLTRPVXdWQ3drTEdIZnN3NGllV0p5TmluWG1HUUU2bHVMX3dTdHAtcFVDVkdvUnRRb3hla1hnbVZGNkxIRmxNV0JXMG4xOTZLMEVTVGZ5YWZEVzhiQklQRUhTTlktVlFxbEJSODZhVVNsUGI0WnNoQkNxNGpCM3R1QmFSdzNNLW5HS2h1ZDZqVlV3ZEpnblZHamFpanV4aUo5ejBCTkFqOU16SUZnNUMtWUR5MjRqSExCbXcxcGs1XzdnTUxEbTdr?oc=5",
-      "source": "Sky Sports",
-      "pubDate": "2026-11-25T00:58:07.000Z",
-      "lang": "en",
-      "sport": "football"
-    },
-    {
-      "title": "গেইলকে ছাড়িয়ে ১৯ ছক্কায় ভারতীয় ওপেনারের ১৮১",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5HaVBvSlBCMXR6UzdNZUc5VUVoek5mMWJnVHhIc0x5Vm5XeDhla1Y0R3BCSndUMEowUnN0eUJ1eDM3YWJMSkE?oc=5",
-      "source": "Tsports",
-      "pubDate": "2026-11-24T20:25:26.000Z",
-      "lang": "bn",
-      "sport": "cricket"
-    },
-    {
-      "title": "আন্তঃবিশ্ববিদ্যালয় ফুটবলে যৌথ চ্যাম্পিয়ন রাবি ও জাতীয় বিশ্ববিদ্যালয়",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5wN1A3VWt6T01OVWlvWWZfRU43Nk1iRU16TVM4dUZ6RDkxNi1la2ZJeUREajJiWXZRcnIydkp2Q0tHZ3Vsd3Nod2xjVFN4R3F6WTZXRGJ6TVo4RU40NVBxXzlLNXR3d3BqN3FHaGlNWEtiNEE?oc=5",
-      "source": "The Bangladesh Today",
-      "pubDate": "2026-11-24T21:28:33.000Z",
-      "lang": "bn",
-      "sport": "football"
-    },
-    {
-      "title": "Australia vs England",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TalJkT0Y2RW53Y2RJMVhEb1VpYWcydHU1ZFdGNzVTUEJjV2h2WU5SVlVzcE9nZWliWWlGRGVHS2Y2cE03cGstWVI3d09fSjNwYXlzWGwtREFkY2J2NTVtQ2Nn?oc=5",
-      "source": "BBC",
-      "pubDate": "2026-11-24T23:41:55.000Z",
-      "lang": "en",
-      "sport": "cricket"
-    },
-    {
-      "title": "Football Scores & Fixtures",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5PNEF1Z21NRF9QSUR6Sk9KQTB6NURYTzdncHJXT01zVVMtZHdQUG5WY2JUUm5EUmJobWVVM0RwTUtmSzBPSTExajhoQi1iMkNUdjhDTWtHUjlNeGhjcTdj?oc=5",
-      "source": "BBC",
-      "pubDate": "2026-11-25T00:42:19.000Z",
-      "lang": "en",
-      "sport": "football"
-    },
-    {
-      "title": "কিশোরগঞ্জের উদ্দেশে কুমিল্লার অনূর্ধ্ব-১৮ ক্রিকেট দল",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45SG1BVW5mTzNrZnJMei1UNW1YQUNjTnJFZHdMRHZFVXlmQTdUdDc1QVJMelZpcWdxOWFvR2NJRktTa24xLWo4eXRTS052QmQyb3lj?oc=5",
-      "source": "Daily Comillar Kagoj",
-      "pubDate": "2026-11-24T19:44:00.000Z",
-      "lang": "bn",
-      "sport": "cricket"
-    },
-    {
-      "title": "ফুটবল টুর্নামেন্ট নিয়ে বিরোধ, ছুরিকাঘাতে আহত যুবক",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5nOENqX3pFVW1DQVpqQ05vMGM1ZWtadGlVY3g4QTNhRVl3Mi1TWW1nTnBEbXhGLXB2ZUk2QXI0T2FkSDJqVHRySnQzVVUxZUpG?oc=5",
-      "source": "Shomoyer Alo",
-      "pubDate": "2026-11-24T20:42:40.000Z",
-      "lang": "bn",
-      "sport": "football"
-    },
-    {
-      "title": "'Pass, pass, slow, slow' - Man City's slick machine grinding to a halt",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9uVGg5R1lfNGNET2tDSEpPVXVWVU16cXRzOUlmSS1VeVZPSWFFcV9VRmhlQ3hqcHVucnlteURHek5RcDhtWm40S3hxYTd2NEtUNVBCOGVkM3lNOTdWUS1OVHBnLXo5ZWdp?oc=5",
-      "source": "BBC",
-      "pubDate": "2026-11-24T23:17:42.000Z",
-      "lang": "en",
-      "sport": "cricket"
-    },
-    {
-      "title": "Scores & Fixtures - Football",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBURHBxQjYzNFc2bnNOUlV2endfTTY5bmhLaEw2VDhEdExnTXdabnFqemRSU0I3NlZ0WDBWMVhGb0IzU251ZDNYb210Uzc4YlU1RnlkSnVWcDZOSm44Smt4MnhjQ0JEdWpudTlPVVdn?oc=5",
-      "source": "BBC",
-      "pubDate": "2026-11-25T00:36:44.000Z",
-      "lang": "en",
-      "sport": "football"
-    },
-    {
-      "title": "ক্রিকেট সংগঠক কাজী মহিউদ্দিনের মৃত্যু, বিসিবির শোক",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ZNWtNR0N6djEyeTNFN2ZDUDJPdlFLSExzb1pmYXgzZmlrRlV3U1I4N1RQZHUwYnF0eHhVcXctYlpPZThBOXVEMjAtNFpILTVXaTg0?oc=5",
-      "source": "Daily Comillar Kagoj",
-      "pubDate": "2026-11-24T19:44:00.000Z",
-      "lang": "bn",
-      "sport": "cricket"
-    },
-    {
-      "title": "CD Extremadura বনাম Real Betis সরাসরি স্কোর, মুখোমুখি ফলাফল এবং খেলোয়াড় তালিকা",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZ19fOTNPR0drb1lfeUhzQll1MjRIQU5Rd0tjN1ByN2czVzRGaFpBZlNSbEtqeG9qUk1MWi1idUE2bEZuME0zR0o3UTNtZ0NJeFZGOTFpOHBTSlJkOTQ4cUJ0Mms5dFRLRkJOd2hpcE9XVWhwM1JWTWZKc0Utbjlaak92LWI?oc=5",
-      "source": "Sofascore",
-      "pubDate": "2026-11-24T20:01:23.000Z",
-      "lang": "bn",
-      "sport": "football"
-    },
-    {
-      "title": "South Africa stamp authority with the bat in Centurion",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWlNXQXdHWDdnN0h6cjUtcXZDUG8zTjFKRGFFYmlxSjBNeFFDUkxGY2wxb19kd3gyQVo0bTJMaTNmemhPdm51Y3E1SVlYZkhKaHA5a3BmVzItM1JER1Y3cE1WWDN5OTNtaUVkdWM1d3hDOEFDemFIUHc1REM1RS1iUjVxSGhKUWxKMFNXblh2Ujg?oc=5",
-      "source": "ICC",
-      "pubDate": "2026-11-24T23:02:20.000Z",
+      "title": "Cricket match squads | ZIMA vs IREA, 4th unofficial ODI, Ireland A tour of Zimbabwe, 2026",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOFdmUnNjUDBIVFpFREF6Q2hBQVAxSmZFaVNIY1YxYW84SWtNak02Z0NkcUtiUUFrWW9kcDJtS010VGZIZVZVWDg4LXRzV24yNXdtSDFaV0lPSUFvdGFnTEZsRG91MGpkZjJud1hJdG9yekdZeGVpSUlkMGFHLWRXVGNOYWR6NWQtZ25lZlhJR1hKbHRUQ2tXRVZWcEJCS2h3MktkWWV3aFFrQ0EwRlEtSmt4cmhiamM?oc=5",
+      "source": "Cricbuzz",
+      "pubDate": "2026-11-25T09:55:15.000Z",
       "lang": "en",
       "sport": "cricket"
     },
@@ -190,7 +30,167 @@
       "title": "Galatasaray 1-0 Aston Villa: Deniz Gul's late winner in Champions League league phase extends Villa's winless run",
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQMmJMRUNUeTJ4Vm9TNHhFb2hxM1M4OWRkWm5uVmlzMHhxMVBHRGQ4eGQyeFRUV3Z4cEVIekdmY3dXUGxsUG1VTncxTFhYN3V1NUZTaHhQTzg3U2N3Q1RoeVpsUE1tTzR2d2N4UF9fSkZSMGlRdkxJOWpLX3pOdkRNWEJ0OUZsMFdjM2xXb2d5SUFjMWkzT3piYkdsYVJNdjVCRlBHQVN3TThYZEtQMlNBSEp1djZfZnBPM2h4UEhRanBmTENtTWVqQWpSWDNidkpXdGRtaFFNYkpPU3ZTNFJrVkEtWUFQc2FQUnpSX29RQjM?oc=5",
       "source": "Sky Sports",
-      "pubDate": "2026-11-25T00:26:17.000Z",
+      "pubDate": "2026-11-25T09:19:21.000Z",
+      "lang": "en",
+      "sport": "football"
+    },
+    {
+      "title": "ট্রিপল সেঞ্চুরিও ‘অসম্ভব নয়’ সূর্যবংশীর",
+      "link": "https://news.google.com/rss/articles/CBMi9gNBVV95cUxObUxET0p2NlYwb2RYdF9hUWMyaTQwMjFsWTFhcXdzemdScGlzTU9Sd09LV3paa2RyNF9yZnNYNTVDS2J0bEkzbGtUbmNtNTVFdkNXelZGT0hScWhwWjl2ZEhyZ0d2Ri1Sdm0ydjhOVDhXTld1a1VSWm9JOVRiNjlHS25qWGpkQXlQT3UxY1NVdHRjUkpzV3h4Ymp5VnI1OGxIU0RoQXdjenhhby1RZ0U2ajc0UUxDbUNSM3l1TWtCQlJ2aFdoZUVXMGJGQ1pSZ1lsUl8wc3pjLWZEQU1wZTdvVkhtRkxCTEY1cDViSC1Yd1BSaUtDT3VMOGh5UjV4Ty1zY2w2QnphWm15NGNlUDJNRHc1dE9hLW5RNDBJcDlJZXdBTGE5bHJZRnlhUFZmTjh5WE45Mmt2dWx6eDRnZkhzdWY0V0ZJbHdrS3ctb0F5RDNVc0FDbzlHdnc2OHRXWFg5bV91bXd3Qmx5VlR0aGZJSmViMlIydWdtazNUU3puN0xnLTJMSzFja3V1dDFibmxKOGs2Q29neWJaaEZKUUhDNG9PVVU1ajBZMDRBZ24tZzNGNVczckcxTTdKNDJpbUZiOEhVOHNPV3ozaXNxRVBnUFFXd1ctbm55NnlEdWR0RzV2RG1pWVBWa1h6ZlhzZlpwWWFYUVRB0gH7A0FVX3lxTE45Mm90NE4wTW5CQktXNEU0aXVwTnBqeE11T09GR1o5S1VBOTBrcFN6bXMzUnFHZlpSZGNaeVQ2Um94YUZOdDdDRVAyLUZfeWkzVHlhMU1KQ0xlS3BUYUxRUWRxQUFCSHpPbDRGcHVTWFQzR3h6ZmNCWHpCN3hwZ1FPNXNtUGdMOE00UkhBbGlnTEhNZ1JESVlaYXZfOFZXZUtmcDNfckZTVGQ0ZGVrZUZTOWFGa0lpYUlkcDlpQkRxbGJZMzBIN05PMXJxVmpTakRscFNqamxJa3Q5M0c5MGNoVmxNX0NHeEVINk1DV3lablNUQ014THg2cHpNLW5LTU5WaFpRWlJIdm5GZy1kY3B2RnlnMFZrLTh1V0tVX3owTzMyaHA5M2UtdlhqTlNUeGZ3dUhJc1ZLR2d0cE1VMGt4d193V2V1cXJVS1J5REw5VnVZNVRJeGRUc3IzS1BtdFA5N1BBYUtrSjhJMVZhTWVocks1MjMtXy12Wjh3RzlHX3UxenFvRlJJNVdDOXlhUF9MYjBqaDFZZ0tqWWprZVhHSWo5cE12NzZBQzJ2cFFNUnVoaGtrZ0pFbWh5S2YwOGEyUGxiWWZlZUNlNXI0YW5KUFp0Mkt1WXRIMHJ1VkRENmpleElHc3hQOUZ0bktrek9nUE55X09aSEVkWQ?oc=5",
+      "source": "দেশ রূপান্তর",
+      "pubDate": "2026-11-25T09:52:07.000Z",
+      "lang": "bn",
+      "sport": "cricket"
+    },
+    {
+      "title": "আন্তঃবিশ্ববিদ্যালয় ফুটবল ফাইনালে ট্রাইব্রেকার ছাড়াই যৌথ চ্যাম্পিয়ন ঘোষণা, শিক্ষার্থীদের ক্ষো'ভ",
+      "link": "https://news.google.com/rss/articles/CBMivghBVV95cUxPeVFQazhOSV9ZTy1fdXRwTG1ZbjJXVXE2cFNtYVYxZFpZN0E5NFF4NVdLdElocGc4amdNY0pIOVBnUEZGYWZGOHJWeW1Lc0VHR0J4UFhVRTIzRWpaTTlUQ2t3dTlSSWR5N0h1QWFJa0JlVGFWeEV5QWp4UXFjaWd5ZUlMc3N1UjZ5MEp1bGliMHZMcjZQaXhkQkpMbW1PNFJ5N3J2aTNJOUY1Q2hHbXN4dEQtc2pWRlA3ZVZQWHhtSC1KcF9CZ2xoSkd4NGlmbmdab2ZQcG5JY0tLS2ZHSVQzMTd6UFZUVEZpQ1Q5bEp3cFNQYWxhM2hKX0x0UldOak1RZGZNQ04wZlE4SGpGZkpnTTNpSlc4TklGOS1rTXNKRm9SMFZTYzVwMlBrRTZWUVo3Qlo2SkZxNTV4ak8zdE5tRVBIdm00cjMwMjhDR2xsN1l6YXc0cTIxa0kzTTJRUlZybFRFNXV4RDhUejVGSnJDOWkxVVZkdGlGazVNSFFkTGRTY1hVcHA0amV6Y3QxOVpxRy1pd3daVVF3Y2drSXE2SlZiOFJkU2JKQlpaVTJOY3V3ODFHSHdFcldCZDNhdUNRaXBWdm83VmhiV0gxaU42aXhVV1pkdDNxRE5qSXpQeFBVY0MxSzNzdHgwN3JRZ3ZpMUZOYzlTWXJqd3prMEdlVjhjcm85VE5HNWIzd3g4MFBNc0FmX1Bzc0pzRmo0elhzZkhSMDJfNmtMdFZreDdSOXNJbml6ZmJFS0xvLVdWYjRYNllSdF9QMjVkVDhpeXlpM1RqRHhTTTc5Tkp0cG54UFBaTlNURERzSFBBTlpZLUpocGI0T1cxbE9wY09ZQzB1cktCQjdMcGVCUE04NU5zbmYtME9lTXdITVZqQVlJWjBnVU9VYUtXTmx6alFXT20xUHRQT2pBZFJXa2JNN1dKWWo3ZGVrTlV5SHRFbnhWWjJvNUpIQ0Rva2lfellrYXMwempWLWRwOV9uQzFDQ0djdF83aWlQa25mdzdZM2NqUWNuOEFjaktJSjFpTW83ZElidUF5dzR2MUNpS1A4bnhzZFpYMTlteVg4a3Azb1RBWFV4b1kzalVFVS1CUnFpU2VwYXRCTWNhRTUzUWd4MTBhMUY1OFdyZUJTMEh0RWVXX0hZNVBMa0dhWUMyN1N6ZHhmUnZ2NDZSQ1NQM3duMkF5ZlJ6SGpZTWtXVlRESkVZcVlXa283eGFZUXFfbEptV21WbWtiTTQ4cXhiVGdBSGlmS1NGTjQzY1hucGJMMVVWNVRMQXMyMWxKNWk1RVBvWnFfZXB6Y05NMm9oWHZqUWNPQ1RuTDBRaTloMHFxNDJ2Q3gzSFI3R2l3QmJsWkRIZ1pPQzVmNjNJSGJVUDdTWjQ2N0g1N2dwenpWeG1WNmJWZUxBOWZ3SkFmRnRUZjJqNkdsQjVmMUYxNVhPd1N6MEE?oc=5",
+      "source": "Banglar Alo News",
+      "pubDate": "2026-11-25T09:21:26.000Z",
+      "lang": "bn",
+      "sport": "football"
+    },
+    {
+      "title": "Sooryavanshi explains the thinking behind his Doha blitz",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTTVPbWJ6WGhfN3ZpQmhyTmZIaXU4RFRMUlJSOWw2c2lNY2dodmp2bzRVbzlycG5ESnpHelhOM0pra21YNGJSTVFVLUV0Z2k3cFpBazQzMmFSdzJ1dUJ1cFJEX3hTWlhIamp2TFl5SUFRbWRST3lfaE9oZ3VtaVEwNkh4LVFBZk9HVE03dU1IVGgzZjQ?oc=5",
+      "source": "ICC",
+      "pubDate": "2026-11-25T09:45:38.000Z",
+      "lang": "en",
+      "sport": "cricket"
+    },
+    {
+      "title": "Rangers 3-2 Aberdeen: Gers beat Dons in five-goal thriller to cut Celtic's Premiership lead to one point",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbTFUVFg1LVhoU09iT3pSTUp5V1IyQnRFaTRQUWpYY2o3LXhFRzM2VE5iTGttcTM3VUpUUzRBTnRaLUpKNkxpR2JTQm53cVVfRFBQTkFWTUExcnVUYmJGZjNXczZiWmx4T3EyYnI5WUdhV3lyWFNjSFZvWk45VE9EV1NfV0p0UFhhaHZMZVZIWkF5R2pMQmtQdXpzdnRIanpESk80dnoxZ3V3eVRvTFpoV3JJN0JLQlkzYXdld21qTmlKcFJpN3VNR1dVMExvVERiYkl1bWZ6S0ROaV9ReDRJS0p5LUx5dw?oc=5",
+      "source": "Sky Sports",
+      "pubDate": "2026-11-25T09:00:01.000Z",
+      "lang": "en",
+      "sport": "football"
+    },
+    {
+      "title": "Vaibhav Sooryavanshi: মানসিকতা ঠিক ছিল না, ৩০ মিনিটের একটা ফোনে বদলায় ভাগ্য, ঐতিহাসিক ইনিংসের",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQWEkxckY2SXJ0QnE3bWpKU2ljNkE1NGgxbVd5elVMTnZnZ0RLNlVEVmRHNFdDM25uLWlVbmdTRElEY2oyNDNrczdwRkU2UHYzLUdQV2ExVUZuS2djSHNXLVZ2WDk0TzJwYjZYRnZRNkhGcjNPZlZTY2hxTkVkbUFXdFo1R3lLaWlSc2JMak5iZXJYSzMtdjdKLU5xeHVueW0zTXk3RmliZWtPUnlhNVZNSWh4dHBSTjNLN1AtdzNCc3ZPZW9TMl9uSlFhNVQ0cWJ3c2U5dWt2SHpJTkZNOTlSWVppQVBLblM0R0RIQi1VMzZUbjFx0gH6AUFVX3lxTE1fdEI5aF9QTEJOaG5PYnJKV3FXQUU4Wk9DMVZYaHRoMFR6UnBMWGZBbGM4UnB4dzU4dzd5U0N3NnV3cmZNSzNJNG5OWGtUV1BlRkwzOERHR252bGRMVXlDaVd4NXBfVmxwaG01MTdJVGdLOEE1N29ZVGlTRWZZdXBERHBZXzAyOGtkczFMSUJnYmZReXpEZUFveWN2VTFTb3pJenpVQ2Z4UHRRemhBYnBEeWs1QmFwQW9meEhpaWN0RkFrTG5SQkEzdUdiY1NqdmN5ay1OSHRwZW5QMFFOS2RBVXdiTWlMUl96TkZIdDl3UW5VbTFzMHpTbWc?oc=5",
+      "source": "ABP Ananda",
+      "pubDate": "2026-11-25T09:43:18.000Z",
+      "lang": "bn",
+      "sport": "cricket"
+    },
+    {
+      "title": "২০২৬ সালের অনূর্ধ্ব-১৭ বিশ্বকাপে এশীয় ফুটবলের এখনও অনেক সম্ভাবনা রয়েছে।",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdjhIWHFjRWt6czZTRHNhcE83ZlJYd0xJbG9EQjk5RWNhajJlTG1Td1p4Xzgtdk5wQlN5VVV5Y3RISnZkYnJ3dnpBZ2duTWtqUmV4Mmc1cTBWOFI3OF9IZGFZQ1MzekFURXc5bEFBVHFQUnFlbF9XNm1BUlVrZTBhZ2Q1Q0toRHVT?oc=5",
+      "source": "Vietnam.vn",
+      "pubDate": "2026-11-25T09:16:20.000Z",
+      "lang": "bn",
+      "sport": "football"
+    },
+    {
+      "title": "Why Stokes can enter the IPL 2027 auction but Brook can't",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPckhvMWR5dDlvT2RKUDZ1bHllaXVtR09CTjFSR3hZZ19HZDQ1a0VRVVpraUo3N2hwZFI0YUl1UUkxSWRGWnF6MFRDMFdvNzFjUXQxcWdhRVdhRzg2TnVUeHhsZVBRSjIxWnJYQWtkcVNrdGg4OHdLRkxqczdYWi0wVTJLdDQyNjVvQTVXU1prU2s2cGxKUHoxR1ZuQUlvb3h4N2lN?oc=5",
+      "source": "Cricbuzz",
+      "pubDate": "2026-11-25T09:08:05.000Z",
+      "lang": "en",
+      "sport": "cricket"
+    },
+    {
+      "title": "Wolverhampton Wanderers 3-0 Derby County: Adam Armstrong nets twice in Wolves win",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMy1iaERtOUpjUlNpUmhzOE91eFUzaG5HeWZOd0dTNDNpMFRsVWYwTHBvTEZmdmthN2lOa3JRN2k0TlAzNDA2UGJXck5vTEg4WmNnb0R4VWIyUjZham5BQm90T0ZuaDRvRWp3SVVpOW5WMlZZTjFwaGlpT3E3ejhrWEhMVll4R1hHaENMa1M1Yks4N1k0MlphRHp4QUZYeGF0dTEwRVlOaTF5M3FoYVZsMEttbXI5OGZJTTNUbXoyeHFQSEF3V1NMRw?oc=5",
+      "source": "Sky Sports",
+      "pubDate": "2026-11-25T08:43:06.000Z",
+      "lang": "en",
+      "sport": "football"
+    },
+    {
+      "title": "ভালো শুরুর পড়ে বিপথে বাংলাদেশ",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Rb3FSQUViY0NPam0xS3Rnczl4bE5rSC1jY2R0d2xpRmxRaXlRczIzTnlXRWFkN1RxX2JYbTZtQXFCSUwzR1ZDUVVFU2Z2aGFtODJN?oc=5",
+      "source": "Ntvbd",
+      "pubDate": "2026-11-25T09:35:48.000Z",
+      "lang": "bn",
+      "sport": "cricket"
+    },
+    {
+      "title": "২০২৮ কোপা আমেরিকার আসরও বসছে যুক্তরাষ্ট্রে",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8tNE5sVjZ0SUlic2tqM0FlZHg5VGtyV0Yzd2lJNzhLeERfWTZ1VXI0d3NvckNudzBYTkNoTkk2aVMxeWczSVZReGZkSzhSLWdtVlNaTQ?oc=5",
+      "source": "Daily Bhorer Dak",
+      "pubDate": "2026-11-25T09:07:35.000Z",
+      "lang": "bn",
+      "sport": "football"
+    },
+    {
+      "title": "Henry backs Duffy's mindset after Wellington outing",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTzZZdnJXNkYzZjJLcUVQSjhiU25yRDltYW1yNHBOSVU5bXhrLXRWenlQS29uYXRiUHgtMWxhMGdEbkNLV1dTaEViM2RQVi1LNkdibERnRWdjV1FNZ1BldHRlUmtQYlY4TDAtbm1FRXBwMnhncWZYRm9GN0NMUVBTMTA3OUozUnBvcktXTFhOZWlnSHhRdDktYjhocjJVNTBMVlJHbWE4NGVOM05uZFZaRDJzX1ZuQjhmOXZ2bA?oc=5",
+      "source": "ICC",
+      "pubDate": "2026-11-25T09:07:13.000Z",
+      "lang": "en",
+      "sport": "cricket"
+    },
+    {
+      "title": "Man City 2-2 Napoli: Rayan Cherki equalises late but Enzo Maresca's team frustrate in Champions League draw",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNWdfbURkdHJuRUg0cWJRbEx0WDdleGR6RGtsczV2bEp0TThqSVpTRWgwYXJNVWxRc295ODFmaHBNdlVzTlYxRmhwMjZpbWgzLTBmRV9qWjhCdFREaGxseXBxM0lzMGxwMG5XS2dKRW95NEd4VzFwTEJzV2pZWGZ4TVNIbl9DelFHZEJVYTdxSXdiSkhYeWhfSTZSVDFkaW1xR0ZPVG8xS1FIRjRSQ2JZVnktcW9EOUd3eFFJWEFXSTJLYUtpX3hDOVRXTm83Vi1KNWVWY2tQRkIwdXpnaVpwMF9kREFsV3BoNHc?oc=5",
+      "source": "Sky Sports",
+      "pubDate": "2026-11-25T08:43:03.000Z",
+      "lang": "en",
+      "sport": "football"
+    },
+    {
+      "title": "ফের উইকেট বিলিয়ে বিদায় নিলেন তানজিদ-মুমিনুল",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE52cXdTRDJJV01oUjkxS3d1MVhVd2Q0SWFSdHpZUEtJWTY4Um96clVYZEhidXpoZ3BWQTNtOVg0WElRSmw0ZnlrX01JN2xTN3BkaEdjZXVRVEl6T1oybnlyTnR2RndzZzZXN0d3?oc=5",
+      "source": "দ্য ডেইলি স্টার বাংলা",
+      "pubDate": "2026-11-25T09:33:41.000Z",
+      "lang": "bn",
+      "sport": "cricket"
+    },
+    {
+      "title": "‘জিদান আমার চাইতে অনেক এগিয়ে!’ চোখধাঁধানো গোলের পরও তুলনায় নারাজ বেলিংহ্যাম",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNE01aFZFR3JYMmlHSDNlNVNUSjBoZFIyTkdYVEhWU3d5ZlpRMUE4WGNZQmNlLV9DN2QySmU4d0dRUmJ0aDgxMmphNFVwdldDS3AzOXlmZnloaTlEcGFZdGloZUt6ZENtR0VTbWZXa3hubFRXQm9QMmN1WTZuNW5pMi1fT0NsVzI1T1pCV3k2T21jelFYcGU4NEdGRlM3cS1JSVlqT1c5bXVQQzFMUnB2WU1sb9IBuAFBVV95cUxOMVFudXZOS1BlcW1Nc24wa1prUERudTZ1SjZESk41RS1fNVRueGh3MC0zdnAzOHRVUGJCdDl0VWlfZzJyMy1jeDFYUkJGci1oTEtwSEhOTjF6c1RScTl0Vmc2VGFMMzhGdjc2bUJ0RUNjZi15dHNtYXlxcUo1dGswQU5BRHF1YXpFdnhHTzBmV2FJQl9DRUlVTzlKbFFYdlY2ZDRGYUh5ZHJ0dVRUNERsaHRsVlBaUWll?oc=5",
+      "source": "TheWall",
+      "pubDate": "2026-11-25T09:04:57.000Z",
+      "lang": "bn",
+      "sport": "football"
+    },
+    {
+      "title": "Tamim falls after 58-run opening stand",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQd09EY2pSWU96ZTBJMzRtVUY0QnlOem1rWWJsS1FoaWkxa1Q0VlN0M2t5OFVlU3RlNWVRbmx0NDJmMWxscG9IYVZIOFJjOHhHX0ZsUkxYWkxFTEx2ek1iVjFKaHlYdk5iek5sMHlqc21sRGN5RTAxX2JWSU9DQWxmUnJxbkxHLU85Z1lwLS1pWXo?oc=5",
+      "source": "The Daily Star",
+      "pubDate": "2026-11-25T09:02:13.000Z",
+      "lang": "en",
+      "sport": "cricket"
+    },
+    {
+      "title": "Charlton Athletic 4-0 Lincoln City: Addicks sweep to victory at The Valley",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbEF1cDJlb3BMR0JJQmdqWkdyLWFpNFdaOTdMVzVEVWp2OVBBanc3dDVGeU01ZkRQSzQ2Wk55ZFFTckVfZUJXam0taGxEQ0VGVFhlTjl2c2VFczJnNlFqUjFXTGZSd29lS2VuaUpaU0xyZWozNlBzSkRCcUNrWXZzam9Qa0VKcEtxMGN1c0ltd1NQYk9DLVEzTzJkMk1LeVRINEl3ZDRIVXhSejJINFZ1Y1kxODRMQWczS3FkNFBVSQ?oc=5",
+      "source": "Sky Sports",
+      "pubDate": "2026-11-25T08:38:15.000Z",
+      "lang": "en",
+      "sport": "football"
+    },
+    {
+      "title": "কিশোরগঞ্জে পর্দা উঠল ইয়ং টাইগার্স অনূর্ধ্ব-১৮ জাতীয় ক্রিকেট টুর্নামেন্টের",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBaUWIwTVdmLVdOcnhxeXdVeG94YVFzWnY2eXBvWkJPQkFGOTRkMGhJQVFYUDFUMWM3TUtuQXNZRFpHWC1GYlVjbGszNnhQWGFMZWhLU3U3OXQyRE0?oc=5",
+      "source": "দৈনিক ইনকিলাব",
+      "pubDate": "2026-11-25T09:33:19.000Z",
+      "lang": "bn",
+      "sport": "cricket"
+    },
+    {
+      "title": "আন্তঃবিশ্ববিদ্যালয় ফুটবলে যৌথ চ্যাম্পিয়ন রাবি ও জাতীয় বিশ্ববিদ্যালয়",
+      "link": "https://news.google.com/rss/articles/CBMiwAZBVV95cUxPR21CRlF5UmU0Z0hKWk9NZGpxR3o3eW9nYk0zQ0loSURyUGpUWDdhMGxodjB0ZlotNlRKWlR4TS1fYlZaVXlsc016endIOHhYdU9xMWR6MXUwOHpuaWZrbDZkYTVPeDJFeC1lWlVVbUt4ZjlTTzAxd3lTWWdYc1p3MU5zeHdFZWg0ZFpqbGlyTkpxTkptYWhVOG5sb3dqWXB3eURZU0ZQakJvdUNhd29ZRU1hUHRMN21YZm1SSlF6d1RpQkRyZ29TOHE5SXhURHpCcHQ1N2xJTjJrUl9vZmVDZlBKTGFBVTI3QnR1b0hPUlhNLXJOeHNJVF9tT1BHd3RCTEthdDRWUmJlSlZ6UVNkT2RBN0dVaERyTUptNWhldktGVHA4OTR1OVNyWW02MEd6NTd4WFNRblBWNmxtYzJ6OTBUWHM5WTM0MDhRTmtNV3NMYmFaRGlZamlXeW51eG53amx4Y0w1MEtVYVVfSTF0QXlkc0tZQnEzNXBGT2QxeHB2RjctS2xIc0E1ajdiWGhPMW1DS2ZNREVaUzhQMFRhbXpfcE51cmRFM2RPLVVvS0lQN195WVIxdmp0WmJ3WEhpaTkyUEJCazlsUmFRb0hkUHpXb0tUdE1tSkhnUnVVaENkY3hqRFNHZFRvdWZlZ2tfbzFCdFZ4ZW1zZ2RackNrSUNSbC1QUlJtU3dyM2JURm9LTnBKMVdyam00azVRRFJtRk9RS25FdkNzZFA3czR1aExVaHBnZWxOdXJaUTVESzk4ei1ER1JrbmdKT1ZGYjdueEVFbW96bnBMUWNmUmJuaHRJUHdRZmpTdy1fSTFZaVU1TUN1eGktaFNKcER6MXZPWjZPb253VXVQTGlzOU1YYmt4Rm9mVDRqODRHdW5Ic0VETmdGWjNGc3FLMmxXcXBWWEg2RzFRelFraXVEVUhYRnhydHo1M2RicndnOWpQX091SENHdkdIanVwWkQxVlZILWx2SUFUTVp4THFlcjJkV0VQNE80b0I3YlFyaGx3OVF5ZnNZU01neTF0TS1TTGphUU5XVWFjcVVHRjhVMWhuNWstVVl5Q2dFYnJrU3kyeFV6S3lFVWhiaUFHY3JTcno1?oc=5",
+      "source": "Sangbad Sarabela",
+      "pubDate": "2026-11-25T08:45:00.000Z",
+      "lang": "bn",
+      "sport": "football"
+    },
+    {
+      "title": "Cricket match squads | MLRW vs BRHW, 33rd Match, Womens Big Bash League 2026",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNak9xQjhuZUE3SWRrenBvUWpiOVVCTkwwWGtOdDRjMUNRWFV3REFYaTVlUjZJeWFOSWtPZV9xYlFUVWtrS2hrWkUzWGhQZjNiMG9ZcUxyTXA4cDREdXloNU1LVFRQRG5vYzE4c0FOTGtid0JHa1VMUDVkNm9ZV3RUM2xYdzItNkpyLTd1V0REbTJKcjhHVW1Na2M3eGhlTFNZdjFNSlpPOA?oc=5",
+      "source": "Cricbuzz",
+      "pubDate": "2026-11-25T09:00:44.000Z",
+      "lang": "en",
+      "sport": "cricket"
+    },
+    {
+      "title": "Arsenal 1-1 Dortmund: Viktor Gyokeres goal cancelled out as Gunners frustrated in Champions League",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTG83MlQ5ZUp2X1hBZEUybmVMcExfQWROcWUtRW8xODdjWlJKLTRPVXdWQ3drTEdIZnN3NGllV0p5TmluWG1HUUU2bHVMX3dTdHAtcFVDVkdvUnRRb3hla1hnbVZGNkxIRmxNV0JXMG4xOTZLMEVTVGZ5YWZEVzhiQklQRUhTTlktVlFxbEJSODZhVVNsUGI0WnNoQkNxNGpCM3R1QmFSdzNNLW5HS2h1ZDZqVlV3ZEpnblZHamFpanV4aUo5ejBCTkFqOU16SUZnNUMtWUR5MjRqSExCbXcxcGs1XzdnTUxEbTdr?oc=5",
+      "source": "Sky Sports",
+      "pubDate": "2026-11-25T08:28:07.000Z",
       "lang": "en",
       "sport": "football"
     }
